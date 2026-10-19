@@ -1,0 +1,13 @@
+{
+  "name": "security-certificate-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Security Certificate & Compliance Inspection System",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "backend": "python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload --app-dir backend",
+    "frontend": "npm --prefix frontend run dev",
+    "test": "python -m unittest discover -s tests -p \"test_*.py\""
+  }
+}

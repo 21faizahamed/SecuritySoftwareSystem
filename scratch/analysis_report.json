@@ -1,0 +1,673 @@
+[
+  {
+    "num": 1,
+    "facility": "Luxury Hotels (5-star & 4-star, luxury resorts)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Requirements:"
+    ],
+    "full_text_snippet": "Chapter One: Security Conditions and Requirements for Luxury Hotels: \nLuxury hotels are commercial establishments that provide accommodation and \nhospitality services to visitors and travelers. \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Security Requirements: \nA. Cameras must be installed to meet the following requirements: \nVSS Requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View cashier and reception desks  2 \n- Observation View elevators lobbies and stairs 3 \nwith an angle showing \nthe floor number \nObservation View Inside the elevators 4 \n- Observation View emergency exit doors among \nfloors \n5 \n- Recognition View Vehicle entrances and exits to \nthe establishment \n6 \n- Recognition View Safe and bag deposit room 7 \n- Identification View entrances leading to the bars, \ndiscos, nightclubs and the \ndoors of ballrooms \n8 \n- Detection View Establishment corridors 9 \n- Detection View inside business centers 10 \n- Detection View loading and unloading areas  11 \n- Monitoring View Passenger drop-off and pick-up \narea \n12 \nFor units with an \nexternal entrance \nDetection View External corridors leading to \nresidential units \n13 \n- Monitoring View Corridors containing \nrestaurants or shops \n14 \n- Identification View Entrances from restaurants, \ncafes, and shops that have an \nexternal entrance and are \nwithin the establishment's \nboundaries \n15 \nFor establishmen"
+  },
+  {
+    "num": 2,
+    "facility": "Tourist Hotels (1, 2, 3-star, hotel apartments, motels)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Requirements:"
+    ],
+    "full_text_snippet": "Chapter Two: Security Conditions and Requirements for Tourist Hotels: \nTourist hotels are commercial establishments that provide accommodation and \nhospitality services to visitors and travelers. \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Security Requirements: \nA. Cameras must be installed to meet the following requirements: \nVSS Requirements \nRemarks Field Of View Areas SN \n- Identification view Entrances of the establishment 1 \n- Recognition View cashier and reception desks  2 \n- Observation View elevators lobbies and stairs 3 \nwith an angle showing \nthe floor number \nObservation View Inside the elevators 4 \n- Observation View emergency exit doors among \nfloors \n5 \n- Recognition View Vehicle entrances and exits to \nthe Establishment \n6 \n- Recognition View safe and bag deposit rooms 7 \n- Identification View entrances leading to the bars, \ndiscos, nightclubs and the \ndoors of ballrooms \n8 \n- Detection View Establishment corridors 9 \n- Detection View inside business centers 10 \n- Detection View loading and unloading areas  11 \n- Monitoring View Passenger drop-off and pick-up \narea \n12 \nFor units with an \nexternal entrance \nDetection View External corridors leading to \nresidential units \n13 \n- Monitoring View Corridors containing restaurants \nor shops \n14 \n- Identification View Entrances from restaurants, \ncafes, and shops that have an \nexternal entrance and are \nwithin the establishment's \nboundaries \n15 \nFor establish"
+  },
+  {
+    "num": 3,
+    "facility": "Shopping Malls & Commercial Centers",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": true,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Three: Security Conditions and Requirements for Shopping \nMalls: \nThese are commercial establishments that combine a group of shops and stores in \none location. \n \nFirst: Activities Covered \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors \namong floors \n2 \n- Recognition View cashier and reception \ndesks  \n3 \n- Observation View elevators lobbies and \nstairs \n4 \nwith an angle showing the \nfloor number, using a lens \nwith a wide angle to cover \nall parts of the elevator. \nObservation View Inside the elevators 5 \nSo that the cash filling \nangle is visible. \nRecognition View Locations of ATMs, \npublic phones, and \npublic charging devices \n6 \n- Recognition View Vehicle entrances and \nexits to the \nEstablishment \n7 \n- Recognition View Safe and baggage \nstorage rooms, \ntemporary storage \nservice for purchases \n8 \nAt the Vehicles entrances \nand exits to the \nestablishment. \nIf there is more than one \nentrance, cameras should \nbe installed at the \nfollowing locations: \no Vehicle entrances and \nexits to the establishment \no Parking entrances and \nexits \nAutomatic Number-Plate \nRecognition system \n(ANPR) approved by \nSIRA \nVehicles Number-Plate \nRecognition cameras \nshall be installed \n9 \n--- PAGE 42 ---\n "
+  },
+  {
+    "num": 4,
+    "facility": "Important Complexes (Multi-use, residential & commercial complexes)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": true,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements for Multi-Story",
+      "Specifications and security requirements for multi-story",
+      "Specifications and Security Requirements for Villa Complexes:",
+      "Specifications and Security Requirements for Building Complexes:",
+      "Specifications and Security Requirements for Villa and Building",
+      "Specifications and Security Requirements for Gated Building",
+      "Specifications and Security Requirements for Multi-Use Buildings:"
+    ],
+    "full_text_snippet": "Chapter Four: Security Conditions and Requirements for Important \nComplexes: \nAny group of residential or office units, including buildings, towers, and villa \ncomplexes. \n \nFirst: Covered Activities \nRefer the Commercial Facilities and Activities Annex. \n \nSecond: Specifications and Security Requirements for Multi-Story \nResidential Buildings: \n These are buildings used for residential purposes only. \n \nCameras must be installed to meet the following requirements. \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View reception desks 2 \n- Observation View elevators lobbies and \nstairs \n3 \nwith an angle showing \nthe floor number \nObservation View Inside the elevators 4 \n- Detection View Establishment corridors 5 \n- Recognition View Health club entrances 6 \n- Monitoring View swimming pools 7 \n- Detection View parking lots pathways 8 \nInstalling cameras on \nthe walls of the \nbuilding \nMonitoring View Installing external \ncameras around the \nbuilding's perimeter \n9 \n \nA. Cameras must be installed in the complex’s gardens according to the \nfollowing requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View Vehicle entrances and exits 2 \n- Detection View Establishment corridors 3 \n- Detection View Seating areas 4 \n- Monitoring View Outdoor areas, performance \nvenues, and visitor gatherings \n5 \n \n--- PAGE 45 ---\n \nB. Vehicles Num"
+  },
+  {
+    "num": 5,
+    "facility": "Labor Accommodations / Workers Residential Compounds",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Five: Security Requirements for Labor Accommodations: \nThese are designated accommodations for workers, typically used to provide \ntemporary or permanent housing for them. \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification \nView \nEntrances of the establishment 1 \n- Observation \nView \nemergency exit doors among \nfloors \n2 \nCommon areas include, \nfor example, washing \nareas. \n \nMonitoring View \nDining and sitting rooms and \ncommon areas for residents \n3 \n- Observation \nView \nelevators lobbies and stairs 4 \nWith an angle showing \nthe floor number, a wide-\nangle lens shall be used \nto cover all parts of the \nelevator. \n \n \nObservation \nView \n \n \nInside the elevators \n5 \n- Recognition \nView \nReception areas 6 \n- Detection View Establishment corridors 7 \n- Observation \nView \nHealth club entrances 8 \n- Monitoring View swimming pools 9 \n- Vehicles \nNumber-Plate \nRecognition \nview \nInstalling cameras on vehicle \nentrances \n10 \n- Detection View Vehicle parking pathways 11 \nOn the wall of the \nbuilding \nDetection View The area surrounding the labor \naccommodations \n12 \n- Detection View outdoor areas 13 \n \n--- PAGE 56 ---\n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Providing 24-hour s"
+  },
+  {
+    "num": 6,
+    "facility": "Cinemas and Theaters",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Specifications and Requirements"
+    ],
+    "full_text_snippet": "Chapter Six: Security Conditions and Requirements for Cinemas and \nTheaters: \nThese are entertainment venues used to show films, plays, and various artistic \nworks. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Security Specifications and Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors \namong floors \n2 \n- Detection View Main lobby area 3 \n- Recognition View cashier and reception \ndesks  \n4 \n- Recognition View Inside the safe deposit \nboxes rooms \n5 \n- Observation View elevators lobbies and stairs 6 \nWith an angle showing \nthe floor number, a \nwide-angle lens shall \nbe used to cover all \nparts of the elevator. \n \n \nObservation View \n \n \nInside the elevators \n7 \n- Recognition View ATM locations 8 \n- Detection View Establishment corridors 9 \n- Detection View Seating and display areas 10 \n- Recognition View Vehicle entrances to the \nestablishment \n11 \n- Monitoring View loading and unloading \nareas  \n12 \n- Monitoring View Passenger drop-off and \npick-up area \n13 \n- Detection View parking lots pathways 14 \n- Observation View Gas cylinder storage area 15 \n- Automatic Number-Plate \nRecognition system \n(ANPR) approved by \nSIRA \nVehicles Number-Plate \nRecognition cameras shall \nbe installed \n16 \n \n--- PAGE 58 ---\n \nB. The following security requirements mus"
+  },
+  {
+    "num": 7,
+    "facility": "Amusement Parks, Theme Parks & Water Parks",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": true,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Seven: Security Conditions and Requirements for Amusement \nParks: \nThese parks are specifically designed to provide entertainment and enjoyment for \nvisitors. These parks contain a variety of activities, games, and facilities that attract \nfamilies and individuals. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View cashier and reception \ndesks  \n2 \n- Observation View elevators lobbies and \nstairs \n3 \nWith an angle showing \nthe floor number, a \nwide-angle lens shall \nbe used to cover all \nparts of the elevator. \nObservation View Inside the elevators 4 \n- Recognition View ATM locations 5 \n- Recognition View Vehicle entrances 6 \n- Monitoring View loading and unloading \nareas  \n7 \n- Monitoring View Passenger drop-off and \npick-up area \n8 \n- Detection View Establishment corridors 9 \n- Detection View Seating areas 10 \n- Detection View parking lots pathways 11 \n- Monitoring View Outdoor spaces, \nperformance venues, \nand visitor gatherings \n12 \n- Detection View In the LPG storage \narea and filling sites \n13 \n- Recognition View Electrical room \nentrance \n14 \n- Detection View Backup generator fuel \ntanks \n15 \nPrivate or rented \nparking \nAutomatic Number-Plate \nRecognition system (ANPR) \napproved by S"
+  },
+  {
+    "num": 8,
+    "facility": "Educational Facilities (Universities, Colleges, Schools, Nurseries)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements for Nurseries and",
+      "Specifications and Security Requirements for Schools",
+      "Security Specifications and Requirements for Universities and"
+    ],
+    "full_text_snippet": "Chapter Eight: Security Conditions and Requirements for Educational \nFacilities: \nEducational facilities include a wide range of institutions that provide educational and \ntraining services to students and learners of various ages and educational levels. \n \nFirst: Covered Activities \nRefer to the Annex on Commercial Facilities and Activities \n \nSecond: Specifications and Security Requirements for Nurseries and \nKindergartens \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements (nurseries and kindergartens) \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors \namong floors \n2 \n- Detection View Establishment \ncorridors \n3 \n- Observation View elevators lobbies and \nstairs \n4 \nWith an angle showing the \nfloor number, a wide-angle \nlens shall be used to cover \nall parts of the elevator. \nObservation View Inside the elevators 5 \n- Detection View Waiting halls 6 \n- Detection View Stairs leading to the \nroof \n7 \n- Recognition View cashier and reception \ndesks  \n8 \n- Detection View Inside classrooms 9 \n- Detection View Outdoor play areas or \nevent areas at the \nestablishment \n10 \n- Recognition View Washrooms \nentrances \n11 \n- Automatic Number-Plate \nRecognition system \n(ANPR) approved by SIRA \nVehicles Number-\nPlate Recognition \ncameras shall be \ninstalled \n12 \n- Detection View The external \nperimeter of the \nestablishment \n13 \n \n--- PAGE 62 ---\n \nB. The following security re"
+  },
+  {
+    "num": 9,
+    "facility": "Healthcare Facilities (Hospitals, Clinics, Medical Centers, Day Surgery)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": true,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Nine: Security Requirements for Healthcare Facilities: \nFacilities that provide healthcare services to patients and communities, including a \nwide range of medical and healthcare services. \n \nFirst: Covered Activities \nRefer to the Facilities and Commercial Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification view Entrances of the establishment 1 \n- Observation View emergency exit doors among \nfloors \n2 \n- Detection View Main lobby 3 \n- Detection View Establishment corridors 4 \n- Observation View elevators lobbies and stairs 5 \nWith an angle \nshowing the floor \nnumber, a wide-\nangle lens shall be \nused to cover all \nparts of the \nelevator. \n \n \n \nObservation View \n \n \n \nInside the elevators \n6 \n- Recognition View cashier and reception desks  7 \n- Detection View Washroom Main entrances  8 \n- Monitoring View Loading and unloading areas 9 \n- Recognition View Laboratories room entrances 10 \n- Detection View Inside blood units storage rooms 11 \n- Detection View Pharmacy and medicine \ndispensing area \n12 \n- Detection View Medicine shelves in the pharmacy 13 \n- Recognition View Operation room entrances 14 \n- Recognition View Anesthesia room entrances 15 \n- Recognition View Intensive care unit entrances 16 \n- Detection View Seating and waiting areas 17 \n- Detection View Inside the nursery rooms for \ninfants \n18 \n- Detection Vi"
+  },
+  {
+    "num": 10,
+    "facility": "Non-Muslim Places of Worship (Churches, Temples)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Ten: Security Requirements for Non-Muslim Places of Worship: \nThese are places licensed for the performance of worship and religious rites for non-\nMuslim religions and sects. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification view Entrances of the \nestablishment \n1 \n- Monitoring View Areas of worship 2 \n- Recognition View reception desks 3 \nAll cameras are \nequipped with infrared \nfeatures. \nDetection View The area surrounding the \nplace of worship \n4 \nAll cameras are \nequipped with infrared \nfeatures. \nDetection View Appendices of places of \nworship \n5 \n- Detection View Vehicle parking 6 \n- Observation View elevators lobbies and \nstairs \n7 \n- Vehicles Number-Plate \nRecognition system \nVehicles Number-Plate \nRecognition cameras shall \nbe installed \n8 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Providing 24-hour security guards \naccording to the risk analysis report \nSecurity Guard 1 \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system \nhealth monitoring \nservice \n2 \n \n \n--- PAGE 70 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 70 of 140"
+  },
+  {
+    "num": 11,
+    "facility": "Manufacture & Sale of Precious Metals and Gemstones (Jewelry, Gold shops, Refineries)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements for Commercial Stores:",
+      "Specifications and Security Requirements for Gold Offices",
+      "Specifications and Security Requirements for Flexible or Virtual",
+      "Specifications and Security Requirements for Business Centers",
+      "Specifications and Security Requirements for Jewelry and Precious",
+      "Specifications and Security Requirements for Kiosks",
+      "Specifications and security requirements for display windows and"
+    ],
+    "full_text_snippet": "Chapter Eleven: Security Requirements for the Manufacture and Sale of \nPrecious Metals and Gemstones: \nThe manufacture and trade of precious metals and gemstones includes all operations \nrelated to the extraction, manufacturing, and trade of precious metals such as gold, \nsilver, and gemstones. \n \nFirst: Covered Activities \nRefer to the Annex on Establishments and Commercial Activities \n \nSecond: Specifications and Security Requirements for Commercial Stores: \nThese are stores that sell and trade gold, manufactured and unmanufactured \njewelry, and gemstones, retail or wholesale. \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View Display and inspection tables 2 \n- Recognition View cashier and reception desks  3 \n- Recognition View The safe 4 \n-  \nRecognition View \nDisplay tables and cases that \nextend beyond the \nestablishment's boundaries \nor displayed at another \nlocation. \n5 \nThe camera's viewing \nangle must be no less \nthan 110 degrees. This \nrequirement is exempted \ninside malls and \nbuildings. \n \n \n \n \nMonitoring View \n \n \n \n \nExternal area of the \nestablishment \n6 \n- Monitoring View Internal area of the \nestablishment \n7 \n \n  \n--- PAGE 71 ---\n \nB. Alarm system must be provided according to the following \nrequirements: \nAlarm system \nRemarks Details Requirement SN \n- Covering all areas with motion sensors is \ncompreh"
+  },
+  {
+    "num": 12,
+    "facility": "Financial & Monetary Institutions (Banks, Exchange houses, ATMs, Money transfer)",
+    "retention": "31 days",
+    "features": {
+      "ANPR": false,
+      "AccessControl": true,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements for Financial and",
+      "Security Requirements for Electronic Banking Services",
+      "Security Requirements for Hawala Dar",
+      "Security Requirements for ATMs",
+      "Security requirements for mobile ATMs",
+      "Security Requirements for Selling and Trading Digital Currencies"
+    ],
+    "full_text_snippet": "Chapter Twelve: Security Requirements for Financial and Monetary \nInstitutions: \nFinancial and monetary institutions include a wide range of entities that provide \ndiverse financial services to individuals and businesses. First: Activities Covered \nRefer to the Annex on Establishments and Commercial Activities \n \nSecond: Specifications and Security Requirements for Financial and \nMonetary Institutions \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View cashier and reception \ndesks  \n2 \n- Recognition View safes 3 \n- Monitoring View Main lobby area 4 \n- To show the image of the ATM \nuser \nInside ATMs 5 \nSo that the cash \nfilling angle is \nvisible \nObservation View ATMs at the \nestablishment \n6 \n- Recognition View Safe rooms 7 \nThe camera's \nviewing angle \nshould not be \nless than 110 \nhorizontal \ndegrees. \nMonitoring View External area of the \nestablishment \n8 \n- Not less than 31 days for on-site \ncameras and not less than 75 days \nfor ATM cameras. \nRecording retention \nperiod \n9 \n \nB. Alarm system must be provided according to the following \nrequirements: \nAlarm and intruder detection system \nRemarks Details Requirement SN \n- The sensor range must cover \nProtected Areas so that there is no \narea that can be penetrated to stop or \ndisable the security system. \nProtected Areas 1 \n- All glass facades of the facility must \nbe secured with "
+  },
+  {
+    "num": 13,
+    "facility": "Sports & Recreational Halls and Fitness Clubs",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirteen: Security Requirements for Sports and Recreational \nHalls and Clubs: \nThese are facilities (buildings) where sports and recreational activities are conducted. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Detection View Internal areas of the \nestablishment \n2 \n- Detection View Establishment corridors 3 \n- Recognition View cashier and reception \ndesks  \n4 \n- Monitoring View Passenger drop-off and \npick-up area \n5 \n- Detection View parking lots pathways 6 \nIf the facility has its \nown building \nDetection View Around the \nestablishment’s \nperimeter \n7 \n- Detection View Recreational Areas and \nSports Arenas \n8 \n- Detection View Inside the storage rooms 9 \n- Vehicles Number-Plate \nRecognition view \nInstalling car entrance \ncameras \n10 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n  \n--- PAGE 89 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 89 of 140"
+  },
+  {
+    "num": 14,
+    "facility": "Gas Stations / Fuel Service Stations",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Fourteen: Security Requirements for Gas Stations: \nThese are facilities that provide fuel for cars and other vehicles to drivers and \nconsumers. \n \nFirst: Activities Covered \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS Requirements \nRemarks Field Of View Areas SN \n- Identification View Store entrance 1 \n- Monitoring View Vehicle fueling lines 2 \n- Monitoring View Petrol station fueling \nLocations  \n3 \n- Detection View Internal area of the store 4 \nAt the station \nentrances and exits \nAutomatic Number-\nPlate Recognition \nsystem (ANPR) \napproved by SIRA \nVehicles Number-Plate \nRecognition cameras shall be \ninstalled \n5 \n- Detection View Parking lots 6 \n- Detection View External washrooms \nentrances \n7 \n- Recognition View Cash register table 8 \nFor example: vehicle \nwashing and \nmaintenance areas \n \nDetection View \nAreas of services provided by \nthe station \n9 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n  \n--- PAGE 90 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 90 of 140"
+  },
+  {
+    "num": 15,
+    "facility": "Large & Diverse Stores (Supermarkets, Hypermarkets, Department stores, Electronics)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": true,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements",
+      "Specifications and Security Requirements for Department Store"
+    ],
+    "full_text_snippet": "Chapter Fifteen: Security Requirements for Large and diverse Stores: \nLarge and diverse stores include large retail chains that offer a wide range of \nproducts and services under one roof. These stores are often part of large shopping \nmalls or operate as large individual stores. \n \nFirst: Activities Covered \nReview the Business Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors \namong floors \n2 \n- Observation View elevators lobbies and stairs 3 \nWith an angle \nshowing the \nfloor number, a \nwide-angle lens \nshall be used to \ncover all parts \nof the elevator. \nObservation View Inside the elevators 4 \n- Recognition View cashier and reception desks  5 \n- Observation View display tables 6 \n- Detection View Main store area and shelf \naisles \n7 \nInstalling \ncameras on the \nexternal \nperimeter of the \nestablishment if \nthe \nestablishment \nhas its own \nbuilding. \nDetection View Building perimeter 8 \nNote: \nIf the facility has its own or rented parking spaces, cameras must be \ninstalled as follows: \n- Install an Automatic Number-Plate Recognition system (ANPR) \napproved by SIRA at the entrances and exits of the parking spaces. \n--- PAGE 91 ---\n \n- Install cameras along the parking lanes in Detection View. \n \nB. The following security requi"
+  },
+  {
+    "num": 16,
+    "facility": "Electronic Games & Entertainment Halls and Arenas (Gaming centers, VR, Arcades)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Sixteen: Security Requirements for Electronic Games and \nEntertainment Halls and Arenas: \nEntertainment facilities that offer a variety of electronic games and recreational \nactivities for visitors. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors \namong floors \n2 \n- Detection View Establishment corridors 3 \n- Observation View elevators lobbies and \nstairs \n4 \nWith an angle showing \nthe floor number, a \nwide-angle lens shall be \nused to cover all parts \nof the elevator. \nObservation View Inside the elevators 5 \n- Detection View Playrooms and areas 6 \n- Recognition View cashier and reception \ndesks  \n7 \n- Detection View Inside the party rooms 8 \nFor private or rented \nparking spaces \nAutomatic Number-Plate \nRecognition system (ANPR) \napproved by SIRA \nVehicles Number-Plate \nRecognition cameras \nshall be installed \n9 \nInstalling cameras on \nthe external perimeter \nof the establishment if \nthe establishment has \nits own dedicated \npremises / independent. \nDetection View establishment \nperimeter \n10 \n \n  \n--- PAGE 95 ---\n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring"
+  },
+  {
+    "num": 17,
+    "facility": "Football Clubs & Sports Stadiums",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Seventeen: Security Requirements for Football Clubs: \nThese are facilities that train athletes and organize football competitions. \n \nFirst: Activities Covered \nRefer to the Commercial Facilities and Activities Annex. \n \n Second: Specifications and Security Requirements \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Observation View emergency exit doors among \nfloors \n2 \n- Recognition View cashier and reception desks  3 \n- Detection View Main lobby 4 \n- Detection View Seating and waiting areas 5 \n- Recognition View Inside ticket outlets 6 \n- Observation View elevators lobbies and stairs 7 \nWith an angle \nshowing the floor \nnumber, a wide-\nangle lens shall be \nused to cover all \nparts of the \nelevator. \n \n \nObservation View \n \n \nInside the elevators \n8 \nSo that the cash \nfilling angle is \nvisible. \nRecognition View ATM and public phones Locations 9 \n- Monitoring View Loading and unloading areas 10 \n- Monitoring View Visitor drop-off and pick-up area 11 \n- Detection View Establishment corridors 12 \n- Detection View Fan stands and special platforms 13 \n- Detection View Parking pathways 14 \n- Monitoring View Outdoor areas, performance \nvenues, and visitor gatherings \n15 \n- Observation View LPG storage area and filling sites \nand gas cylinder storage area \n16 \n- Recognition View Electrical room entrance 17 \n- Recognition View Water t"
+  },
+  {
+    "num": 18,
+    "facility": "Warehouse Compounds & Logistics Parks",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Requirements for Warehouse compounds"
+    ],
+    "full_text_snippet": "Chapter Eighteen: Security Requirements for Warehouse compounds: \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Security Requirements for Warehouse compounds \n \nNote: The responsibility for installing cameras in the warehouse \ncompound lies with the compound owner. \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Vehicles Number-\nPlate Recognition \nview \nInstalling cameras at car \nentrances \n1 \n- Detection View External walkways between \nwarehouses \n2 \n- Detection View External perimeter 3 \n \n \n  \n--- PAGE 99 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 99 of 140"
+  },
+  {
+    "num": 19,
+    "facility": "Individual Warehouses & Storage Facilities",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Requirements for General Warehouses:",
+      "Security requirements for hazardous and valuable materials",
+      "Security requirements for processed tobacco and tobacco"
+    ],
+    "full_text_snippet": "Chapter Nineteen: Security Requirements for Warehouses: \nFirst: Covered Activities \nRefer to the Annex on Commercial Facilities and Activities \n \nSecond: Security Requirements for General Warehouses: \nThese are facilities used to store materials and equipment. \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View reception desks 2 \nVehicle entrances \nand exits \nVehicles Number-\nPlate Recognition \nView \nVehicles Number-Plate Recognition \ncameras shall be installed \n3 \n- Monitoring View Loading and unloading areas 4 \n- Detection View Establishment corridors 5 \n- Detection View The internal area of the \nwarehouse \n6 \n- Detection View The outer area of the warehouse 7 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \nThird: Security requirements for hazardous and valuable materials \nwarehouses: \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View reception desks 2 \n- Vehicles Number-Plate \nRecognition View \nVehicle entrances and exits to \nthe establishment \n3 \n- Monitoring View Loading and unloading areas 4 \n- Detection View"
+  },
+  {
+    "num": 20,
+    "facility": "Self-Storage Facilities",
+    "retention": "90 days",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements for Self-Storage",
+      "Specifications and security requirements for automatic storage"
+    ],
+    "full_text_snippet": "Chapter Twenty: Security Requirements for Self-storage: \nThe process of storing goods or materials by individuals or companies, either \nmanually or automatically. \n \nFirst: Covered Activities \nRefer to the Appendix on Establishments and Commercial Activities \n \nSecond: Specifications and Security Requirements for Self-Storage \n \nA. Definitions: \nDefinitions \nDefinition The term SN \nIt is the area that contains iron safes and is \nsurrounded by a cement wall. \nSafes area 1 \nIt is the area that contains a group of stores stores area 2 \nIt is the area where customers are received and \ndealt with, or the waiting room where they are \nserved. \nReception and waiting \narea \n3 \nIt is the area where the customer can view his \nthings privately and is within the protected area. \nViewing area 4 \nIt is the area that separates the safes area from the \nrest of the areas and is the only way for it. \nsecuring area 5 \n \nB. General Specifications: \nGeneral Specifications of Facilities \nRemarks Details Requirement SN \n- • Reception and waiting area. \n• Safes area. \n• viewing area. \n• Securing area. \n• Administration area. \nSafe rental facilities for \nstoring valuable deposits \nmust have the following \ndivisions: \n1 \n- • Reception and waiting area. \n• stores area. \n• Administration area \nSelf-storage facilities \nmust have the following \ndivisions: \n2 \n- The securing area must have at \nleast two doors that open \nalternately, with one door being \nable to be opened only after the \nother is closed. \nTh"
+  },
+  {
+    "num": 21,
+    "facility": "Air Cargo & Freight Forwarding Terminals",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": true,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-One: Security Requirements for Air Cargo: \nFirst: Covered Activities \nRefer to the Annex on Commercial Facilities and Activities \n \nSecond: Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Details Requirement SN \n- Identification View Entrances of the establishment 1 \n- Observation View reception desks 2 \n- Recognition View Temporary and recovered material \nstorage sites \n3 \n- Recognition View Cargo inspection sites 4 \n- Monitoring View Aisles and shelves in the facility 5 \n- Recognition View Hazardous Material Storage Areas 6 \n- Detection View Interior areas of the facility 7 \n- Detection View Inside the cargo handling rooms 8 \n- Monitoring View Loading and unloading areas 9 \n- Automatic Number-\nPlate Recognition \nsystem (ANPR) \napproved by SIRA \nAutomatic Vehicles Number-Plate \nRecognition cameras shall be \ninstalled \n10 \n- Detection View External facility perimeter 11 \n \nB. The following requirements must be provided: \nOther security requirements \nRemarks Description Requirement SN \n- Providing 24-hour security guards \naccording to the risk analysis report \nsecurity guard 1 \nIf the work system \nis 24/7, they must \nbe provided. \nProviding a security operations \nmanager or security supervisor \naround the clock \nSecurity \nOperations \nManager or \nSecurity \nSupervisor \n2 \nOn all gates leading \nto the warehouse, \nemergency \nentrances from the \noutside, and offices \nthat require an \naccess control "
+  },
+  {
+    "num": 22,
+    "facility": "Factories & Industrial Manufacturing Plants",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements for General Factories:",
+      "Specifications and security requirements for hazardous materials",
+      "Specifications and security requirements for tobacco processing"
+    ],
+    "full_text_snippet": "Chapter Twenty-Two: Security Requirements for Factories: \nThese are facilities used to produce goods and products on a large scale through \nindustrial processes. \n \nFirst: Activities Covered \nRefer to the Annex on Business Facilities and Activities \n \nSecond: Specifications and Security Requirements for General Factories: \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View reception desks 2 \n- Vehicles number-plate \nrecognition view \nVehicle entrances and exits 3 \n- Monitoring View Loading and unloading areas 4 \n- Detection View The interior of the factory 5 \n- Detection View Establishment corridors 6 \nInstalling \ncameras around \nthe facility \nDetection View The external perimeter of the \nfactory \n7 \n- Detection View Storage areas 8 \n- Recognition View Hazardous Material Storage \nContainer Doors \n9 \n \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \nThird: Specifications and security requirements for hazardous materials \nfactories: \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n--- PAGE 110 ---\n \n- Recognition View rece"
+  },
+  {
+    "num": 23,
+    "facility": "Vacation Homes / Holiday Homes (Short-term rental properties)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Three: Security Requirements for Vacation Homes: \nIndividually owned establishments rented on a daily, weekly, or monthly basis \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Security Requirements \n \nA. The following security requirements must be provided for vacation \nhomes: \nRequirements for Vacation homes \nRemarks Description Requirement SN \n- Installation of SIRA-approved secure \nlocks. \nsecure lock 1 \n- Use the SIRA approved smart lock \nApp \nLock App 2 \nThe safe must be \ninstalled in a secure \nway that is difficult \nto remove. \nInstallation of a safe approved by \nSIRA. \nSecure Safe 3 \n \n \n  \n--- PAGE 113 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 113 of 140"
+  },
+  {
+    "num": 24,
+    "facility": "Shooting Ranges (Live ammunition & Laser/Airgun ranges)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Four: Security Requirements for Shooting Ranges: \nThese are facilities designated for practicing shooting sports, whether with firearms \nor bows and arrows. \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View cashier and reception desks  2 \n- Recognition View Weapons and ammunition \ndelivery tables \n3 \n- Detection View Inside the weapons and \nammunition warehouse \n4 \n- Recognition View Shooting lanes 5 \n- Detection View Establishment corridors 6 \n- Automatic \nNumber-Plate \nRecognition system \n(ANPR) approved \nby SIRA \nVehicles Number-Plate \nRecognition cameras shall be \ninstalled \n7 \n- Detection View parking lots pathways 8 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 114 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 114 of 140"
+  },
+  {
+    "num": 25,
+    "facility": "Art Galleries & Antique Exhibitions",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Five: Security Requirements for Art Galleries: \nThese are spaces designated for displaying artworks such as paintings, statues, \nphotographs, and art installations. These galleries are used for displaying artworks. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View cashier and reception desks  2 \n- Observation View Display tables and display areas 3 \nIf the establishment \nhas its own parking \nspaces \nVehicles number-\nplate recognition \nview \nVehicle entrances and exits to \nthe establishment \n4 \n- Detection View Main lobby 5 \n \nB. An alarm system must be provided for facilities that contain a piece of \nno less than 100,000 dirhams or a total of no less than one million \ndirhams, according to the following requirements: \nAlarm and intruder detection system \nRemarks Details Requirement SN \n- Covering the showroom with \nmotion sensors so that no area \ncan be penetrated to stop or \ndisable the security system. \nShowroom Coverage 1 \n- All glass facades of the facility \nmust be secured with glass break \nsensors or motion detection \nsensors. \nglass facades 2 \n- Main and secondary entrances \nand emergency exits, if any, \nmust be equipped with magnetic \nkeys (Door contacts) or motion \ndetectors."
+  },
+  {
+    "num": 26,
+    "facility": "Vehicle Rental Shops (Car rental agencies)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Six: Security Requirements for Vehicle Rental Shops: \nThese are premises that provide vehicle rental services to individuals or companies \nfor specific periods. \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View cashier and reception desks  2 \n- Recognition View Contract editing tables 3 \n- Detection View The internal area of the shop 4 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 117 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 117 of 140"
+  },
+  {
+    "num": 27,
+    "facility": "Tobacco Retail Stores (Shisha/Smoking accessories)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Seven: Security Requirements for Tobacco Retail \nStores: \nEstablishments that sell tobacco and cigarette products, as well as other related \nproducts such as e-cigarettes, pipes, luxury cigarettes, and related accessories. \n \nFirst: Activities Covered \nRefer to the Business Establishments and Activities Annex. \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View cash tables 2 \n- Detection View Internal space of the \nstore \n3 \n- Observation View The store’s external \narea \n4 \n- Detection View Store room 5 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 118 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 118 of 140"
+  },
+  {
+    "num": 28,
+    "facility": "Precious Goods Stores (Luxury watches, Art, Collectibles, High-value retail)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Eight: Security Requirements for Precious Goods \nStores: \nThese stores specialize in buying and selling high-value goods, such as global \nbrands, luxury watches, and rare currencies. These include commercial \nestablishments that sell precious items valued at more than AED 10,000. \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Appendix \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Recognition View cashier and reception desks  2 \n- Observation View display tables 3 \n- Detection View Covering the internal space of the \nstore \n4 \n \nB. An alarm system must be provided for facilities that contain a piece of \nno less than 100,000 dirhams or a total of no less than one million \ndirhams, according to the following requirements: \nAlarm system \nRemarks Details Requirement SN \n- Covering all areas with motion \nsensors is comprehensive and \nnot limited to protected areas, \noffices, and administrative \nareas directly connected to the \nstore, so that no area can be \nbreached to stop or disable \nthe security system. \nProtected areas, offices and \nadministration areas directly \nconnected to the store \n1 \n- All glass facades of the facility \nmust be secured with glass \nbreakage sensors or motion \ndetection sensors. \nglass facades 2 \n- Main and secondary entrances"
+  },
+  {
+    "num": 29,
+    "facility": "Data Centers & Cloud Server Facilities",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": true,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": true
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Twenty-Nine: Security Requirements for Data Centers: \nData centers are facilities used to host computing systems and store data securely \nand efficiently. \n \nFirst: Covered Activities \nRefer to the Facilities and Business Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Detection View Establishment corridors 2 \n- Observation View elevators lobbies and stairs 3 \n- Observation View Inside the elevators 4 \n- Recognition View cashier and reception desks  5 \n- Detection View Main lobby 6 \n- Detection View Seating and waiting areas 7 \n- Detection View Inside server rooms 8 \n- Recognition View Electrical and mechanical room \nentrances \n9 \n- Vehicles Number-Plate \nRecognition view \nInstalling cameras at the car \nentrance  \n10 \nInstalling cameras \naround the facility \nDetection View The external perimeter of the \nestablishment \n11 \n- Recognition View the pre-stage area before \nentering the server room \n12 \n- Detection View Inside the Network Operations \nCenter \n13 \n- Detection View Backup Power Supply (UPS) \nRoom Entrances \n14 \n \n--- PAGE 121 ---\n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \nElectromechanical \nlocks must be \nused. \nAccess control system for server \nroom \n \n \n \nAccess control \nsystem \n1 \n- Only one "
+  },
+  {
+    "num": 30,
+    "facility": "Pharmacies & Drug Stores",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty: Security Requirements for Pharmacies: \nThese are commercial establishments that provide medicines, medical supplies, and \nhealth products to customers. \n \nFirst: Activities Covered \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View cashier and reception desks  2 \n- Detection View Inside the Establishment \nareas \n3 \n- Recognition View Entrance to medicine \nstorage rooms \n4 \n- Recognition View restricted medicine cabinet 5 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n  \n--- PAGE 123 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 123 of 140"
+  },
+  {
+    "num": 31,
+    "facility": "Massage & Spa Centers",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-One: Security Requirements for Massage Centers: \nA place that provides massage and physiotherapy services for the body for the \npurpose of relaxation, stress relief, and improving general health. \n \nFirst: Covered Activities \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View cashier and reception desks  2 \n- Detection View Waiting areas 3 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 124 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 124 of 140"
+  },
+  {
+    "num": 32,
+    "facility": "Parking Rental & Management Facilities (Multi-story, Public parking)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Two: Security Requirements for Parking Rental and \nManagement Services: \nThese are services that help individuals and companies provide and manage parking \nspaces. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors \namong floors \n2 \n- Detection View parking lots pathways 3 \n- Detection View Establishment corridors 4 \n- Observation View elevators lobbies and \nstairs \n5 \n- Observation View Payment areas 6 \nVehicle \nentrances and \nexits to the \nestablishment \nAutomatic Number-Plate \nRecognition system (ANPR) \napproved by SIRA \nVehicles Number-Plate \nRecognition cameras shall \nbe installed. Or the \nregistration system \napproved by SIRA \n7 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 125 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 125 of 140"
+  },
+  {
+    "num": 33,
+    "facility": "Auction Halls (Motor vehicle, Real estate, Luxury auctions)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Three: Security Requirements for Auction Halls: \nCommercial establishments that sell goods or items by public auction. These halls \nare considered places for the public exchange and sale of goods based on bids \nsubmitted by the public. \n \nFirst: Activities Covered \nRefer to the Commercial Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Detection View Seating and waiting areas 2 \n- Detection View Establishment corridors 3 \nFor large items such as \ncars and heavy vehicles \nDetection View Collectibles display area 4 \n- Detection View Auction halls 5 \n- Recognition View The main safe room 6 \nFor own or rented \nparking spaces \nVehicles Number-Plate \nRecognition view \nVehicles Number-Plate \nRecognition cameras \n7 \nIn the case of external \nsales halls \nDetection View The external perimeter of \nthe establishment \n8 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 126 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 126 of 140"
+  },
+  {
+    "num": 34,
+    "facility": "Customer Happiness Centers (Government & Semi-government service centers)",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": true,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Four: Security Requirements for Customer Happiness \nCenters: \nCustomer Happiness Centers are facilities that aim to improve customer experience \nand increase customer satisfaction with the services or products offered by a \ncompany or organization. \nThese centers are essential in providing support and assistance to customers and \noffer a wide range of services. \n \nFirst: Activities Covered \nRefer to the Business Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Detection View Establishment \ncorridors \n2 \n- Observation View elevators lobbies and \nstairs \n3 \nWith an angle showing the \nfloor number, a wide-angle \nlens shall be used to cover \nall parts of the elevator. \nObservation View Inside the elevators 4 \n- Detection View Waiting halls 5 \n- Recognition View cashier and reception \ndesks  \n6 \nFor the establishment own \nparking or rented parking \nspaces \nAutomatic Number-Plate \nRecognition system \n(ANPR) approved by SIRA \nPublic parking \nentrances and exits \n7 \n Detection View The external \nperimeter of the \nestablishment \n8 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1"
+  },
+  {
+    "num": 35,
+    "facility": "Business Centers & Co-working Spaces",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Five: Security Requirements for Business Centers: \nThese are designated spaces that provide a comfortable work environment and are \nequipped with the tools and facilities businessmen and owners of small and medium-\nsized enterprises (SMEs) need to run their businesses efficiently. These offices can \nbe traditional or shared offices and offer a variety of services that facilitate business. \n \nFirst: Covered Activities \nRefer to the Business Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Details Requirement SN \n- Identification View Entrances of the \nestablishment \n1 \n- Observation View emergency exit doors among \nfloors \n2 \n- Detection View Establishment corridors 3 \n- Observation View elevators lobbies and stairs 4 \n- Detection View Waiting halls 5 \n- Recognition View Customer service tables 6 \n- Recognition View cashier and reception desks  7 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 128 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 128 of 140"
+  },
+  {
+    "num": 36,
+    "facility": "Quran Memorization Centers & Islamic Institutions",
+    "retention": "60 days",
+    "features": {
+      "ANPR": true,
+      "AccessControl": true,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Six: Security Requirements and Conditions for Quran \nMemorization Centers and Islamic Institutions: \nQuran memorization centers and Islamic institutions include establishments \ndedicated to teaching and memorizing the Holy Quran, religious lessons, and Islamic \nculture in general. \n \nFirst: Activities Covered \nRefer to the annex for commercial establishments and activities \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed in accordance with the following \nrequirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the establishment 1 \n- Detection View Installing external cameras \naround the building's perimeter \n2 \n- Detection View Establishment corridors 3 \n- Observation View elevators lobbies and stairs 4 \nWith an angle \nshowing the floor \nnumber, a wide-\nangle lens shall be \nused to cover all \nparts of the elevator. \n \n \nObservation View \n \n \nInside the elevators \n5 \n- Recognition View cashier and reception desks  6 \n- Recognition View Cash storage and sorting areas 7 \n- Recognition View The safe 8 \n- Detection View Inside classrooms 9 \n- Detection View Inside the activity halls 10 \n- Detection View Inside the event halls 11 \n- Detection View sitting and waiting area 12 \n- Detection View Inside the library 13 \n- Detection View Inside the theater 14 \n- Detection View Inside the men's prayer hall and \nthe corridor leading to the \nwomen’s prayer hall. \n15 \n- Detection View Inside the fili"
+  },
+  {
+    "num": 37,
+    "facility": "Charitable Organizations & Humanitarian Associations",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": true,
+      "Alarm_Panic": true,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Covered Activities",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Seven: Security Requirements for Charitable \nOrganizations: \nThese are non-profit organizations that aim to provide support and assistance to \nindividuals and communities in need. \n \nFirst: Covered Activities \nRefer to the Commercial Facilities and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Detection View The external perimeter of \nthe establishment \n2 \n- Detection View Establishment corridors 3 \n- Observation View elevators lobbies and \nstairs \n4 \n- Recognition View cashier and reception \ndesks  \n5 \n- Recognition View Cash storage and sorting \nareas \n6 \n- Recognition View The safe room 7 \n- Detection View Storage rooms 8 \n- Vehicles Number-Plate \nRecognition view \nVehicle entrances and \nexits \n9 \n \nB. Alarm system must be provided according to the following \nrequirements: \nAlarm and intruder detection system \nRemarks Details Requirement SN \n- The cabinet must be equipped with a \nvibration sensor or motion detector. \nThe safe and \nstorage areas for \nvaluable materials \n1 \n- A panic button must be installed in \nthe safe, cash storage and sorting \nareas, and cash receiving tables for \nuse in the event of an emergency. It \nmust be located at an easy-to-use \nand inconspicuous location. \n \nPanic button \n \n2 \n- All Alarm System components must \nbe certified by SIRA."
+  },
+  {
+    "num": 38,
+    "facility": "Hunting Equipment & Weaponry Stores",
+    "retention": "31 days (Standard SIRA)",
+    "features": {
+      "ANPR": false,
+      "AccessControl": false,
+      "Alarm_Panic": false,
+      "HVM_Barriers": false,
+      "SecurityGuards": false
+    },
+    "sections": [
+      "Activities Covered",
+      "Specifications and Security Requirements"
+    ],
+    "full_text_snippet": "Chapter Thirty-Eight: Security Requirements for Hunting Equipment \nStores: \nHunting equipment stores are stores that offer a variety of Hunting-related \nequipment and supplies. \n \nFirst: Activities Covered \nRefer to the Business Establishments and Activities Annex \n \nSecond: Specifications and Security Requirements \n \nA. Cameras must be installed to meet the following requirements: \nVSS requirements \nRemarks Field Of View Areas SN \n- Identification View Entrances of the \nestablishment \n1 \n- Recognition View Cash and reception tables 2 \n- Observation View display tables 3 \n- Detection View Storage areas 4 \n- Detection View Shop area 5 \n \nB. The following security requirements must be provided: \nOther requirements \nRemarks Description Requirement SN \n- Installing system health monitoring \nservice approved by SIRA \nInstalling system health \nmonitoring service \n1 \n \n \n  \n--- PAGE 133 ---\n \nAdministrative Resolution No. (13) of 2025 Approving the Page 133 of 140"
+  }
+]

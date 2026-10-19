@@ -1,0 +1,5560 @@
+
+--- PAGE 34 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 34 of 140 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Part Three: Security Requirements and Conditions    
+ 
+ 
+ 
+ 
+ 
+  
+--- PAGE 35 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 35 of 140 
+Chapter One: Security Conditions and Requirements for Luxury Hotels: 
+Luxury hotels are commercial establishments that provide accommodation and 
+hospitality services to visitors and travelers. 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Security Requirements: 
+A. Cameras must be installed to meet the following requirements: 
+VSS Requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View cashier and reception desks  2 
+- Observation View elevators lobbies and stairs 3 
+with an angle showing 
+the floor number 
+Observation View Inside the elevators 4 
+- Observation View emergency exit doors among 
+floors 
+5 
+- Recognition View Vehicle entrances and exits to 
+the establishment 
+6 
+- Recognition View Safe and bag deposit room 7 
+- Identification View entrances leading to the bars, 
+discos, nightclubs and the 
+doors of ballrooms 
+8 
+- Detection View Establishment corridors 9 
+- Detection View inside business centers 10 
+- Detection View loading and unloading areas  11 
+- Monitoring View Passenger drop-off and pick-up 
+area 
+12 
+For units with an 
+external entrance 
+Detection View External corridors leading to 
+residential units 
+13 
+- Monitoring View Corridors containing 
+restaurants or shops 
+14 
+- Identification View Entrances from restaurants, 
+cafes, and shops that have an 
+external entrance and are 
+within the establishment's 
+boundaries 
+15 
+For establishment 
+private or rented 
+parking spaces 
+Detection View parking lots pathways 16 
+- Detection View Main lobby area 17 
+- Observation View In the LPG storage area and 
+filling sites 
+18 
+--- PAGE 36 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 36 of 140 
+Main rooms only. If 
+there is no covering for 
+the corridors leading to 
+the sub-electrical 
+rooms, then the 
+entrances to all 
+electrical rooms must 
+be covered. 
+Recognition View Electrical room entrance 19 
+- Recognition View Water tank room entrance 20 
+- Recognition View Entrances to fresh air handling 
+units for the air conditioning 
+system (FAHU) 
+21 
+- Detection View Backup generator fuel tanks 22 
+At the Vehicles 
+entrances and exits to 
+the establishment. 
+If there is more than 
+one entrance, cameras 
+should be installed at 
+the following locations: 
+o Vehicle entrances and 
+exits to the 
+establishment 
+o Parking entrances 
+and exits 
+o Passenger drop-off 
+areas entrance and 
+exits 
+  o Loading and 
+unloading areas 
+Automatic 
+Number-Plate 
+Recognition system 
+(ANPR) approved 
+by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+23 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- An electronic room entry system with 
+the following features: 
+A. A lock registers at least 1,500 entry 
+and exit movements. 
+B. A record of movements is 
+maintained for at least six months. 
+Room Entry 
+System 
+1 
+Maintain and 
+operate the VSS 
+system in a 
+location with 
+mobile network 
+coverage. 
+Providing an independent, closed, and 
+unexposed surveillance room equipped 
+with all means of communication with 
+guards, hotel officials, emergency, 
+rescue, and ambulance services, and 
+all means of assistance to manage or 
+control the security system. 
+surveillance room 2 
+--- PAGE 37 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 37 of 140 
+- Providing 24-hour security guards 
+according to the risk analysis report 
+Security Guard 3 
+- Providing a security operations 
+manager or security supervisor around 
+the clock 
+Security Team 
+Leader 
+4 
+- A security manager must be available 
+on constant contact. 
+Security manager 5 
+- Female security personnel must be 
+available when needed. 
+female guard 6 
+- Providing a security systems 
+supervisor with a license approved by 
+SIRA around the clock in the control 
+room. 
+Security Systems 
+Operator 
+7 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+8 
+ 
+  
+--- PAGE 38 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 38 of 140 
+Chapter Two: Security Conditions and Requirements for Tourist Hotels: 
+Tourist hotels are commercial establishments that provide accommodation and 
+hospitality services to visitors and travelers. 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Security Requirements: 
+A. Cameras must be installed to meet the following requirements: 
+VSS Requirements 
+Remarks Field Of View Areas SN 
+- Identification view Entrances of the establishment 1 
+- Recognition View cashier and reception desks  2 
+- Observation View elevators lobbies and stairs 3 
+with an angle showing 
+the floor number 
+Observation View Inside the elevators 4 
+- Observation View emergency exit doors among 
+floors 
+5 
+- Recognition View Vehicle entrances and exits to 
+the Establishment 
+6 
+- Recognition View safe and bag deposit rooms 7 
+- Identification View entrances leading to the bars, 
+discos, nightclubs and the 
+doors of ballrooms 
+8 
+- Detection View Establishment corridors 9 
+- Detection View inside business centers 10 
+- Detection View loading and unloading areas  11 
+- Monitoring View Passenger drop-off and pick-up 
+area 
+12 
+For units with an 
+external entrance 
+Detection View External corridors leading to 
+residential units 
+13 
+- Monitoring View Corridors containing restaurants 
+or shops 
+14 
+- Identification View Entrances from restaurants, 
+cafes, and shops that have an 
+external entrance and are 
+within the establishment's 
+boundaries 
+15 
+For establishment 
+private or rented 
+parking spaces 
+Detection View parking lots pathways 16 
+- Detection View Main lobby area 17 
+- Observation View In the LPG storage area and 
+filling sites 
+18 
+--- PAGE 39 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 39 of 140 
+Main rooms only. If 
+there is no covering for 
+the corridors leading to 
+the sub-electrical 
+rooms, then the 
+entrances to all 
+electrical rooms must 
+be covered. 
+Recognition View Electrical room entrance 19 
+- Recognition View Water tank room entrance 20 
+- Recognition View Entrances to fresh air handling 
+units for the air conditioning 
+system (FAHU) 
+21 
+- Detection View Backup generator fuel tanks 22 
+At the Vehicles 
+entrances and exits to 
+the establishment. 
+If there is more than 
+one entrance, cameras 
+should be installed at 
+the following locations: 
+o Vehicle entrances 
+and exits to the 
+establishment 
+o Parking entrances 
+and exits 
+o Passenger drop-off 
+areas entrances and 
+exits 
+  o Loading and 
+unloading areas 
+Automatic Number-
+Plate Recognition 
+system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+23 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- An electronic room entry system with 
+the following features: 
+A. A lock registers at least 1,500 
+entry and exit movements. 
+B. A record of movements is 
+maintained for at least six months. 
+Room Entry 
+System 
+1 
+Maintain and 
+operate the VSS 
+system in a location 
+with mobile network 
+coverage. 
+Providing an independent, closed, 
+and unexposed surveillance room 
+equipped with all means of 
+communication with guards, hotel 
+officials, emergency, rescue, and 
+ambulance services, and all means of 
+surveillance room 2 
+--- PAGE 40 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 40 of 140 
+assistance to manage or control the 
+security system. 
+- Providing 24-hour security guards 
+according to the risk analysis report 
+Security Guard 3 
+- Providing a security operations 
+manager or security supervisor 
+around the clock 
+Security Team 
+Leader 
+4 
+- Female security personnel must be 
+available when needed. 
+female guard 5 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+6 
+ 
+  
+--- PAGE 41 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 41 of 140 
+Chapter Three: Security Conditions and Requirements for Shopping 
+Malls: 
+These are commercial establishments that combine a group of shops and stores in 
+one location. 
+ 
+First: Activities Covered 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Recognition View cashier and reception 
+desks  
+3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+with an angle showing the 
+floor number, using a lens 
+with a wide angle to cover 
+all parts of the elevator. 
+Observation View Inside the elevators 5 
+So that the cash filling 
+angle is visible. 
+Recognition View Locations of ATMs, 
+public phones, and 
+public charging devices 
+6 
+- Recognition View Vehicle entrances and 
+exits to the 
+Establishment 
+7 
+- Recognition View Safe and baggage 
+storage rooms, 
+temporary storage 
+service for purchases 
+8 
+At the Vehicles entrances 
+and exits to the 
+establishment. 
+If there is more than one 
+entrance, cameras should 
+be installed at the 
+following locations: 
+o Vehicle entrances and 
+exits to the establishment 
+o Parking entrances and 
+exits 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by 
+SIRA 
+Vehicles Number-Plate 
+Recognition cameras 
+shall be installed 
+9 
+--- PAGE 42 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 42 of 140 
+o Passenger drop-off 
+areas entrances and exits 
+o Loading and unloading 
+areas 
+ 
+Note: If the main entrance 
+to all the mentioned areas 
+is the same, only the main 
+entrance should be 
+covered. 
+- Monitoring View loading and unloading 
+areas  
+10 
+- Monitoring View Passenger drop-off and 
+pick-up area 
+11 
+- Detection View Establishment corridors 12 
+- Detection View Seating and waiting 
+areas 
+13 
+For establishment private 
+or rented parking spaces 
+Detection View parking lots pathways 14 
+- Detection View Main lobby area 15 
+In addition to installing 
+PTZ cameras. 
+Monitoring View outdoor spaces, 
+performance areas and 
+crowd gathering areas 
+16 
+- Detection View In the LPG storage area 
+and filling sites and gas 
+cylinders storage areas 
+17 
+- Recognition View Electrical room entrance 18 
+- Recognition View Water tank room 
+entrance 
+19 
+- Recognition View Entrances to fresh air 
+handling units for the air 
+conditioning system 
+(FAHU) 
+20 
+- Monitoring View Backup generator fuel 
+tanks 
+21 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+--- PAGE 43 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 43 of 140 
+Maintain and 
+operate the VSS 
+system in a 
+location with 
+mobile network 
+coverage. 
+Providing an independent, closed, and 
+unexposed surveillance room equipped 
+with all means of communication with 
+guards, Mall officials, emergency, 
+rescue, and ambulance services, and all 
+means of assistance to manage or 
+control the security system. 
+surveillance room 1 
+- Providing 24-hour security guards 
+according to the risk analysis report 
+Security Guard 2 
+- Providing a security operations 
+manager or security supervisor around 
+the clock 
+Security Operations 3 
+- A security manager must always be 
+available on call. 
+Security Manager 4 
+- Female security personnel must be 
+available   
+female guard 5 
+- Providing a security systems supervisor 
+with a license approved by SIRA 
+around the clock in the control room. 
+Security Systems 
+Operator 
+6 
+- Hostile Vehicle Mitigation (HVM) 
+Stationary or mobile HVM that is 
+approved shall be installed in front of 
+the main gates and the areas where 
+guests and visitors gather. 
+Hostile Vehicle 
+Mitigation (HVM)  
+7 
+- Permanent Security Guards shall be 
+provided for areas or corridors where 
+shops of gold, jewelry and precious 
+goods are located. 
+Permanent Security 
+Guards for gathering 
+areas of gold and 
+precious goods 
+shops 
+8 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+9 
+  
+--- PAGE 44 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 44 of 140 
+Chapter Four: Security Conditions and Requirements for Important 
+Complexes: 
+Any group of residential or office units, including buildings, towers, and villa 
+complexes. 
+ 
+First: Covered Activities 
+Refer the Commercial Facilities and Activities Annex. 
+ 
+Second: Specifications and Security Requirements for Multi-Story 
+Residential Buildings: 
+ These are buildings used for residential purposes only. 
+ 
+Cameras must be installed to meet the following requirements. 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View reception desks 2 
+- Observation View elevators lobbies and 
+stairs 
+3 
+with an angle showing 
+the floor number 
+Observation View Inside the elevators 4 
+- Detection View Establishment corridors 5 
+- Recognition View Health club entrances 6 
+- Monitoring View swimming pools 7 
+- Detection View parking lots pathways 8 
+Installing cameras on 
+the walls of the 
+building 
+Monitoring View Installing external 
+cameras around the 
+building's perimeter 
+9 
+ 
+A. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+--- PAGE 45 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 45 of 140 
+B. Vehicles Number-Plate Recognition cameras: 
+Vehicles Number-Plate Recognition cameras 
+Remarks Field Of View Areas SN 
+At the entrances and exits of 
+parking spaces, the parking 
+spaces are to be used by 
+residents only and not by any 
+residential units used as vacation 
+homes. 
+Vehicles Number-Plate 
+Recognition view 
+Vehicles Number-
+Plate Recognition 
+cameras shall be 
+installed 
+ 
+ 
+ 
+1 
+ 
+Note: If the parking spaces are used by visitors or the units are used 
+for holiday homes, Automatic Number-Plate Recognition system 
+(ANPR) approved by SIRA must be installed at the vehicle entrances 
+and exits. 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- For buildings with fewer than 50 
+residential units, this is optional. 
+ - For buildings with 50 or more 
+residential units, this is mandatory. 
+Providing a security 
+guard or watchman 
+around the clock 
+security guard  
+ 
+1 
+- If a security guard is used, a 
+restroom must be provided for the 
+guard. 
+- If a watchman is used, a suitable, 
+fully equipped living room must be 
+provided. 
+A place for the security 
+guard or watchman to 
+manage the work must 
+be provided. 
+Provide a place 
+for the guard to 
+work 
+ 
+ 
+2 
+- For buildings containing fewer 
+than 50 residential units, it is 
+mandatory. - For buildings 
+containing 50 residential units or 
+more, it is optional. 
+A system that controls 
+entry to the building 
+and prevents 
+unauthorized entry 
+until permission is 
+granted by the 
+concerned residents. 
+Access control 
+system for both 
+residents and 
+visitors 
+ 
+ 
+ 
+ 
+3 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+4 
+ 
+ 
+  
+--- PAGE 46 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 46 of 140 
+Third: Specifications and security requirements for multi-story 
+commercial buildings: 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Identification View Entrances to the 
+establishment from shops 
+2 
+- Detection View Main lobby areas 3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+- Recognition View reception desks 5 
+with an angle showing 
+the floor number 
+Observation View Inside the elevators 6 
+- Observation View emergency exit doors 
+among floors 
+7 
+- Detection View Establishment corridors 8 
+- Recognition View Health club entrances 9 
+- Monitoring View swimming pools 10 
+- Detection View parking lots pathways 11 
+Installing cameras on 
+the walls of the 
+building 
+Monitoring View Installing external 
+cameras around the 
+building's perimeter 
+12 
+ 
+B. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+C.  Vehicles Number-Plate Recognition cameras 
+Vehicles Number-Plate Recognition cameras 
+Remarks Field Of View Areas SN 
+ 
+- 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by 
+SIRA 
+Vehicles Number-
+Plate Recognition 
+cameras shall be 
+installed 
+ 
+1 
+--- PAGE 47 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 47 of 140 
+ 
+D. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing a security 
+guard or watchman 
+around the clock 
+security guard  
+1 
+- If a security guard is used, a 
+restroom must be provided for the 
+guard. 
+- If a watchman is used, a suitable, 
+fully equipped living room must be 
+provided. 
+A place for the security 
+guard or watchman to 
+manage the work must 
+be provided. 
+Provide a place 
+for the guard to 
+work 
+ 
+ 
+2 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+3 
+ 
+Fourth: Specifications and Security Requirements for Villa Complexes: 
+Any group of residential villas. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+In public areas Observation View elevators lobbies and 
+stairs 
+2 
+- Detection View Main lobby area 3 
+- Recognition View reception desks 4 
+In public areas Observation View Inside the elevators 5 
+- Detection View Internal street 
+intersections 
+6 
+- Recognition View Health club entrances 7 
+- Monitoring View swimming pools 8 
+It would be optional if 
+cameras were installed 
+to cover internal 
+streets. 
+ 
+Monitoring View 
+The fence surrounding the 
+site 
+9 
+It is optional if cameras 
+are installed on the 
+fence surrounding the 
+site. 
+ 
+Monitoring View 
+internal streets 10 
+At the entrances and 
+exits of parking lots 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+11 
+--- PAGE 48 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 48 of 140 
+- Detection View parking lots pathways 12 
+ 
+B. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+C. The following security requirements must be provided: 
+Other requirements (villa complexes and building complexes or villa and 
+building complex) 
+Remarks Description Requirement SN 
+ 
+- 
+Providing 24-hour 
+security guards 
+security guard 1 
+a washroom must be provided for 
+the guard. 
+A place for the security 
+guard to manage the 
+work must be provided. 
+Provide a place 
+for the guard to 
+work 
+2 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+3 
+ 
+Fifth: Specifications and Security Requirements for Building Complexes: 
+A complex containing a group of buildings. 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+In public areas Observation View elevators lobbies and 
+stairs 
+2 
+- Detection View Main lobby area 3 
+- Recognition View reception desks 4 
+In public areas Observation View Inside the elevators 5 
+In public areas Observation View emergency exit doors 
+among floors 
+6 
+--- PAGE 49 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 49 of 140 
+- Detection View Internal street 
+intersections 
+7 
+- Recognition View Health club entrances 8 
+- Monitoring View swimming pools 9 
+It would be optional if 
+cameras were installed 
+to cover internal 
+streets. 
+ 
+Monitoring View 
+The fence surrounding the 
+site 
+10 
+It is optional if cameras 
+are installed on the 
+fence surrounding the 
+site. 
+ 
+Monitoring View 
+internal streets 11 
+At the entrances and 
+exits of parking lots 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+12 
+- Detection View parking lots pathways 13 
+ 
+B. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+C. The following security requirements must be provided: 
+Other requirements (villa complexes and building complexes or villa and 
+building complex) 
+Remarks Description Requirement SN 
+ 
+- 
+Providing 24-hour 
+security guards 
+security guard 1 
+a washroom must be provided for 
+the guard. 
+A place for the security 
+guard to manage the 
+work must be provided. 
+Provide a place 
+for the guard to 
+work 
+2 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+3 
+ 
+Sixth: Specifications and Security Requirements for Villa and Building 
+Complexes: 
+These are complexes containing villas and residential buildings. 
+--- PAGE 50 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 50 of 140 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+In public areas Observation View elevators lobbies and 
+stairs 
+2 
+- Detection View Main lobby area 3 
+- Recognition View reception desks 4 
+In public areas Observation View Inside the elevators 5 
+In public areas Observation View emergency exit doors 
+among floors 
+6 
+- Detection View Internal street 
+intersections 
+7 
+- Recognition View Health club entrances 8 
+- Monitoring View swimming pools 9 
+It would be optional if 
+cameras were installed 
+to cover internal 
+streets. 
+ 
+Monitoring View 
+The fence surrounding the 
+site 
+10 
+It is optional if cameras 
+are installed on the 
+fence surrounding the 
+site. 
+ 
+Monitoring View 
+internal streets 11 
+At the entrances and 
+exits of parking lots 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+ 
+12 
+- Detection View parking lots pathways 13 
+ 
+B. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+C. The following security requirements must be provided: 
+--- PAGE 51 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 51 of 140 
+Other requirements (villa complexes and building complexes or villa and 
+building complex) 
+Remarks Description Requirement SN 
+ 
+- 
+Providing 24-hour 
+security guards 
+security guard 1 
+a washroom must be provided for 
+the guard. 
+A place for the security 
+guard to manage the 
+work must be provided. 
+Provide a place 
+for the guard to 
+work 
+2 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+3 
+ 
+Seventh: Specifications and Security Requirements for Gated Building 
+Complexes: 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Detection View Main lobby area 2 
+- Observation View elevators lobbies and 
+stairs 
+3 
+- Recognition View reception desks 4 
+with an angle showing 
+the floor number 
+Observation View Inside the elevators 5 
+- Observation View emergency exit doors 
+among floors 
+6 
+- Detection View corridors leading to 
+residential units 
+7 
+- Recognition View Health club entrances 8 
+- Monitoring View swimming pools 9 
+Installation is required 
+at the entrances and 
+exits of parking areas if 
+the establishment 
+contains less than 50 
+residential units. 
+Number-Plate Recognition 
+view 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+10 
+Installing cameras on 
+the walls of the 
+building 
+Monitoring View Installing external 
+cameras around the 
+building's perimeter 
+11 
+At the main entrances 
+and exits leading to the 
+gated complexes. 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+12 
+- Detection View parking lots pathways 13 
+--- PAGE 52 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 52 of 140 
+If there is a fence 
+surrounding the site 
+(only if there are 
+multiple uses for the 
+site other than 
+residential buildings), 
+for example, there are 
+multi-story buildings 
+and a villa complex. 
+ 
+ 
+ 
+ 
+Detection View 
+Installing cameras around 
+the fence surrounding the 
+site 
+14 
+ 
+B. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+C. The following security requirements must be provided: 
+Other requirements (villa complexes and building complexes or villa and 
+building complex) 
+Remarks Description Requirement SN 
+ 
+- 
+Providing 24-hour 
+security guards 
+security guard 1 
+a washroom must be provided for 
+the guard. 
+A place for the security 
+guard to manage the 
+work must be provided. 
+Provide a place 
+for the guard to 
+work 
+2 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+3 
+ 
+Eighth: Specifications and Security Requirements for Multi-Use Buildings: 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Identification View Entrances of the 
+establishment from shops 
+2 
+--- PAGE 53 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 53 of 140 
+- Detection View Main lobby areas 3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+- Recognition View reception desks 5 
+with an angle showing 
+the floor number 
+Observation View Inside the elevators 6 
+- Observation View emergency exit doors 
+among floors 
+7 
+- Detection View Establishment corridors 8 
+- Recognition View Health club entrances 9 
+- Monitoring View swimming pools 10 
+ 
+- 
+ 
+Detection View 
+ 
+parking lots pathways 
+11 
+Installing cameras on 
+the walls of the 
+building 
+Monitoring View Installing external 
+cameras around the 
+building's perimeter 
+12 
+- Detection View Installing cameras around 
+the fence surrounding the 
+site 
+13 
+ 
+B. Cameras must be installed in the complex’s gardens according to the 
+following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View Vehicle entrances and exits 2 
+- Detection View Establishment corridors 3 
+- Detection View Seating areas 4 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+5 
+ 
+C. Vehicles Number-Plate Recognition cameras 
+Vehicles Number-Plate Recognition cameras 
+Remarks Field Of View Areas SN 
+Installation is required at the 
+entrances and exits of parking 
+spaces where non-residents are 
+allowed to use the spaces. 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by 
+SIRA 
+Vehicles Number-
+Plate Recognition 
+cameras shall be 
+installed 
+ 
+ 
+1 
+ 
+D. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+--- PAGE 54 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 54 of 140 
+- Mandatory for commercial 
+buildings. 
+- Optional for buildings with less 
+than 50 residential units. 
+- Mandatory for buildings with 50 
+or more residential units. 
+Providing a security 
+guard or watchman 
+around the clock 
+security guard 1 
+- If a security guard is used, a 
+restroom must be provided for the 
+guard. 
+- If a watchman is used, a fully 
+equipped and suitable living room 
+must be provided. 
+A place for the security 
+guard or watchman to 
+manage the work must 
+be provided. 
+Provide a place 
+for the guard to 
+work 
+2 
+- Installing system health 
+monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+3 
+ 
+  
+--- PAGE 55 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 55 of 140 
+Chapter Five: Security Requirements for Labor Accommodations: 
+These are designated accommodations for workers, typically used to provide 
+temporary or permanent housing for them. 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification 
+View 
+Entrances of the establishment 1 
+- Observation 
+View 
+emergency exit doors among 
+floors 
+2 
+Common areas include, 
+for example, washing 
+areas. 
+ 
+Monitoring View 
+Dining and sitting rooms and 
+common areas for residents 
+3 
+- Observation 
+View 
+elevators lobbies and stairs 4 
+With an angle showing 
+the floor number, a wide-
+angle lens shall be used 
+to cover all parts of the 
+elevator. 
+ 
+ 
+Observation 
+View 
+ 
+ 
+Inside the elevators 
+5 
+- Recognition 
+View 
+Reception areas 6 
+- Detection View Establishment corridors 7 
+- Observation 
+View 
+Health club entrances 8 
+- Monitoring View swimming pools 9 
+- Vehicles 
+Number-Plate 
+Recognition 
+view 
+Installing cameras on vehicle 
+entrances 
+10 
+- Detection View Vehicle parking pathways 11 
+On the wall of the 
+building 
+Detection View The area surrounding the labor 
+accommodations 
+12 
+- Detection View outdoor areas 13 
+ 
+--- PAGE 56 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 56 of 140 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security guard 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+  
+--- PAGE 57 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 57 of 140 
+Chapter Six: Security Conditions and Requirements for Cinemas and 
+Theaters: 
+These are entertainment venues used to show films, plays, and various artistic 
+works. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Security Specifications and Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Detection View Main lobby area 3 
+- Recognition View cashier and reception 
+desks  
+4 
+- Recognition View Inside the safe deposit 
+boxes rooms 
+5 
+- Observation View elevators lobbies and stairs 6 
+With an angle showing 
+the floor number, a 
+wide-angle lens shall 
+be used to cover all 
+parts of the elevator. 
+ 
+ 
+Observation View 
+ 
+ 
+Inside the elevators 
+7 
+- Recognition View ATM locations 8 
+- Detection View Establishment corridors 9 
+- Detection View Seating and display areas 10 
+- Recognition View Vehicle entrances to the 
+establishment 
+11 
+- Monitoring View loading and unloading 
+areas  
+12 
+- Monitoring View Passenger drop-off and 
+pick-up area 
+13 
+- Detection View parking lots pathways 14 
+- Observation View Gas cylinder storage area 15 
+- Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by 
+SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+16 
+ 
+--- PAGE 58 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 58 of 140 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing a surveillance control 
+room that is independent, closed, 
+and non-exposed from the outside. 
+VSS control room 1 
+- Providing security guards security guard 2 
+- Female security guard must be 
+present. 
+female guard 3 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+4 
+ 
+ 
+  
+--- PAGE 59 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 59 of 140 
+Chapter Seven: Security Conditions and Requirements for Amusement 
+Parks: 
+These parks are specifically designed to provide entertainment and enjoyment for 
+visitors. These parks contain a variety of activities, games, and facilities that attract 
+families and individuals. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception 
+desks  
+2 
+- Observation View elevators lobbies and 
+stairs 
+3 
+With an angle showing 
+the floor number, a 
+wide-angle lens shall 
+be used to cover all 
+parts of the elevator. 
+Observation View Inside the elevators 4 
+- Recognition View ATM locations 5 
+- Recognition View Vehicle entrances 6 
+- Monitoring View loading and unloading 
+areas  
+7 
+- Monitoring View Passenger drop-off and 
+pick-up area 
+8 
+- Detection View Establishment corridors 9 
+- Detection View Seating areas 10 
+- Detection View parking lots pathways 11 
+- Monitoring View Outdoor spaces, 
+performance venues, 
+and visitor gatherings 
+12 
+- Detection View In the LPG storage 
+area and filling sites 
+13 
+- Recognition View Electrical room 
+entrance 
+14 
+- Detection View Backup generator fuel 
+tanks 
+15 
+Private or rented 
+parking 
+Automatic Number-Plate 
+Recognition system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras 
+shall be installed 
+16 
+--- PAGE 60 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 60 of 140 
+In water parks Observation View Chemical storage 
+rooms 
+17 
+In water parks Observation View Pools Water treatment 
+rooms 
+18 
+ 
+Note: If the facility has an open nature and does not have defined 
+entrances or lobby areas, the Pixel Per Meter (PPM) feature can be used 
+after obtaining prior approval from SIRA. 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security Guard 1 
+- A security manager must always be 
+available on call. 
+Security manager 2 
+- Female guard must be available female guard 3 
+- A dedicated operations room must be 
+provided to control and manage the 
+cameras. It must be equipped with all 
+means of communication with guards, 
+officials at the amusement parks, 
+emergency, rescue, and ambulance 
+services, and all means of assistance to 
+manage or control the security system. 
+Operations room 4 
+- Providing a licensed security systems 
+operator approved by SIRA around the 
+clock in the control room. 
+Security Systems 
+operator 
+5 
+- Stationary or mobile HVM that are 
+approved shall be installed in front of 
+the main gates and the areas where 
+guests and visitors gather 
+Hostile Vehicle 
+Mitigation (HVM) 
+6 
+- - Chemical storage rooms 
+- Aquarium water treatment rooms 
+Installing a secure 
+lock approved by 
+SIRA 
+7 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+8 
+ 
+ 
+  
+--- PAGE 61 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 61 of 140 
+Chapter Eight: Security Conditions and Requirements for Educational 
+Facilities: 
+Educational facilities include a wide range of institutions that provide educational and 
+training services to students and learners of various ages and educational levels. 
+ 
+First: Covered Activities 
+Refer to the Annex on Commercial Facilities and Activities 
+ 
+Second: Specifications and Security Requirements for Nurseries and 
+Kindergartens 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements (nurseries and kindergartens) 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Detection View Establishment 
+corridors 
+3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+With an angle showing the 
+floor number, a wide-angle 
+lens shall be used to cover 
+all parts of the elevator. 
+Observation View Inside the elevators 5 
+- Detection View Waiting halls 6 
+- Detection View Stairs leading to the 
+roof 
+7 
+- Recognition View cashier and reception 
+desks  
+8 
+- Detection View Inside classrooms 9 
+- Detection View Outdoor play areas or 
+event areas at the 
+establishment 
+10 
+- Recognition View Washrooms 
+entrances 
+11 
+- Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-
+Plate Recognition 
+cameras shall be 
+installed 
+12 
+- Detection View The external 
+perimeter of the 
+establishment 
+13 
+ 
+--- PAGE 62 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 62 of 140 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security Guard 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+Third: Specifications and Security Requirements for Schools 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements (schools) 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Detection View Establishment 
+corridors 
+3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+With an angle showing the 
+floor number, a wide-angle 
+lens shall be used to cover 
+all parts of the elevator. 
+Observation View Inside the elevators 5 
+- Detection View Waiting halls 6 
+- Detection View Stairs leading to the 
+roof 
+7 
+- Recognition View cashier and reception 
+desks  
+8 
+- Detection View Inside classrooms 9 
+- Detection View Laboratories 10 
+- Monitoring View Outdoor play areas or 
+event areas at the 
+establishment, for 
+example  
+Sports fields, 
+swimming pools, and 
+playgrounds 
+11 
+- Recognition View washrooms entrances 12 
+- Detection View Inside the 
+establishment's clinic 
+room 
+13 
+--- PAGE 63 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 63 of 140 
+- Detection View Inside rooms of 
+people with 
+disabilities 
+14 
+- Detection View Inside the large 
+exhibition halls 
+15 
+- Detection View The outer wall of the 
+establishment 
+16 
+The Establishment file and 
+equipment storage rooms, 
+if any 
+Detection View Inside the storage 
+rooms 
+17 
+- Recognition View Safes for cash and 
+important documents 
+18 
+- Recognition View Men's changing 
+rooms entrances 
+19 
+- Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-
+Plate Recognition 
+cameras shall be 
+installed 
+20 
+- Detection View The external 
+perimeter of the 
+establishment 
+21 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security Guard 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+Fourth: Security Specifications and Requirements for Universities and 
+Colleges 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements (universities and colleges) 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Detection View Establishment 
+corridors 
+3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+--- PAGE 64 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 64 of 140 
+With an angle showing the 
+floor number, a wide-angle 
+lens shall be used to cover 
+all parts of the elevator. 
+Observation View Inside the elevators 5 
+- Detection View Waiting halls 6 
+- Detection View Staircase areas 
+leading to the roof 
+7 
+- Recognition View cashier and reception 
+desks  
+8 
+- Detection View Inside classrooms 9 
+- Detection View Laboratories 10 
+- Monitoring View Outdoor play areas or 
+event areas at the 
+establishment, for 
+example  
+Sports fields, 
+swimming pools, and 
+playgrounds 
+11 
+- Recognition View Washrooms 
+entrances 
+12 
+- Detection View Inside the 
+establishment's clinic 
+room 
+13 
+- Detection View Inside rooms of 
+people with 
+disabilities 
+14 
+- Detection View Inside the large 
+exhibition halls 
+15 
+- Detection View The outer wall of the 
+establishment 
+16 
+The Establishment file and 
+equipment storage rooms 
+Detection View Inside the storage 
+rooms 
+17 
+- Recognition View Safes for cash and 
+important documents 
+18 
+- Recognition View Men's changing 
+rooms entrances 
+19 
+- Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Vehicles Number-
+Plate Recognition 
+cameras shall be 
+installed 
+20 
+- Detection View The external 
+perimeter of the 
+establishment 
+21 
+ 
+--- PAGE 65 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 65 of 140 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security Guard 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+  
+--- PAGE 66 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 66 of 140 
+Chapter Nine: Security Requirements for Healthcare Facilities: 
+Facilities that provide healthcare services to patients and communities, including a 
+wide range of medical and healthcare services. 
+ 
+First: Covered Activities 
+Refer to the Facilities and Commercial Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification view Entrances of the establishment 1 
+- Observation View emergency exit doors among 
+floors 
+2 
+- Detection View Main lobby 3 
+- Detection View Establishment corridors 4 
+- Observation View elevators lobbies and stairs 5 
+With an angle 
+showing the floor 
+number, a wide-
+angle lens shall be 
+used to cover all 
+parts of the 
+elevator. 
+ 
+ 
+ 
+Observation View 
+ 
+ 
+ 
+Inside the elevators 
+6 
+- Recognition View cashier and reception desks  7 
+- Detection View Washroom Main entrances  8 
+- Monitoring View Loading and unloading areas 9 
+- Recognition View Laboratories room entrances 10 
+- Detection View Inside blood units storage rooms 11 
+- Detection View Pharmacy and medicine 
+dispensing area 
+12 
+- Detection View Medicine shelves in the pharmacy 13 
+- Recognition View Operation room entrances 14 
+- Recognition View Anesthesia room entrances 15 
+- Recognition View Intensive care unit entrances 16 
+- Detection View Seating and waiting areas 17 
+- Detection View Inside the nursery rooms for 
+infants 
+18 
+- Detection View Inside the storage rooms 19 
+- Detection View Inside medicine storage rooms 20 
+- Detection View Nursing centers and stations in 
+the establishment 
+21 
+--- PAGE 67 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 67 of 140 
+- Recognition View Entrances to electrical and 
+mechanical rooms, and medical 
+gas storage areas 
+22 
+A room used to 
+sterilize medical 
+equipment in 
+hospitals 
+ 
+Detection View 
+Sterile Supply Unit Entrances 23 
+- Automatic Number-
+Plate Recognition 
+system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+24 
+- Monitoring View Passenger drop-off and pick-up 
+area 
+25 
+- Detection View parking lots pathways 26 
+- Detection View The external perimeter of the 
+establishment 
+27 
+- Detection View Helipads 28 
+- Detection View Patient drop-off areas from the 
+ambulance 
+29 
+- Detection View Ambulance parking 30 
+ 
+B. Provide an access control system according to the following 
+requirements: 
+Access control system 
+Remarks Areas Requirement SN 
+- Entrances for staff and 
+doctors 
+Provide access control system 1 
+- Rooms for storing 
+medicines and various 
+medical equipment 
+Provide access control system 2 
+- The intensive care unit 
+includes entrances, exits, 
+and internal rooms. 
+Provide access control system 3 
+- Electrical, air conditioning 
+and mechanical rooms 
+Provide access control system 4 
+- Data storing centers and 
+server rooms 
+Provide access control system 5 
+- The hospital's quarantine 
+section, including 
+entrances, exits, and 
+internal rooms. 
+Provide access control system 6 
+- The Pharmacy 
+Department includes 
+entrances and exits for 
+employees, doctors, and 
+pharmacists. 
+Provide access control system 7 
+--- PAGE 68 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 68 of 140 
+- Radiology Department, 
+including entrances to 
+imaging rooms 
+Provide access control system 8 
+- File rooms for storing files 
+and documents for 
+patients, staff, and 
+doctors 
+Provide access control system 9 
+- Newborns and maternity 
+departments, including 
+entrances, exits, and 
+internal rooms 
+Provide access control system 10 
+- Internal meeting rooms 
+for staff and doctors 
+Provide access control system 11 
+- Storage rooms of Various 
+medical gasses 
+Provide access control system 12 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security Guard 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+  
+--- PAGE 69 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 69 of 140 
+Chapter Ten: Security Requirements for Non-Muslim Places of Worship: 
+These are places licensed for the performance of worship and religious rites for non-
+Muslim religions and sects. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification view Entrances of the 
+establishment 
+1 
+- Monitoring View Areas of worship 2 
+- Recognition View reception desks 3 
+All cameras are 
+equipped with infrared 
+features. 
+Detection View The area surrounding the 
+place of worship 
+4 
+All cameras are 
+equipped with infrared 
+features. 
+Detection View Appendices of places of 
+worship 
+5 
+- Detection View Vehicle parking 6 
+- Observation View elevators lobbies and 
+stairs 
+7 
+- Vehicles Number-Plate 
+Recognition system 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed 
+8 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards 
+according to the risk analysis report 
+Security Guard 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+ 
+--- PAGE 70 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 70 of 140 
+Chapter Eleven: Security Requirements for the Manufacture and Sale of 
+Precious Metals and Gemstones: 
+The manufacture and trade of precious metals and gemstones includes all operations 
+related to the extraction, manufacturing, and trade of precious metals such as gold, 
+silver, and gemstones. 
+ 
+First: Covered Activities 
+Refer to the Annex on Establishments and Commercial Activities 
+ 
+Second: Specifications and Security Requirements for Commercial Stores: 
+These are stores that sell and trade gold, manufactured and unmanufactured 
+jewelry, and gemstones, retail or wholesale. 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View Display and inspection tables 2 
+- Recognition View cashier and reception desks  3 
+- Recognition View The safe 4 
+-  
+Recognition View 
+Display tables and cases that 
+extend beyond the 
+establishment's boundaries 
+or displayed at another 
+location. 
+5 
+The camera's viewing 
+angle must be no less 
+than 110 degrees. This 
+requirement is exempted 
+inside malls and 
+buildings. 
+ 
+ 
+ 
+ 
+Monitoring View 
+ 
+ 
+ 
+ 
+External area of the 
+establishment 
+6 
+- Monitoring View Internal area of the 
+establishment 
+7 
+ 
+  
+--- PAGE 71 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 71 of 140 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm system 
+Remarks Details Requirement SN 
+- Covering all areas with motion sensors is 
+comprehensive and not limited to 
+protected areas, offices, and 
+administrative areas directly connected to 
+the shop, so that no area can be 
+penetrated to stop or disable the security 
+system. 
+Protected areas, 
+offices, and 
+administration 
+areas directly 
+connected to the 
+shop 
+1 
+- All glass facades of the facility must be 
+secured with glass break sensors or 
+motion detectors; these facades must not 
+be openable in any way. 
+glass facades 2 
+- Main and secondary entrances and 
+emergency exits, if any, must be equipped 
+with magnetic keys or motion detectors. 
+Entrances and 
+exits 
+3 
+- The safe must be equipped with a 
+vibration sensor or motion detector. 
+The safe 4 
+- The cashier, seller, and manager must be 
+provided with a panic button for use in 
+case of an emergency. It must be located 
+at a level that is easy to use and not 
+visible. 
+Panic button 5 
+- Alarm system components must be 
+certified by SIRA 
+Alarm system 6 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+ 
+ 
+- 
+A fixed iron grille must be installed on 
+all external openings that are not in 
+the display area, such as windows in 
+service rooms, bathrooms, and 
+ventilation rooms. 
+solid metal grille 1 
+This 
+requirement is 
+exempted if an 
+automatic iron 
+shutter that 
+operates with 
+a control 
+button is 
+provided. 
+ SIRA approved locks must be 
+installed. 
+locks 2 
+- All cameras and recording devices 
+must be connected to an 
+uninterruptible power 
+supply 
+3 
+--- PAGE 72 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 72 of 140 
+uninterruptible power supply (UPS) 
+for 30 minutes. 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+4 
+ 
+D. The following requirements must be provided to secure glass facades 
+for shops and doors by one of the following means: 
+Securing glass facades for shops 
+Remarks Description Requirement SN 
+- Iron curtains must be installed and 
+closed after official working hours. 
+iron curtains 1 
+ 
+ 
+- 
+The facility must use piercing-
+resistant glass or piercing-resistant 
+films attached to the outer frame of 
+the glass facades. 
+piercing -resistant glass  
+ 
+2 
+ 
+Third: Specifications and Security Requirements for Gold Offices 
+These are institutions or companies that provide various services related to the trade 
+in precious metals and gemstones. These services include the repurchase and sale of 
+precious metals, whether in the form of jewelry, bullion, gold coins, or scrap gold, 
+provided that no exhibits or collectibles are kept in the office and that its work is 
+limited to office work. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Monitoring View Internal area of the 
+establishment 
+2 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- All cameras and recording devices 
+must be connected to an 
+uninterruptible power supply (UPS) 
+for 30 minutes. 
+uninterruptible power 
+supply 
+1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+2 
+--- PAGE 73 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 73 of 140 
+ 
+Note: If precious metals or gemstones are kept or displayed at a gold 
+office, then gold shops requirements must be applied. 
+ 
+Fourth: Specifications and Security Requirements for Flexible or Virtual 
+Offices 
+This is the common name for a shared office used by a group of institutions and 
+companies for a single location in a facility, or virtual offices that are not located in a 
+specific facility but rather exist on the virtual world or on the internet: 
+ 
+A. Conditions: 
+- No exhibits may be kept. 
+- No safe may be used for storing valuables. 
+- Valuables may not be stored. 
+ 
+B. Security Requirements: 
+- There are no security requirements if the above requirements are adhered to. 
+ 
+Note: 
+1. It is strictly prohibited for these activities to display or store precious 
+metals and gemstones in flexible offices. 
+2. If the offices are separated by any type of partition, the above office 
+requirements apply. 
+3. If precious metals or gemstones are stored or displayed in the flexible 
+office, the requirements for commercial stores apply. 
+ 
+Fifth: Specifications and Security Requirements for Business Centers 
+This is a physical location that provides temporary office solutions for all types of 
+entrepreneurs and institutions. These spaces offer private or shared office solutions 
+with reception, email, and internet services. 
+ 
+A. Requirements: 
+- No exhibits may be kept. 
+- No safe may be used for storing valuables. 
+- Valuables may not be stored. 
+ 
+B. Security Requirements: 
+- No security requirements apply if the above requirements are met. 
+ 
+Note: 
+1. The display or storage of precious metals and gemstones is strictly 
+prohibited for these activities. 
+2. If the offices are separated by any type of partition, the above office 
+requirements apply. 
+3. If precious metals or gemstones are kept or displayed in business 
+centers, the requirements for commercial stores apply. 
+ 
+Sixth: Specifications and Security Requirements for Jewelry and Precious 
+--- PAGE 74 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 74 of 140 
+Goods Exhibitions 
+Jewelry and precious goods exhibitions are places where fine jewelry and precious 
+goods, such as gemstones, gold and silver jewelry, and precious works of art, are 
+displayed. These exhibitions are typically held to display and sell fine art and jewelry 
+to the public and investors and include all temporary exhibitions. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View The safe 2 
+- Recognition View display tables 3 
+- Monitoring View Exhibition area 4 
+- Keep recording for one 
+month after the exhibition 
+ends. 
+Recording retention period 5 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing security guards according to 
+the risk analysis report 
+security guard 1 
+- A specific area where the cabinet(s) 
+will be placed by all exhibition 
+participants must be designated by. 
+defining the safe area 2 
+ 
+C. Alarm system must be provided according to the following 
+requirements: 
+Alarm system 
+Remarks Details Requirement SN 
+- The safe must be equipped 
+with a vibration sensor or 
+motion detector. 
+The safe 1 
+- The guard must be provided 
+with a panic button for use in 
+the event of an emergency. It 
+must be located at a level that 
+is easy to use and not visible. 
+Panic button 2 
+- Alarm system components 
+must be certified by SIRA. 
+Alarm system 3 
+ 
+Seventh: Specifications and Security Requirements for Kiosks 
+These are open-air shops in the aisles for the sale and trade of gold, manufactured 
+and unmanufactured jewelry, and precious stones. 
+ 
+--- PAGE 75 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 75 of 140 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Observation View Display and sales tables 1 
+- Recognition View Cash Registers 2 
+ 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm system 
+Remarks Details Requirement SN 
+- The safe must be equipped with a 
+vibration sensor or motion detector. 
+The safe 1 
+- The cashier, seller, and manager must be 
+provided with a panic button for use in 
+case of an emergency. It must be located 
+at a level that is easy to use and not 
+visible. 
+Panic button 2 
+-  Alarm system components must be 
+approved by SIRA. 
+Alarm 
+system 
+3 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+Eighth: Specifications and security requirements for display windows and 
+platforms outside the store: 
+ 
+A. The following security requirements must be provided: 
+Security Requirements 
+Remarks Description Requirement SN 
+- The facility must use piercing-
+resistant glass or piercing-resistant 
+films attached to the outer frame of 
+the glass facades. 
+piercing -resistant glass 1 
+- SIRA approved locks must be 
+installed. 
+Locks 2 
+- Local alarm system linked to sirens Alarm system 3 
+  
+--- PAGE 76 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 76 of 140 
+Chapter Twelve: Security Requirements for Financial and Monetary 
+Institutions: 
+Financial and monetary institutions include a wide range of entities that provide 
+diverse financial services to individuals and businesses. First: Activities Covered 
+Refer to the Annex on Establishments and Commercial Activities 
+ 
+Second: Specifications and Security Requirements for Financial and 
+Monetary Institutions 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception 
+desks  
+2 
+- Recognition View safes 3 
+- Monitoring View Main lobby area 4 
+- To show the image of the ATM 
+user 
+Inside ATMs 5 
+So that the cash 
+filling angle is 
+visible 
+Observation View ATMs at the 
+establishment 
+6 
+- Recognition View Safe rooms 7 
+The camera's 
+viewing angle 
+should not be 
+less than 110 
+horizontal 
+degrees. 
+Monitoring View External area of the 
+establishment 
+8 
+- Not less than 31 days for on-site 
+cameras and not less than 75 days 
+for ATM cameras. 
+Recording retention 
+period 
+9 
+ 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- The sensor range must cover 
+Protected Areas so that there is no 
+area that can be penetrated to stop or 
+disable the security system. 
+Protected Areas 1 
+- All glass facades of the facility must 
+be secured with glass breakage 
+sensors or motion detection sensors. 
+glass facades 2 
+--- PAGE 77 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 77 of 140 
+- Main and secondary entrances and 
+emergency exits, if any, must be 
+equipped with magnetic keys or 
+motion detectors. 
+Entrances and exits 3 
+- The safe must be equipped with a 
+vibration sensor or motion detector. 
+The safe 4 
+- The cashier, seller, and manager must 
+be provided with a panic button for 
+use in case of an emergency. It must 
+be located at a level that is easy to 
+use and not visible. 
+Panic button 5 
+- Alarm system components must be 
+approved by SIRA 
+Alarm system 6 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing Security Guard during 
+official working hours 
+Security Guard 1 
+- A fixed iron grille must be installed on 
+all external openings that are not 
+located in the trading area, such as 
+windows in service rooms, 
+bathrooms, and ventilation rooms. 
+Iron Grille 2 
+It will be 
+cancelled if 
+piercing-
+resistant glass is 
+provided. 
+Iron curtains must be installed and 
+must be closed after official working 
+hours. 
+iron curtains 3 
+It will be 
+cancelled if iron 
+curtains are 
+provided. 
+Piercing-resistant glass or piercing-
+resistant films attached to the outer 
+frame must be used on glass facades 
+for the facility, such that it prevents 
+glass penetration for a period of not 
+less than 90 seconds. 
+piercing-resistant 
+glass 
+4 
+- All cameras and recording devices 
+must be connected to an 
+uninterruptible power supply (UPS) 
+for 30 minutes. 
+uninterruptible power 
+supply 
+5 
+The above 
+requirement is 
+excluded if the 
+customer 
+provides an 
+automatic iron 
+shutter that 
+operates with a 
+control button. 
+SIRA approved locks must be 
+installed. 
+Locks 6 
+--- PAGE 78 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 78 of 140 
+- An access control system must be 
+installed at the main doors leading to 
+the trading areas. 
+Access control system 7 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+8 
+ 
+Third: Security Requirements for Electronic Banking Services 
+Electronic banking services are banking services provided by banks and financial 
+institutions via the internet and mobile applications. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception desks  2 
+- Recognition View Cash Registers 3 
+- Recognition View The safe 4 
+- Monitoring View Lobby area 5 
+So that the cash 
+filling angle is 
+visible 
+Recognition View ATMs 6 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- All cameras and recording devices 
+must be connected to an 
+uninterruptible power supply UPS for 
+30 minutes. 
+uninterruptible power 
+supply 
+1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+2 
+ 
+  
+--- PAGE 79 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 79 of 140 
+C. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system (if a safe is available on site) 
+Remarks Details Requirement SN 
+- All areas must be covered 
+with motion sensors, 
+including but not limited to 
+protected areas, offices, and 
+administrative areas directly 
+connected to the store, so 
+that no area can be 
+penetrated to stop or disable 
+the security system. 
+Protected Areas, offices and 
+administration areas directly 
+connected to the store 
+ 
+ 
+ 
+ 
+1 
+- All glass facades of the 
+facility must be secured with 
+glass break sensors. 
+ 
+glass facades 
+ 
+2 
+- Main and secondary 
+entrances and emergency 
+exits, if any, must be 
+equipped with magnetic 
+keys. 
+ 
+Entrances and exits 
+ 
+3 
+- The safe must be equipped 
+with a vibration sensor or 
+motion detector. 
+The safe 4 
+- The cashier, seller, and 
+manager must be provided 
+with a panic button for use in 
+the event of an emergency. 
+It must be located at a level 
+that is easy to use and not 
+visible. 
+ 
+Panic button 
+ 
+5 
+- Alarm system components 
+must be approved by SIRA. 
+Alarm system 6 
+ 
+D. The following security requirements must be provided: 
+Other requirements (if a safe is available on site) 
+Remarks Description Requirement SN 
+- A fixed iron grille must be installed on all 
+external openings that are not located in 
+the trading area, such as windows in 
+service rooms, bathrooms, and ventilation 
+rooms. 
+Iron Grille 1 
+--- PAGE 80 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 80 of 140 
+If the bank is in 
+a mall, iron 
+curtains are not 
+required. Only 
+piercing-
+resistant glass 
+or films are 
+sufficient. 
+Iron curtains must be installed that close 
+after the end of official working hours, or 
+piercing-resistant glass or piercing-resistant 
+films must be used, fixed to the outer 
+frame, on the glass facades of the facility, 
+such that they prevent glass penetration for 
+a period of no less than 1.5 minutes. 
+iron curtains 2 
+The above 
+requirement is 
+excluded if the 
+customer 
+provides an 
+automatic iron 
+shutter that 
+operates with a 
+control button. 
+SIRA approved locks must be installed. locks 3 
+ 
+ 
+Fourth: Security Requirements for Hawala Dar 
+Hawala Dar is a money transfer business that also carries out a related commercial 
+activity. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception desks  2 
+- Recognition View safes 3 
+- Observation View Lobby area 4 
+- Recognition View Safe deposit rooms 5 
+The camera 
+viewing angle 
+must be at least 
+110 degrees. 
+Monitoring View External area of the 
+establishment 
+6 
+ 
+  
+--- PAGE 81 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 81 of 140 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- All areas must be covered with 
+motion sensors, including but not 
+limited to protected areas, offices, 
+and administrative areas directly 
+connected to the shop, so that no 
+area can be penetrated to stop or 
+disable the security system. 
+Protected Areas, offices 
+and administration 
+areas directly 
+connected to the shop 
+ 
+ 
+ 
+1 
+- All glass facades of the facility must 
+be secured with glass breakage 
+sensors or motion detection sensors. 
+ 
+glass facades 
+ 
+2 
+- Main and secondary entrances and 
+emergency exits, if any, must be 
+equipped with magnetic keys. 
+ 
+Entrances and exits 
+ 
+3 
+- The safe must be equipped with a 
+vibration sensor or motion detector. 
+The safe 4 
+- The cashier, seller, and manager 
+must be provided with a panic 
+button for use in case of an 
+emergency. It must be located at a 
+level that is easy to use and not 
+visible. 
+ 
+ 
+Panic button 
+ 
+ 
+5 
+- Alarm system components must be 
+approved by SIRA. 
+Alarm system 6 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Security must be provided 
+during official working hours. 
+Providing security 
+guards 
+1 
+- A fixed iron grille must be 
+installed on all external 
+openings that are not located in 
+the trading area, such as 
+windows in service rooms, 
+bathrooms, and ventilation 
+rooms. 
+Iron Grille 2 
+Or piercing-resistant glass 
+or piercing-resistant films 
+attached to the outer 
+frame must be used on 
+the facility's glass facades, 
+such that they prevent 
+Iron curtains must be installed 
+and closed after official working 
+hours. 
+ 
+ 
+ 
+ 
+iron curtains 
+3 
+--- PAGE 82 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 82 of 140 
+glass penetration for at 
+least 90 seconds. 
+The above requirement is 
+excluded if the customer 
+provides an automatic iron 
+shutter that operates with 
+a control button. 
+SIRA approved locks must be 
+installed. 
+locks 4 
+- All cameras and recording 
+devices must be connected to 
+an uninterruptible power supply 
+UPS for 30 minutes. 
+uninterruptible 
+power supply 
+5 
+- An access control system must 
+be installed on the main doors 
+leading to the cashiers’ areas. 
+Access control 
+system 
+6 
+- The cashier area and its 
+associated rooms must be 
+separated from the rest of the 
+shop. 
+Isolating the 
+cashier area from 
+the general areas 
+of the store 
+ 
+7 
+- Installing system health 
+monitoring service approved by 
+SIRA 
+Installing system 
+health monitoring 
+service 
+8 
+ 
+Fifth: Security Requirements for ATMs 
+ATMs are electronic devices used to withdraw, deposit, and manage money 
+independently, without the need for direct interaction with a bank employee. These 
+devices provide a variety of convenient banking services to users. 
+Types of ATMs: 
+- Conventional: Perform basic functions such as withdrawing money and inquiring 
+about the balance. 
+- Multi-function: Provide additional services such as deposits, money transfers, and 
+bill payments. 
+- Banking Applications: Support additional banking applications and services such as 
+opening new accounts or applying for loans. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Inside the ATM 1 
+So that the cash 
+filling angle is 
+visible. 
+Recognition View On ATMs of all kinds 2 
+- Not less than 75 days for all 
+cameras 
+Recording retention period 3 
+Note: If the ATM is old and does not have built-in cameras, external 
+cameras must be installed in the Identification View to ensure a clear 
+image of the ATM user. 
+ 
+--- PAGE 83 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 83 of 140 
+Sixth: Security requirements for mobile ATMs 
+ 
+A. Standards and conditions that must be met: 
+Technical standards and conditions that must be met by mobile ATMs 
+Remarks Details Requirement SN 
+- - Front section for driver's assistant - 
+and rear section (cabinet) 
+The vehicle must be 
+internally divided 
+into two sections. 
+1 
+- The sections where the guards are 
+located must be air-conditioned and 
+equipped with suitable seats and seat 
+belts for each person in the vehicle. 
+The sections where 
+the guards are 
+located are air-
+conditioned and 
+equipped with seats. 
+2 
+- Only the ATM room to be armored on 
+all sides to withstand any potential 
+attack, emergency, or fire, provided 
+that the armoring level is not less than 
+B2 level according to international 
+standards or its equivalent. 
+ATM room armoring 
+only 
+3 
+Front doors are 
+used in 
+emergencies 
+only and must 
+be connected to 
+a tracking 
+system. 
+Only one door should be used for entry 
+and exit (side door) using both the ID 
+card reader and the PIN. 
+Using only one door 
+for entry and exit. 
+4 
+- The vehicle crew's forward vision must 
+be at least 200 degrees with the naked 
+eye. 
+Forward view of the 
+vehicle crew 
+5 
+- All wheels must be equipped with an 
+internal rubber tread to ensure they will 
+continue to travel for at least 110 km in 
+the event of a puncture or damage. 
+Wheels with internal 
+rubber tires 
+6 
+the locks must 
+be secure and 
+cannot be 
+opened by 
+normal means 
+or tampered 
+with. 
+The dimensions of the evacuation 
+opening must not be less than (60 cm 
+* 60 cm) 
+Evacuation opening 
+dimensions 
+7 
+- All doors must be connected to a 
+unified locking system, operating on an 
+interchange system so that the safe 
+door will not open if any other door in 
+the rear section is open. 
+The doors are 
+connected with a 
+unified locking 
+system. 
+8 
+- Door hinges must be internal and of 
+high durability. 
+door hinges 9 
+- The ability to unlock the ATM room 
+using an ID card 
+ATM room lock 10 
+--- PAGE 84 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 84 of 140 
+- The engine 
+starts when the 
+entire crew 
+checks in using 
+their ID cards. 
+The engine starter system must be 
+linked to the vehicle entry system and 
+the electronic starter system. 
+Engine starting 
+system 
+11 
+- The vehicle must be equipped with a 
+geographic coordinate system for 
+determining the vehicle's location, 
+approved by SIRA. 
+geographic tracking 
+system 
+12 
+- - Use a system approved by SIRA. 
+- Connected to the vehicle's operating 
+system so that the vehicle can be 
+stopped remotely. 
+- Vehicle movements must be 
+monitored by the security service 
+provider during business hours. 
+Geographical 
+tracking system 
+requirements 
+13 
+- The vehicle must have an anti-theft or 
+break-in alarm system, with a panic 
+button within easy reach of the driver 
+and their assistant and connected to 
+the security service provider's central 
+monitoring center. 
+- All system cables in the vehicle must 
+be shielded. 
+Vehicle Entry 
+System 
+Requirements 
+14 
+- - The cash feed door must be located 
+at the rear. 
+- It must be mounted on the floor of 
+the vehicle. 
+- Only the user panel must be visible 
+from the ATM, with the rest of the 
+machine hidden. 
+- A minimum of 21 cm must be left 
+between the rear entrance and the 
+ATM, with a secure door to close the 
+area if the vehicle is moving. 
+- Any other equipment or supplies 
+required by SIRA. 
+The following 
+Specifications must 
+be provided at the 
+ATM: 
+15 
+- The vehicle's weight after plating must 
+not exceed the weights specified by the 
+vehicle manufacturer. If the weight 
+exceeds the permissible limit, all of the 
+vehicle's mechanical components must 
+be modified to accommodate the new 
+weight. 
+Vehicle weight 16 
+- The vehicle must be equipped with 
+emergency equipment to deal with 
+sudden and minor vehicle breakdowns, 
+Equipped with 
+emergency 
+equipment 
+17 
+--- PAGE 85 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 85 of 140 
+such as (flashlight, gloves, safety 
+equipment, and first aid). 
+- Adequate lighting must be provided 
+around the vehicle and the ATM. 
+Provide adequate 
+lighting 
+18 
+ 
+B. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+Camera specifications 
+must not be less than 
+IP66 when  
+Covers the front area of the vehicle 
+at an angle of no less than 110° 
+In front 1 
+Camera specifications 
+must not be less than 
+IP66. 
+Covers the rear of the vehicle at 
+an angle of no less than 110°  
+In the back 2 
+Camera specifications 
+must not be less than 
+IP66. 
+Inside the middle compartment to 
+cover the safe door and the entry 
+and exit doors 
+Inside the 
+middle cabin 
+3 
+Camera specifications 
+must not be less than 
+IP66. 
+To cover the sides of the vehicle at 
+an angle of not less than 90° 
+On the right 
+and left sides 
+of the vehicle 
+4 
+Camera specifications 
+must not be less than 
+IP66. 
+Observation View Above the 
+ATM 
+5 
+Camera specifications 
+must not be less than 
+IP66. 
+The ATM requirements in this 
+manual apply. 
+inside the ATM 6 
+- Recording must be at least 1080P 
+(Full HD) at 25 frames per second. 
+Recording 
+quality 
+7 
+ 
+Seventh: Security Requirements for Selling and Trading Digital Currencies 
+Selling and trading digital currencies refers to the process of buying and selling 
+digital currencies and other cryptocurrencies online. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception desks  2 
+- Recognition View The safe 3 
+- Monitoring View Lobby area 4 
+--- PAGE 86 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 86 of 140 
+So that the cash 
+filling angle is 
+visible. 
+Recognition View ATMs 5 
+ 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system (if a safe is available on site) 
+Remarks Details Requirement SN 
+ 
+ 
+ 
+ 
+- 
+All areas must be covered 
+with motion sensors, 
+including but not limited to 
+protected areas, offices, and 
+administrative areas directly 
+connected to the shop, so 
+that no area can be 
+penetrated to stop or disable 
+the security system. 
+Protected Areas, offices and 
+administration areas directly 
+connected to the shop 
+ 
+ 
+ 
+ 
+1 
+- All glass facades of the 
+facility must be secured with 
+glass break sensors. 
+ 
+glass facades 
+ 
+2 
+- Main and secondary 
+entrances and emergency 
+exits, if any, must be 
+equipped with magnetic 
+keys. 
+ 
+Entrances and exits 
+ 
+3 
+- The safe must be equipped 
+with a vibration sensor or 
+motion detector. 
+The safe 4 
+- The cashier, seller, and 
+manager must be provided 
+with a panic button for use in 
+case of an emergency. It 
+must be located at a level 
+that is easy to use and not 
+visible. 
+ 
+ 
+ 
+Panic button 
+ 
+ 
+ 
+5 
+- Alarm system components 
+must be approved by SIRA 
+Alarm system 6 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- All cameras and recording devices 
+must be connected to an 
+uninterruptible power supply UPS for 
+30 minutes. 
+uninterruptible power 
+supply 
+1 
+--- PAGE 87 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 87 of 140 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+2 
+ 
+  
+--- PAGE 88 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 88 of 140 
+Chapter Thirteen: Security Requirements for Sports and Recreational 
+Halls and Clubs: 
+These are facilities (buildings) where sports and recreational activities are conducted. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Detection View Internal areas of the 
+establishment 
+2 
+- Detection View Establishment corridors 3 
+- Recognition View cashier and reception 
+desks  
+4 
+- Monitoring View Passenger drop-off and 
+pick-up area 
+5 
+- Detection View parking lots pathways 6 
+If the facility has its 
+own building 
+Detection View Around the 
+establishment’s 
+perimeter 
+7 
+- Detection View Recreational Areas and 
+Sports Arenas 
+8 
+- Detection View Inside the storage rooms 9 
+- Vehicles Number-Plate 
+Recognition view 
+Installing car entrance 
+cameras 
+10 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+  
+--- PAGE 89 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 89 of 140 
+Chapter Fourteen: Security Requirements for Gas Stations: 
+These are facilities that provide fuel for cars and other vehicles to drivers and 
+consumers. 
+ 
+First: Activities Covered 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS Requirements 
+Remarks Field Of View Areas SN 
+- Identification View Store entrance 1 
+- Monitoring View Vehicle fueling lines 2 
+- Monitoring View Petrol station fueling 
+Locations  
+3 
+- Detection View Internal area of the store 4 
+At the station 
+entrances and exits 
+Automatic Number-
+Plate Recognition 
+system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+5 
+- Detection View Parking lots 6 
+- Detection View External washrooms 
+entrances 
+7 
+- Recognition View Cash register table 8 
+For example: vehicle 
+washing and 
+maintenance areas 
+ 
+Detection View 
+Areas of services provided by 
+the station 
+9 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+  
+--- PAGE 90 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 90 of 140 
+Chapter Fifteen: Security Requirements for Large and diverse Stores: 
+Large and diverse stores include large retail chains that offer a wide range of 
+products and services under one roof. These stores are often part of large shopping 
+malls or operate as large individual stores. 
+ 
+First: Activities Covered 
+Review the Business Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Observation View elevators lobbies and stairs 3 
+With an angle 
+showing the 
+floor number, a 
+wide-angle lens 
+shall be used to 
+cover all parts 
+of the elevator. 
+Observation View Inside the elevators 4 
+- Recognition View cashier and reception desks  5 
+- Observation View display tables 6 
+- Detection View Main store area and shelf 
+aisles 
+7 
+Installing 
+cameras on the 
+external 
+perimeter of the 
+establishment if 
+the 
+establishment 
+has its own 
+building. 
+Detection View Building perimeter 8 
+Note: 
+If the facility has its own or rented parking spaces, cameras must be 
+installed as follows: 
+- Install an Automatic Number-Plate Recognition system (ANPR) 
+approved by SIRA at the entrances and exits of the parking spaces. 
+--- PAGE 91 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 91 of 140 
+- Install cameras along the parking lanes in Detection View. 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+Third: Specifications and Security Requirements for Department Store 
+Buildings 
+These are buildings that contain a main department store and additional stores that 
+are leased and managed by the store management. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Recognition View cashier and reception 
+desks  
+3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+With an angle showing the 
+floor number, a wide-
+angle lens shall be used to 
+cover all parts of the 
+elevator. 
+Observation View Inside the elevators 5 
+So that the cash filling 
+angle is visible 
+Recognition View ATM locations, public 
+phones, and public 
+phone charging devices 
+6 
+- Recognition View Vehicle entrances and 
+exits to the 
+establishment 
+7 
+- Recognition View Safe and baggage 
+storage rooms, 
+temporary storage 
+service for purchases 
+8 
+- Automatic Number-Plate 
+Recognition system 
+Vehicles Number-Plate 
+Recognition cameras 
+shall be installed 
+9 
+--- PAGE 92 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 92 of 140 
+(ANPR) approved by 
+SIRA 
+- Monitoring View loading and unloading 
+areas  
+10 
+- Monitoring View Passenger drop-off and 
+pick-up area 
+11 
+- Detection View Establishment corridors 12 
+- Detection View Seating and waiting 
+areas 
+13 
+- Detection View parking lots pathways 14 
+- Detection View Main lobby area 15 
+In addition to installing 
+PTZ cameras. 
+Monitoring View Outdoor arenas, 
+performance venues, 
+and crowd gatherings 
+16 
+- Detection View LPG storage area, filling 
+sites and gas cylinder 
+storage areas. 
+17 
+- Recognition View Electrical room entrance 18 
+- Recognition View Water tank room 
+entrance 
+19 
+- Recognition View Entrances to the fresh air 
+handling units of the air 
+conditioning system 
+(FAHU) 
+20 
+- Monitoring View Backup generator fuel 
+tanks 
+21 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- A dedicated operations room must be 
+provided to control and manage the 
+cameras. It should be equipped with all 
+means of communication with guards, 
+department store officials, emergency, 
+rescue, and ambulance services, and all 
+other means of assistance to manage 
+or control the security system. 
+Operations room 1 
+- Providing 24-hour security guards Security Guard 2 
+--- PAGE 93 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 93 of 140 
+- Providing a security operations 
+manager or security supervisor around 
+the clock 
+Security operations 3 
+- A security manager must always be 
+available on call. 
+Security manager 4 
+- Female security personnel must be 
+present. 
+female guard 5 
+- Providing a licensed security systems 
+operator, approved by SIRA, available 
+24/7 in the control room. 
+Security systems 
+operator 
+6 
+- Stationary or mobile HVM that are 
+approved shall be installed in front of 
+the main gates and the areas where 
+guests and visitors gather 
+Hostile Vehicle 
+Mitigation (HVM) 
+7 
+- Permanent Security Guards shall be 
+provided for areas or corridors where 
+shops of gold, jewelry and precious 
+goods are located. 
+Permanent Security 
+Guards for gathering 
+areas of gold and 
+precious goods 
+shops 
+8 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+9 
+ 
+  
+--- PAGE 94 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 94 of 140 
+Chapter Sixteen: Security Requirements for Electronic Games and 
+Entertainment Halls and Arenas: 
+Entertainment facilities that offer a variety of electronic games and recreational 
+activities for visitors. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Detection View Establishment corridors 3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+With an angle showing 
+the floor number, a 
+wide-angle lens shall be 
+used to cover all parts 
+of the elevator. 
+Observation View Inside the elevators 5 
+- Detection View Playrooms and areas 6 
+- Recognition View cashier and reception 
+desks  
+7 
+- Detection View Inside the party rooms 8 
+For private or rented 
+parking spaces 
+Automatic Number-Plate 
+Recognition system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras 
+shall be installed 
+9 
+Installing cameras on 
+the external perimeter 
+of the establishment if 
+the establishment has 
+its own dedicated 
+premises / independent. 
+Detection View establishment 
+perimeter 
+10 
+ 
+  
+--- PAGE 95 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 95 of 140 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+  
+--- PAGE 96 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 96 of 140 
+Chapter Seventeen: Security Requirements for Football Clubs: 
+These are facilities that train athletes and organize football competitions. 
+ 
+First: Activities Covered 
+Refer to the Commercial Facilities and Activities Annex. 
+ 
+ Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Observation View emergency exit doors among 
+floors 
+2 
+- Recognition View cashier and reception desks  3 
+- Detection View Main lobby 4 
+- Detection View Seating and waiting areas 5 
+- Recognition View Inside ticket outlets 6 
+- Observation View elevators lobbies and stairs 7 
+With an angle 
+showing the floor 
+number, a wide-
+angle lens shall be 
+used to cover all 
+parts of the 
+elevator. 
+ 
+ 
+Observation View 
+ 
+ 
+Inside the elevators 
+8 
+So that the cash 
+filling angle is 
+visible. 
+Recognition View ATM and public phones Locations 9 
+- Monitoring View Loading and unloading areas 10 
+- Monitoring View Visitor drop-off and pick-up area 11 
+- Detection View Establishment corridors 12 
+- Detection View Fan stands and special platforms 13 
+- Detection View Parking pathways 14 
+- Monitoring View Outdoor areas, performance 
+venues, and visitor gatherings 
+15 
+- Observation View LPG storage area and filling sites 
+and gas cylinder storage area 
+16 
+- Recognition View Electrical room entrance 17 
+- Recognition View Water tank room 18 
+- Recognition View Entrances to the fresh air handling 
+units of the air conditioning system 
+19 
+- Detection View Backup generator fuel tanks 20 
+--- PAGE 97 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 97 of 140 
+- Automatic Number-
+Plate Recognition 
+system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate Recognition 
+cameras shall be installed 
+21 
+- Detection View The external perimeter of the 
+establishment 
+22 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+If the work 
+system is 24 
+hours, this 
+requirement 
+must be met. 
+Otherwise, 
+security is 
+provided during 
+official working 
+hours. 
+Providing 24-hour security guards Security Guard 1 
+- Providing a security operations 
+manager or security supervisor 
+Operations Manager or 
+Security Supervisor 
+2 
+- Female security personnel must be 
+available during official working 
+hours. 
+female guard 3 
+- A dedicated operations room must 
+be provided to control and manage 
+the cameras. It should be 
+equipped with all means of 
+communication with guards, club 
+officials, emergency, rescue, and 
+ambulance services, and all means 
+of assistance to manage or control 
+the security system. 
+operations room 4 
+- Providing a security systems 
+operator in the control room on a 
+continuous basis during working 
+hours, and holding a license 
+approved by the institution. 
+Security Systems 
+Operator 
+5 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+6 
+ 
+ 
+--- PAGE 98 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 98 of 140 
+Chapter Eighteen: Security Requirements for Warehouse compounds: 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Security Requirements for Warehouse compounds 
+ 
+Note: The responsibility for installing cameras in the warehouse 
+compound lies with the compound owner. 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Vehicles Number-
+Plate Recognition 
+view 
+Installing cameras at car 
+entrances 
+1 
+- Detection View External walkways between 
+warehouses 
+2 
+- Detection View External perimeter 3 
+ 
+ 
+  
+--- PAGE 99 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 99 of 140 
+Chapter Nineteen: Security Requirements for Warehouses: 
+First: Covered Activities 
+Refer to the Annex on Commercial Facilities and Activities 
+ 
+Second: Security Requirements for General Warehouses: 
+These are facilities used to store materials and equipment. 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View reception desks 2 
+Vehicle entrances 
+and exits 
+Vehicles Number-
+Plate Recognition 
+View 
+Vehicles Number-Plate Recognition 
+cameras shall be installed 
+3 
+- Monitoring View Loading and unloading areas 4 
+- Detection View Establishment corridors 5 
+- Detection View The internal area of the 
+warehouse 
+6 
+- Detection View The outer area of the warehouse 7 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+Third: Security requirements for hazardous and valuable materials 
+warehouses: 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View reception desks 2 
+- Vehicles Number-Plate 
+Recognition View 
+Vehicle entrances and exits to 
+the establishment 
+3 
+- Monitoring View Loading and unloading areas 4 
+- Detection View The internal area of the 
+warehouse 
+5 
+--- PAGE 100 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 100 of 140 
+The cameras are 
+mounted on the 
+outside wall of 
+the warehouse. 
+Detection View The outer area of the 
+warehouse 
+6 
+For hazardous 
+materials 
+warehouses only 
+Recognition View Hazardous Materials Storage 
+Container Door 
+7 
+ 
+B. An alarm system must be provided according to the following 
+requirements (if the warehouse operates 24 hours, then it is exempted 
+from this requirement) 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- All areas and rooms with windows in 
+the facility must be secured with 
+motion detection sensors. 
+Areas and rooms  
+1 
+- Main and secondary entrances and 
+emergency exits, if any, must be 
+equipped with magnetic keys. 
+ 
+Entrances and exits 
+ 
+2 
+- Alarm system components must be 
+certified by SIRA. 
+Alarm system 3 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- SIRA approved locks must be 
+installed. 
+locks 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+2 
+ 
+Fourth: Security requirements for processed tobacco and tobacco 
+cigarettes warehouses 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View reception desks 2 
+- Vehicles Number-Plate 
+Recognition view 
+Vehicle entrances and exits to 
+the establishment 
+3 
+- Monitoring View Loading and unloading areas 4 
+--- PAGE 101 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 101 of 140 
+- Detection View Internal areas of the 
+warehouse 
+5 
+The cameras are 
+mounted on the 
+outside wall of 
+the warehouse. 
+Detection View 
+External areas of the 
+warehouse 
+6 
+For hazardous 
+materials 
+warehouses only 
+Recognition View Hazardous Materials Storage 
+Container Door 
+7 
+ 
+B. An alarm system must be provided according to the following 
+requirements (if the warehouse operates 24 hours, then it is exempted 
+from this requirement): 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- All areas and rooms with windows in 
+the facility must be secured with 
+motion detection sensors. 
+Areas and rooms  
+1 
+- Main and secondary entrances and 
+emergency exits, if any, must be 
+equipped with magnetic keys. 
+ 
+Entrances and exits 
+ 
+2 
+- Alarm system components must be 
+approved by SIRA. 
+Alarm system 3 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- SIRA approved locks must be 
+installed. 
+locks 1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+2 
+ 
+  
+--- PAGE 102 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 102 of 140 
+Chapter Twenty: Security Requirements for Self-storage: 
+The process of storing goods or materials by individuals or companies, either 
+manually or automatically. 
+ 
+First: Covered Activities 
+Refer to the Appendix on Establishments and Commercial Activities 
+ 
+Second: Specifications and Security Requirements for Self-Storage 
+ 
+A. Definitions: 
+Definitions 
+Definition The term SN 
+It is the area that contains iron safes and is 
+surrounded by a cement wall. 
+Safes area 1 
+It is the area that contains a group of stores stores area 2 
+It is the area where customers are received and 
+dealt with, or the waiting room where they are 
+served. 
+Reception and waiting 
+area 
+3 
+It is the area where the customer can view his 
+things privately and is within the protected area. 
+Viewing area 4 
+It is the area that separates the safes area from the 
+rest of the areas and is the only way for it. 
+securing area 5 
+ 
+B. General Specifications: 
+General Specifications of Facilities 
+Remarks Details Requirement SN 
+- • Reception and waiting area. 
+• Safes area. 
+• viewing area. 
+• Securing area. 
+• Administration area. 
+Safe rental facilities for 
+storing valuable deposits 
+must have the following 
+divisions: 
+1 
+- • Reception and waiting area. 
+• stores area. 
+• Administration area 
+Self-storage facilities 
+must have the following 
+divisions: 
+2 
+- The securing area must have at 
+least two doors that open 
+alternately, with one door being 
+able to be opened only after the 
+other is closed. 
+The securing area must 
+have at least two doors. 
+3 
+--- PAGE 103 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 103 of 140 
+- Doors must have electric locks 
+that operate to open the doors 
+when they are powered. 
+electric door locks 4 
+- • Alarm system (8 hours). 
+• VSS system (8 hours). 
+• Doors system (8 hours). 
+There must be backup 
+power to operate the 
+systems in the event of a 
+power outage as follows: 
+5 
+ 
+C. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View reception desks 2 
+- Detection View Main lobby area 3 
+- Detection View sitting and waiting area 4 
+- Observation View Securing area 5 
+- Monitoring View Safe areas include all 
+spaces. 
+6 
+- Detection View Viewing area 7 
+- Not less than 90 days for all 
+cameras 
+Recording retention period 8 
+ 
+D. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- Safes rooms must contain motion 
+and vibration detectors. 
+Motion and vibration 
+detectors 
+1 
+- The main door must have 
+magnetic keys. 
+Securing the main door 2 
+- The reception area, security area, 
+and safes room must have a 
+motion detector. 
+Securing Areas and Rooms 3 
+- A panic button must be available at 
+the reception desk, the manager's 
+office, and the security guard. 
+Panic button 4 
+- All Alarm System components must 
+be certified by SIRA. 
+Alarm system 5 
+ 
+--- PAGE 104 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 104 of 140 
+E. The following requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards Security Guard 1 
+- The safe tenant's data must be taken with 
+a photo of his/her ID (such as an ID or 
+passport). 
+Taking tenant data 2 
+- There must be a system to verify the 
+identity of the user of The Safe. 
+Verify user identity 3 
+- All tenants must be bound by contracts 
+that include the following: 
+1. Not storing any harmful or prohibited 
+materials. 
+2. Not storing any flammable or explosive 
+materials. 
+3. Not storing materials stolen or obtained 
+through a crime. 
+Tenant Contracts 4 
+- Installing system health monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+5 
+ 
+Third: Specifications and security requirements for automatic storage 
+activities 
+ 
+A. Definitions of automated storage activities: 
+Definitions 
+Definition The term SN 
+It is the area that contains iron safes and is 
+surrounded by a cement wall. 
+Safes area 1 
+It is the area where customers are received and 
+dealt with, or the waiting room where they are 
+served. 
+Reception and waiting 
+area 
+2 
+It is the area where the customer can view his 
+things privately and is within the protected area. 
+Viewing area 3 
+ 
+--- PAGE 105 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 105 of 140 
+B. General Specifications of the automatic storage activity: 
+General Specifications of Facilities 
+Remarks Details Requirement SN 
+- • Reception and waiting area. 
+• Stores area. 
+• Administration area 
+Automated self-storage 
+facilities must have the 
+following divisions: 
+1 
+- Doors must have electric locks 
+that operate to open the doors 
+only when they are powered. 
+electric door locks 2 
+- • Alarm system (8 hours). 
+• VSS system (8 hours). 
+• Doors system (8 hours). 
+There must be backup 
+power to operate the 
+systems in the event of a 
+power outage. 
+3 
+ 
+C. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View reception desks 2 
+- Detection View Main lobby area 3 
+- Detection View sitting and waiting area 4 
+- Identification View Safes maintenance 
+entrance and any access 
+leading to the safes 
+5 
+- Detection View Viewing area 6 
+- Not less than 90 days for all 
+cameras 
+Recording retention period 7 
+ 
+D. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- The main door must have a door 
+contact. 
+main door 1 
+- The maintenance door to the safes 
+area and any entrance leading to 
+the safes area must have door 
+contact. 
+Maintenance door 2 
+- The reception and securing area 
+must have a motion detector. 
+Reception and 
+Securing Area 
+3 
+--- PAGE 106 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 106 of 140 
+- A panic button must be available at 
+the reception desk and the security 
+guard. 
+Panic Button 4 
+- All Alarm System components must 
+be certified by SIRA. 
+Alarm system 5 
+ 
+E. The following requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards security guard 1 
+- The safe tenant's data must be taken with 
+a photo of his/her identity proof (such as 
+an ID or passport). 
+The safe tenant 
+details 
+2 
+- There must be a system to verify the 
+identity of the user of The Safe. 
+Identity Verification 
+System 
+3 
+- All tenants must be bound by contracts 
+that comply with the following: 
+1. Not storing any harmful or prohibited 
+materials. 
+2. Not storing any flammable or explosive 
+materials. 
+  3. Not storing materials stolen or 
+obtained through a crime. 
+Tenant Contracts 4 
+- Installing system health monitoring service 
+approved by SIRA 
+Installing system 
+health monitoring 
+service 
+5 
+ 
+  
+--- PAGE 107 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 107 of 140 
+Chapter Twenty-One: Security Requirements for Air Cargo: 
+First: Covered Activities 
+Refer to the Annex on Commercial Facilities and Activities 
+ 
+Second: Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Details Requirement SN 
+- Identification View Entrances of the establishment 1 
+- Observation View reception desks 2 
+- Recognition View Temporary and recovered material 
+storage sites 
+3 
+- Recognition View Cargo inspection sites 4 
+- Monitoring View Aisles and shelves in the facility 5 
+- Recognition View Hazardous Material Storage Areas 6 
+- Detection View Interior areas of the facility 7 
+- Detection View Inside the cargo handling rooms 8 
+- Monitoring View Loading and unloading areas 9 
+- Automatic Number-
+Plate Recognition 
+system (ANPR) 
+approved by SIRA 
+Automatic Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+10 
+- Detection View External facility perimeter 11 
+ 
+B. The following requirements must be provided: 
+Other security requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards 
+according to the risk analysis report 
+security guard 1 
+If the work system 
+is 24/7, they must 
+be provided. 
+Providing a security operations 
+manager or security supervisor 
+around the clock 
+Security 
+Operations 
+Manager or 
+Security 
+Supervisor 
+2 
+On all gates leading 
+to the warehouse, 
+emergency 
+entrances from the 
+outside, and offices 
+that require an 
+access control 
+system. 
+Providing access control systems in 
+all areas of the facility. 
+1. Electronic identification cards. 
+2. Biometrics reader. 
+Access control 
+system 
+3 
+--- PAGE 108 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 108 of 140 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+4 
+ 
+C. An Alarm system must be provided according to the following 
+requirements if the operates less than (24) hours: 
+Alarm system 
+Remarks Details Requirement SN 
+- All areas and rooms with windows in 
+the facility must be secured with 
+motion detection sensors. 
+motion detector 1 
+- Main and secondary entrances and 
+emergency exits, if any, must be 
+equipped with magnetic keys. 
+magnetic keys 2 
+- A panic button must be provided for 
+use in case of an emergency, at a level 
+that is easy to use and not visible. 
+Panic button 3 
+ 
+Storage conditions and storage methods for hazardous materials, if 
+applicable (smoke lights and construction bullets): 
+- The container must be separated and in a suitable location. 
+- The container must be enclosed or under a shelter. 
+- Adequate ventilation must be provided for air inlet and outlet, or an air conditioning 
+system must be provided. 
+- The container's interior must be covered with insulating material or fire-resistant 
+paint. 
+- Provide cameras at the container gate. Provide fire extinguishers. 
+- Provide a responsible person to coordinate and communicate with SIRA regarding 
+incoming and outgoing shipments of hazardous materials. Maintain or leave 
+sufficient space between containers. 
+- Provide a fire alarm system with an annual maintenance contract. 
+ 
+Note: 
+1. Regarding the storage or escorting of ammunition, explosives, and 
+Class A hazardous materials, in coordination with the relevant 
+authorities in the emirate. 
+2. segregation of ammunition and weapons must be ensured, ensuring 
+they are stored in a single container. 
+3. Coordination must be made with the relevant authorities in the emirate 
+to supervise the site and its operations. 
+4. Provide explosive and hazardous material detection devices approved 
+by SIRA. 
+ 
+ 
+  
+--- PAGE 109 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 109 of 140 
+Chapter Twenty-Two: Security Requirements for Factories: 
+These are facilities used to produce goods and products on a large scale through 
+industrial processes. 
+ 
+First: Activities Covered 
+Refer to the Annex on Business Facilities and Activities 
+ 
+Second: Specifications and Security Requirements for General Factories: 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View reception desks 2 
+- Vehicles number-plate 
+recognition view 
+Vehicle entrances and exits 3 
+- Monitoring View Loading and unloading areas 4 
+- Detection View The interior of the factory 5 
+- Detection View Establishment corridors 6 
+Installing 
+cameras around 
+the facility 
+Detection View The external perimeter of the 
+factory 
+7 
+- Detection View Storage areas 8 
+- Recognition View Hazardous Material Storage 
+Container Doors 
+9 
+ 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+Third: Specifications and security requirements for hazardous materials 
+factories: 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+--- PAGE 110 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 110 of 140 
+- Recognition View reception desks 2 
+- Vehicles number-plate 
+recognition view 
+Vehicle entrances and exits to 
+the establishment 
+3 
+- Monitoring View Loading and unloading areas 4 
+- Detection View The interior of the factory 5 
+- Detection View Establishment corridors 6 
+Installing 
+cameras around 
+the facility 
+Detection View The external perimeter of the 
+establishment 
+7 
+- Detection View Storage areas 8 
+- Recognition View storage container doors 9 
+ 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- All areas and rooms with windows in the 
+facility must be secured with motion 
+detection sensors. 
+Areas and rooms 1 
+- Main and secondary entrances and 
+emergency exits, if there are any, must be 
+equipped with magnetic keys. 
+Entrances and 
+exits 
+2 
+- A panic button must be provided for use in 
+the event of an emergency, located at an 
+easy-to-use, yet inconspicuous level. 
+Panic button 3 
+- Alarm system components must be certified 
+by SIRA. 
+Alarm system 4 
+ 
+Note: Requirements “B” above are excluded, in case the facility works 
+24/7. 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 111 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 111 of 140 
+Fourth: Specifications and security requirements for tobacco processing 
+and tobacco rolling factories (cigarettes): 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View reception desks 2 
+- Vehicles number-plate 
+recognition view 
+Vehicle entrances and 
+exits 
+3 
+- Monitoring View Loading and unloading 
+areas 
+4 
+- Detection View The interior of the 
+factory 
+5 
+- Detection View Establishment corridors 6 
+Installing cameras around 
+the facility 
+Detection View The external perimeter 
+of the establishment 
+7 
+- Detection View Storage areas 8 
+- Recognition View Hazardous Materials 
+Storage Container 
+Doors 
+9 
+- Detection View spare parts room 10 
+- Detection View Quality Control Room 11 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Providing 24-hour security guards security guard 1 
+- Installing system health monitoring service 
+approved by SIRA 
+Installing 
+system health 
+monitoring 
+service 
+2 
+ 
+  
+--- PAGE 112 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 112 of 140 
+Chapter Twenty-Three: Security Requirements for Vacation Homes: 
+Individually owned establishments rented on a daily, weekly, or monthly basis 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Security Requirements 
+ 
+A. The following security requirements must be provided for vacation 
+homes: 
+Requirements for Vacation homes 
+Remarks Description Requirement SN 
+- Installation of SIRA-approved secure 
+locks. 
+secure lock 1 
+- Use the SIRA approved smart lock 
+App 
+Lock App 2 
+The safe must be 
+installed in a secure 
+way that is difficult 
+to remove. 
+Installation of a safe approved by 
+SIRA. 
+Secure Safe 3 
+ 
+ 
+  
+--- PAGE 113 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 113 of 140 
+Chapter Twenty-Four: Security Requirements for Shooting Ranges: 
+These are facilities designated for practicing shooting sports, whether with firearms 
+or bows and arrows. 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View cashier and reception desks  2 
+- Recognition View Weapons and ammunition 
+delivery tables 
+3 
+- Detection View Inside the weapons and 
+ammunition warehouse 
+4 
+- Recognition View Shooting lanes 5 
+- Detection View Establishment corridors 6 
+- Automatic 
+Number-Plate 
+Recognition system 
+(ANPR) approved 
+by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+7 
+- Detection View parking lots pathways 8 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 114 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 114 of 140 
+Chapter Twenty-Five: Security Requirements for Art Galleries: 
+These are spaces designated for displaying artworks such as paintings, statues, 
+photographs, and art installations. These galleries are used for displaying artworks. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View cashier and reception desks  2 
+- Observation View Display tables and display areas 3 
+If the establishment 
+has its own parking 
+spaces 
+Vehicles number-
+plate recognition 
+view 
+Vehicle entrances and exits to 
+the establishment 
+4 
+- Detection View Main lobby 5 
+ 
+B. An alarm system must be provided for facilities that contain a piece of 
+no less than 100,000 dirhams or a total of no less than one million 
+dirhams, according to the following requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- Covering the showroom with 
+motion sensors so that no area 
+can be penetrated to stop or 
+disable the security system. 
+Showroom Coverage 1 
+- All glass facades of the facility 
+must be secured with glass break 
+sensors or motion detection 
+sensors. 
+glass facades 2 
+- Main and secondary entrances 
+and emergency exits, if any, 
+must be equipped with magnetic 
+keys (Door contacts) or motion 
+detectors. 
+Entrances and exits 3 
+- The safe must be equipped with 
+a vibration sensor or motion 
+detector. 
+The safe 4 
+--- PAGE 115 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 115 of 140 
+- The cashier, seller, and manager 
+must be provided with a panic 
+button for use in case of an 
+emergency. It must be located at 
+a level that is easy to use and not 
+visible. 
+Panic button 5 
+- Alarm system approved by SIRA Alarm system 6 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Security must be provided during 
+official working hours. 
+Providing security 
+guards 
+1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+2 
+ 
+  
+--- PAGE 116 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 116 of 140 
+Chapter Twenty-Six: Security Requirements for Vehicle Rental Shops: 
+These are premises that provide vehicle rental services to individuals or companies 
+for specific periods. 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View cashier and reception desks  2 
+- Recognition View Contract editing tables 3 
+- Detection View The internal area of the shop 4 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 117 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 117 of 140 
+Chapter Twenty-Seven: Security Requirements for Tobacco Retail 
+Stores: 
+Establishments that sell tobacco and cigarette products, as well as other related 
+products such as e-cigarettes, pipes, luxury cigarettes, and related accessories. 
+ 
+First: Activities Covered 
+Refer to the Business Establishments and Activities Annex. 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cash tables 2 
+- Detection View Internal space of the 
+store 
+3 
+- Observation View The store’s external 
+area 
+4 
+- Detection View Store room 5 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 118 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 118 of 140 
+Chapter Twenty-Eight: Security Requirements for Precious Goods 
+Stores: 
+These stores specialize in buying and selling high-value goods, such as global 
+brands, luxury watches, and rare currencies. These include commercial 
+establishments that sell precious items valued at more than AED 10,000. 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Appendix 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Recognition View cashier and reception desks  2 
+- Observation View display tables 3 
+- Detection View Covering the internal space of the 
+store 
+4 
+ 
+B. An alarm system must be provided for facilities that contain a piece of 
+no less than 100,000 dirhams or a total of no less than one million 
+dirhams, according to the following requirements: 
+Alarm system 
+Remarks Details Requirement SN 
+- Covering all areas with motion 
+sensors is comprehensive and 
+not limited to protected areas, 
+offices, and administrative 
+areas directly connected to the 
+store, so that no area can be 
+breached to stop or disable 
+the security system. 
+Protected areas, offices and 
+administration areas directly 
+connected to the store 
+1 
+- All glass facades of the facility 
+must be secured with glass 
+breakage sensors or motion 
+detection sensors. 
+glass facades 2 
+- Main and secondary entrances 
+and emergency exits, if any, 
+must be equipped with 
+magnetic keys (Door contacts) 
+or motion detectors. 
+Entrances and exits 3 
+- The safe must be equipped 
+with a vibration sensor or 
+motion detector. 
+The safe 4 
+--- PAGE 119 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 119 of 140 
+- The cashier, seller, and 
+manager must be provided 
+with a panic button for use in 
+case of an emergency. It must 
+be located at a level that is 
+easy to use and not visible. 
+Panic button 5 
+- All components of the alarm 
+system must be approved by 
+SIRA. 
+Alarm system 6 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 120 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 120 of 140 
+Chapter Twenty-Nine: Security Requirements for Data Centers: 
+Data centers are facilities used to host computing systems and store data securely 
+and efficiently. 
+ 
+First: Covered Activities 
+Refer to the Facilities and Business Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Detection View Establishment corridors 2 
+- Observation View elevators lobbies and stairs 3 
+- Observation View Inside the elevators 4 
+- Recognition View cashier and reception desks  5 
+- Detection View Main lobby 6 
+- Detection View Seating and waiting areas 7 
+- Detection View Inside server rooms 8 
+- Recognition View Electrical and mechanical room 
+entrances 
+9 
+- Vehicles Number-Plate 
+Recognition view 
+Installing cameras at the car 
+entrance  
+10 
+Installing cameras 
+around the facility 
+Detection View The external perimeter of the 
+establishment 
+11 
+- Recognition View the pre-stage area before 
+entering the server room 
+12 
+- Detection View Inside the Network Operations 
+Center 
+13 
+- Detection View Backup Power Supply (UPS) 
+Room Entrances 
+14 
+ 
+--- PAGE 121 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 121 of 140 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+Electromechanical 
+locks must be 
+used. 
+Access control system for server 
+room 
+ 
+ 
+ 
+Access control 
+system 
+1 
+- Only one door of the protected area 
+must be enabled to open, and the 
+other door must not open until the 
+first door is closed. 
+ 
+ 
+ 
+Access control 
+system 
+2 
+- Must provide 24-hour security guards 
+according to the risk analysis report 
+security guard 3 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+4 
+ 
+ 
+  
+--- PAGE 122 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 122 of 140 
+Chapter Thirty: Security Requirements for Pharmacies: 
+These are commercial establishments that provide medicines, medical supplies, and 
+health products to customers. 
+ 
+First: Activities Covered 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception desks  2 
+- Detection View Inside the Establishment 
+areas 
+3 
+- Recognition View Entrance to medicine 
+storage rooms 
+4 
+- Recognition View restricted medicine cabinet 5 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+  
+--- PAGE 123 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 123 of 140 
+Chapter Thirty-One: Security Requirements for Massage Centers: 
+A place that provides massage and physiotherapy services for the body for the 
+purpose of relaxation, stress relief, and improving general health. 
+ 
+First: Covered Activities 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View cashier and reception desks  2 
+- Detection View Waiting areas 3 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 124 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 124 of 140 
+Chapter Thirty-Two: Security Requirements for Parking Rental and 
+Management Services: 
+These are services that help individuals and companies provide and manage parking 
+spaces. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors 
+among floors 
+2 
+- Detection View parking lots pathways 3 
+- Detection View Establishment corridors 4 
+- Observation View elevators lobbies and 
+stairs 
+5 
+- Observation View Payment areas 6 
+Vehicle 
+entrances and 
+exits to the 
+establishment 
+Automatic Number-Plate 
+Recognition system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall 
+be installed. Or the 
+registration system 
+approved by SIRA 
+7 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 125 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 125 of 140 
+Chapter Thirty-Three: Security Requirements for Auction Halls: 
+Commercial establishments that sell goods or items by public auction. These halls 
+are considered places for the public exchange and sale of goods based on bids 
+submitted by the public. 
+ 
+First: Activities Covered 
+Refer to the Commercial Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Detection View Seating and waiting areas 2 
+- Detection View Establishment corridors 3 
+For large items such as 
+cars and heavy vehicles 
+Detection View Collectibles display area 4 
+- Detection View Auction halls 5 
+- Recognition View The main safe room 6 
+For own or rented 
+parking spaces 
+Vehicles Number-Plate 
+Recognition view 
+Vehicles Number-Plate 
+Recognition cameras 
+7 
+In the case of external 
+sales halls 
+Detection View The external perimeter of 
+the establishment 
+8 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 126 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 126 of 140 
+Chapter Thirty-Four: Security Requirements for Customer Happiness 
+Centers: 
+Customer Happiness Centers are facilities that aim to improve customer experience 
+and increase customer satisfaction with the services or products offered by a 
+company or organization. 
+These centers are essential in providing support and assistance to customers and 
+offer a wide range of services. 
+ 
+First: Activities Covered 
+Refer to the Business Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Detection View Establishment 
+corridors 
+2 
+- Observation View elevators lobbies and 
+stairs 
+3 
+With an angle showing the 
+floor number, a wide-angle 
+lens shall be used to cover 
+all parts of the elevator. 
+Observation View Inside the elevators 4 
+- Detection View Waiting halls 5 
+- Recognition View cashier and reception 
+desks  
+6 
+For the establishment own 
+parking or rented parking 
+spaces 
+Automatic Number-Plate 
+Recognition system 
+(ANPR) approved by SIRA 
+Public parking 
+entrances and exits 
+7 
+ Detection View The external 
+perimeter of the 
+establishment 
+8 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+  
+--- PAGE 127 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 127 of 140 
+Chapter Thirty-Five: Security Requirements for Business Centers: 
+These are designated spaces that provide a comfortable work environment and are 
+equipped with the tools and facilities businessmen and owners of small and medium-
+sized enterprises (SMEs) need to run their businesses efficiently. These offices can 
+be traditional or shared offices and offer a variety of services that facilitate business. 
+ 
+First: Covered Activities 
+Refer to the Business Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Details Requirement SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Observation View emergency exit doors among 
+floors 
+2 
+- Detection View Establishment corridors 3 
+- Observation View elevators lobbies and stairs 4 
+- Detection View Waiting halls 5 
+- Recognition View Customer service tables 6 
+- Recognition View cashier and reception desks  7 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 128 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 128 of 140 
+Chapter Thirty-Six: Security Requirements and Conditions for Quran 
+Memorization Centers and Islamic Institutions: 
+Quran memorization centers and Islamic institutions include establishments 
+dedicated to teaching and memorizing the Holy Quran, religious lessons, and Islamic 
+culture in general. 
+ 
+First: Activities Covered 
+Refer to the annex for commercial establishments and activities 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed in accordance with the following 
+requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the establishment 1 
+- Detection View Installing external cameras 
+around the building's perimeter 
+2 
+- Detection View Establishment corridors 3 
+- Observation View elevators lobbies and stairs 4 
+With an angle 
+showing the floor 
+number, a wide-
+angle lens shall be 
+used to cover all 
+parts of the elevator. 
+ 
+ 
+Observation View 
+ 
+ 
+Inside the elevators 
+5 
+- Recognition View cashier and reception desks  6 
+- Recognition View Cash storage and sorting areas 7 
+- Recognition View The safe 8 
+- Detection View Inside classrooms 9 
+- Detection View Inside the activity halls 10 
+- Detection View Inside the event halls 11 
+- Detection View sitting and waiting area 12 
+- Detection View Inside the library 13 
+- Detection View Inside the theater 14 
+- Detection View Inside the men's prayer hall and 
+the corridor leading to the 
+women’s prayer hall. 
+15 
+- Detection View Inside the filing rooms 16 
+- Detection View Storage rooms 17 
+- Detection View parking lots pathways 18 
+If own parking is 
+available 
+Automatic Number-
+Plate Recognition 
+system (ANPR) 
+approved by SIRA 
+Vehicles Number-Plate 
+Recognition cameras shall be 
+installed 
+19 
+--- PAGE 129 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 129 of 140 
+- Not less than 60 
+days for all cameras 
+Recording retention period 20 
+ 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm system 
+Remarks Details Requirement SN 
+- The cabinet / safe 
+must be equipped 
+with a vibration 
+sensor or motion 
+detector. 
+The safe and places to store 
+valuables 
+ 
+1 
+- Cash storage, 
+sorting, the safe, and 
+cash receiving tables 
+must be equipped 
+with a panic button 
+for use in the event 
+of an emergency, 
+located at an easy-
+to-use and invisible 
+place. 
+ 
+ 
+ 
+ 
+ 
+Panic button 
+ 
+ 
+ 
+ 
+ 
+2 
+- All Alarm System 
+components must be 
+certified by SIRA. 
+ 
+Alarm system 
+ 
+3 
+ 
+C. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- - Rooms 
+- Offices 
+- Cash storage and 
+sorting areas 
+Access control system 1 
+- Installing system 
+health monitoring 
+service approved by 
+SIRA 
+Installing system health 
+monitoring service 
+2 
+ 
+ 
+--- PAGE 130 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 130 of 140 
+Chapter Thirty-Seven: Security Requirements for Charitable 
+Organizations: 
+These are non-profit organizations that aim to provide support and assistance to 
+individuals and communities in need. 
+ 
+First: Covered Activities 
+Refer to the Commercial Facilities and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Detection View The external perimeter of 
+the establishment 
+2 
+- Detection View Establishment corridors 3 
+- Observation View elevators lobbies and 
+stairs 
+4 
+- Recognition View cashier and reception 
+desks  
+5 
+- Recognition View Cash storage and sorting 
+areas 
+6 
+- Recognition View The safe room 7 
+- Detection View Storage rooms 8 
+- Vehicles Number-Plate 
+Recognition view 
+Vehicle entrances and 
+exits 
+9 
+ 
+B. Alarm system must be provided according to the following 
+requirements: 
+Alarm and intruder detection system 
+Remarks Details Requirement SN 
+- The cabinet must be equipped with a 
+vibration sensor or motion detector. 
+The safe and 
+storage areas for 
+valuable materials 
+1 
+- A panic button must be installed in 
+the safe, cash storage and sorting 
+areas, and cash receiving tables for 
+use in the event of an emergency. It 
+must be located at an easy-to-use 
+and inconspicuous location. 
+ 
+Panic button 
+ 
+2 
+- All Alarm System components must 
+be certified by SIRA. 
+Alarm system 3 
+ 
+C. The following security requirements must be provided: 
+--- PAGE 131 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 131 of 140 
+Other requirements 
+Remarks Description Requirement SN 
+- Installation of an access control 
+system for all rooms, including the 
+safe and cash storage and sorting 
+room. 
+Access control 
+system 
+1 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system 
+health monitoring 
+service 
+2 
+ 
+ 
+  
+--- PAGE 132 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 132 of 140 
+Chapter Thirty-Eight: Security Requirements for Hunting Equipment 
+Stores: 
+Hunting equipment stores are stores that offer a variety of Hunting-related 
+equipment and supplies. 
+ 
+First: Activities Covered 
+Refer to the Business Establishments and Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+ 
+A. Cameras must be installed to meet the following requirements: 
+VSS requirements 
+Remarks Field Of View Areas SN 
+- Identification View Entrances of the 
+establishment 
+1 
+- Recognition View Cash and reception tables 2 
+- Observation View display tables 3 
+- Detection View Storage areas 4 
+- Detection View Shop area 5 
+ 
+B. The following security requirements must be provided: 
+Other requirements 
+Remarks Description Requirement SN 
+- Installing system health monitoring 
+service approved by SIRA 
+Installing system health 
+monitoring service 
+1 
+ 
+ 
+  
+--- PAGE 133 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 133 of 140 
+Chapter Thirty-Nine: Security Requirements and Conditions for the 
+Security Monitoring Operations Center: 
+The Security Monitoring Operations Center is a center responsible for monitoring 
+operations for various facilities and sectors. 
+ 
+First: Covered Activities 
+Refer to the Establishments and Commercial Activities Annex 
+ 
+Second: Specifications and Security Requirements 
+A. Operations centers must have the following requirements and 
+Specifications: 
+1. The operations room must be no less than 300 square feet in area, and its area 
+may increase as deemed necessary by SIRA. 
+2. The operations room must operate 24 hours a day, 7 days a week, year-round. 
+3. The number of staff in the room must be no less than two, in addition to the 
+room manager. This number may increase depending on the room's size and 
+systems. 
+4. A means of communication must be provided between the operations room and 
+security personnel according to their locations. 
+5. The operations room must be connected to the security authorities in the emirate. 
+6. A hotline must be provided with the relevant authorities in the emirate. 
+7. The operations room must be secured with a VSS system and an alarm system 
+linked to the security authorities in the emirate. 
+8. Providing a backup energy source for computer systems that works with a battery 
+for a period of not less than 8 hours. 
+9. The main power source of the room must be linked to a backup generator that 
+operates automatically in emergency situations when the electricity is interrupted so 
+that it operates all the equipment and devices in the room. 
+10. The time must be matching on all the devices in the room with the actual time. 
+11 Provide Safety systems. 
+12. a maintenance contract for all operating room devices. 
+13. an evacuation plan and an emergency plan known by the operating room staff. 
+14. Consider providing enough spaces for the following: 
+• space for devices. 
+• A space for the control room employees. 
+• A space for large screens (if necessary.) 
+• Sufficient space for maintenance. 
+• Space for services. 
+15. must not contain windows that reveal the details of the work for those outside 
+the room. 
+16. Its place should be protected from attacks or penetration. 
+17 It has additional wiring channels. 
+18. Protect wiring outlets from reptiles, rodents, and anything that could cause the 
+connections to be cut or damaged. 
+19. Use furniture designed for extended periods. 
+20. Ensure that wires and connections are concealed. 
+21. Place recording devices, accessories, and wires in secure containers. 
+22. Install surveillance cameras to cover all activities within the control room at 
+detection view. 
+23. The following activities are prohibited in the operating room: 
+• Smoking. 
+• Eating. 
+--- PAGE 134 ---
+ 
+Administrative Resolution No. (13) of 2025 Approving the Preventive Systems Manual 
+Page 134 of 140 
+• Using the systems or room for purposes other than security purposes. 
+• Filming with mobile phones. 
+ 
+  
