@@ -15,6 +15,7 @@ from app.api.routes.reports import router as reports_router
 from app.api.routes.audit_logs import router as audit_logs_router
 from app.api.routes.notifications import router as notifications_router
 from app.api.routes.dashboard import router as dashboard_router
+from app.api.routes.sira_compliance import router as sira_compliance_router
 
 __all__ = [
     "health_router",
@@ -34,4 +35,5 @@ __all__ = [
     "audit_logs_router",
     "notifications_router",
     "dashboard_router",
+    "sira_compliance_router",
 ]

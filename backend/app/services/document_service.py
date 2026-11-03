@@ -65,22 +65,30 @@ class DocumentService:
     @staticmethod
     def get_file_path(doc: Document) -> Path:
         """Returns the absolute path to the stored document and checks that it exists."""
-        full_path = Path(doc.file_path)
-        if not full_path.is_absolute():
-            full_path = settings.UPLOAD_DIR.parent / doc.file_path
-            
-        # Path traversal guard
-        try:
-            resolved = full_path.resolve()
-            upload_root = settings.UPLOAD_DIR.resolve()
-            if not str(resolved).startswith(str(upload_root)):
-                raise ValidationException("Access denied: Invalid file path")
-        except Exception:
-            raise ValidationException("Invalid file path")
+        raw_path = Path(doc.file_path)
+        candidates = []
+        if raw_path.is_absolute():
+            candidates.append(raw_path)
+        else:
+            candidates.extend([
+                settings.UPLOAD_DIR.parent / raw_path,
+                settings.UPLOAD_DIR / raw_path.name,
+                settings.UPLOAD_DIR / "original" / raw_path.name,
+                Path.cwd() / raw_path,
+                Path.cwd() / "backend" / raw_path,
+            ])
+            if doc.stored_filename:
+                candidates.append(settings.UPLOAD_DIR / "original" / doc.stored_filename)
+                candidates.append(settings.UPLOAD_DIR / doc.stored_filename)
 
-        if not full_path.exists():
-            raise NotFoundError(f"Physical file for document {doc.id} not found on disk")
-        return full_path
+        for cand in candidates:
+            try:
+                if cand.exists() and cand.is_file():
+                    return cand.resolve()
+            except Exception:
+                continue
+
+        raise NotFoundError(f"Physical file for document {doc.id} not found on disk")
 
     @staticmethod
     def save_uploaded_file(

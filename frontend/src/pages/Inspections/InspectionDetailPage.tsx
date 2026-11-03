@@ -45,6 +45,7 @@ import { complianceApi } from '../../services/complianceApi';
 import { approvalApi } from '../../services/approvalApi';
 import { certificateApi } from '../../services/certificateApi';
 import { reportApi } from '../../services/reportApi';
+import { siraComplianceApi, type SiraEstablishmentSummary } from '../../services/siraComplianceApi';
 import { formatDate, formatFileSize } from '../../utils/formatters';
 import { getStatusConfig } from '../../utils/statusUtils';
 import type {
@@ -92,6 +93,19 @@ export const InspectionDetailPage: React.FC = () => {
     trade_license: string;
     sira_chapter: string;
     artifacts: string[];
+    image_results?: Array<{
+      document_id?: number;
+      filename: string;
+      scene_type: string;
+      ceiling_score: number;
+      floor_score: number;
+      finishes_score: number;
+      debris_score: number;
+      completion_pct: number;
+      passed: boolean;
+      status: string;
+      findings: string[];
+    }>;
   }>({
     completion_pct: 0,
     is_eligible: false,
@@ -101,6 +115,7 @@ export const InspectionDetailPage: React.FC = () => {
     trade_license: 'Awaiting Trade License',
     sira_chapter: 'Awaiting Classification',
     artifacts: [],
+    image_results: [],
   });
 
   // Loading states
@@ -111,6 +126,7 @@ export const InspectionDetailPage: React.FC = () => {
 
   // Modals
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
+  const [isScopeReportModalOpen, setIsScopeReportModalOpen] = useState(false);
   const [isManualDetectModalOpen, setIsManualDetectModalOpen] = useState(false);
   const [isSubmitReviewModalOpen, setIsSubmitReviewModalOpen] = useState(false);
   const [isApproveModalOpen, setIsApproveModalOpen] = useState(false);
@@ -122,8 +138,8 @@ export const InspectionDetailPage: React.FC = () => {
   const [selectedDocId, setSelectedDocId] = useState<number | null>(null);
   const [selectedDetectionId, setSelectedDetectionId] = useState<number | null>(null);
 
-  // File upload form state
-  const [uploadFile, setUploadFile] = useState<File | null>(null);
+  // File upload form state (supports single or multiple files)
+  const [uploadFiles, setUploadFiles] = useState<File[]>([]);
   const [uploadDocType, setUploadDocType] = useState('AFFECTION_PLAN');
   const [uploadDescription, setUploadDescription] = useState('');
 
@@ -143,6 +159,18 @@ export const InspectionDetailPage: React.FC = () => {
   const [overrideStatus, setOverrideStatus] = useState('COMPLIANT');
   const [itemOverrideReason, setItemOverrideReason] = useState('');
 
+  // Phase 2 SIRA Resolution No. (13) of 2025 Audit, Grading & Two-Stage Review States
+  const [siraAudit, setSiraAudit] = useState<any | null>(null);
+  const [siraChapters, setSiraChapters] = useState<SiraEstablishmentSummary[]>([]);
+  const [siraRuleFilter, setSiraRuleFilter] = useState<'ALL' | 'CAMERA_PLACEMENT' | 'SECTOR_CONTROLS' | 'TECHNICAL_STANDARDS' | 'DEFICIENCIES'>('ALL');
+  const [isEvaluatingSira, setIsEvaluatingSira] = useState(false);
+  const [inspectorDecisionNotes, setInspectorDecisionNotes] = useState('');
+  const [reviewerDecisionNotes, setReviewerDecisionNotes] = useState('');
+  const [recheckPhase1, setRecheckPhase1] = useState(true);
+  const [recheckCategory, setRecheckCategory] = useState(true);
+  const [recheckCameraFov, setRecheckCameraFov] = useState(true);
+  const [recheckInspectorGrade, setRecheckInspectorGrade] = useState(true);
+
   // Initial Load
   const fetchData = useCallback(async () => {
     if (!inspId) return;
@@ -151,12 +179,14 @@ export const InspectionDetailPage: React.FC = () => {
       const insp = await inspectionApi.getById(inspId);
       setInspection(insp);
 
-      const [estRes, docsRes, detRes, compRes, certRes] = await Promise.allSettled([
+      const [estRes, docsRes, detRes, compRes, certRes, siraAuditRes, siraChaptersRes] = await Promise.allSettled([
         establishmentApi.getById(insp.establishment_id),
         documentApi.getDocumentsByInspection(inspId),
         aiApi.getDetectionsByInspection(inspId),
         complianceApi.getComplianceSummary(inspId),
         certificateApi.getCertificateByInspection(inspId),
+        siraComplianceApi.getInspectionAudit(inspId),
+        siraComplianceApi.listEstablishments({ sort_by: 'chapter' }),
       ]);
 
       if (estRes.status === 'fulfilled') setEstablishment(estRes.value);
@@ -169,6 +199,24 @@ export const InspectionDetailPage: React.FC = () => {
       if (detRes.status === 'fulfilled') setDetections(detRes.value);
       if (compRes.status === 'fulfilled') setComplianceSummary(compRes.value);
       if (certRes.status === 'fulfilled') setCertificate(certRes.value);
+      if (siraChaptersRes.status === 'fulfilled') setSiraChapters(siraChaptersRes.value.items || []);
+      if (siraAuditRes.status === 'fulfilled' && siraAuditRes.value) {
+        const auditData = siraAuditRes.value;
+        setSiraAudit(auditData);
+        const p1 = auditData.phase1_verification;
+        if (p1 && p1.construction_readiness_pct > 0) {
+          setConstructionReadiness((prev) => ({
+            ...prev,
+            completion_pct: p1.construction_readiness_pct,
+            is_eligible: p1.readiness_in_scope,
+            status: p1.readiness_in_scope ? 'IN_SCOPE' : 'OUT_OF_SCOPE',
+            sira_chapter: `Chapter ${auditData.sira_classification?.chapter_number}: ${auditData.sira_classification?.display_name}`,
+            message: p1.readiness_in_scope
+              ? `Premises evaluated at ${p1.construction_readiness_pct}% average completion across ${p1.site_photos_count} photo(s) (>= 95.0% SIRA threshold). Facility is IN SIRA SCOPE.`
+              : `Premises evaluated at ${p1.construction_readiness_pct}% average completion across ${p1.site_photos_count} photo(s). Below mandatory 95.0% SIRA threshold — facility is still under active construction/fit-out.`,
+          }));
+        }
+      }
     } catch (err: any) {
       showError(err.message || 'Failed to load inspection workspace data.');
     } finally {
@@ -180,19 +228,27 @@ export const InspectionDetailPage: React.FC = () => {
     fetchData();
   }, [fetchData]);
 
-  // Handle File Upload
+  // Handle File Upload (Single or Multiple Files)
   const handleUploadFile = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!uploadFile) {
-      showError('Please select a file to upload.');
+    if (!uploadFiles || uploadFiles.length === 0) {
+      showError('Please select at least one file to upload.');
       return;
     }
     setIsActionLoading(true);
     try {
-      await documentApi.uploadDocument(inspId, uploadFile, uploadDocType, uploadDescription);
-      showSuccess(`File "${uploadFile.name}" uploaded successfully.`);
+      let uploadedCount = 0;
+      for (const file of uploadFiles) {
+        await documentApi.uploadDocument(inspId, file, uploadDocType, uploadDescription);
+        uploadedCount++;
+      }
+      if (uploadedCount === 1) {
+        showSuccess(`File "${uploadFiles[0].name}" uploaded successfully.`);
+      } else {
+        showSuccess(`${uploadedCount} files uploaded successfully.`);
+      }
       setIsUploadModalOpen(false);
-      setUploadFile(null);
+      setUploadFiles([]);
       setUploadDescription('');
       fetchData();
     } catch (err: any) {
@@ -273,34 +329,220 @@ export const InspectionDetailPage: React.FC = () => {
     }
   };
 
-  // Evaluate Phase 1: Construction Readiness & Scope Eligibility
+  // Evaluate Phase 1: Construction Readiness & Scope Eligibility (Real Python OpenCV + YOLOv8 Analysis)
   const handleEvaluatePhase1Scope = async () => {
     setIsEvaluatingPhase1(true);
     try {
-      // Simulate/trigger Phase 1 AI scope analysis on site images & documents
-      await new Promise((r) => setTimeout(r, 900));
-      const isEligible = true;
-      const pct = 98.0;
+      const res = await aiApi.evaluatePhase1Scope(inspId);
+
+      // Print formatted report and per-image breakdown in browser DevTools console
+      if (res.console_report) {
+        console.log(res.console_report);
+      }
+      if (res.image_results && res.image_results.length > 0) {
+        console.table(
+          res.image_results.map((r) => ({
+            Image: r.filename,
+            Scene: r.scene_type,
+            'Ceiling (25)': r.ceiling_score,
+            'Floor (25)': r.floor_score,
+            'Finishes (25)': r.finishes_score,
+            'No Debris (25)': r.debris_score,
+            'Score (%)': r.completion_pct,
+            Status: r.status,
+            Findings: r.findings.join(' | '),
+          }))
+        );
+      }
+
       setConstructionReadiness({
-        completion_pct: pct,
-        is_eligible: isEligible,
-        status: 'IN_SCOPE',
-        message: 'Premises verified at 98.0% completion. All structural finishes operational. Eligible under SIRA jurisdiction.',
+        completion_pct: res.completion_pct,
+        is_eligible: res.is_eligible,
+        status: res.status,
+        message: res.message,
         land_plot: establishment?.address ? `Plot ${establishment.id * 101}-A (${establishment.address})` : 'Plot 402-118 (Al Quoz Industrial 3)',
         trade_license: `CN-2024-${10000 + (establishment?.id || 1)} (Commercial & Facility Operations)`,
-        sira_chapter: establishment?.establishment_type === 'Industrial' ? 'Chapter 18: Warehouse Compounds' : 'Chapter 4: Important Complexes & Commercial Towers',
-        artifacts: [
-          'Finished architectural ceilings & lighting fixtures',
-          'Polished floor slab with no active construction debris',
-          'Operational entrance and emergency exit doors',
-          'No active scaffolding or raw structural concrete detected',
-        ],
+        sira_chapter: siraAudit?.sira_classification
+          ? `Chapter ${siraAudit.sira_classification.chapter_number}: ${siraAudit.sira_classification.display_name}`
+          : establishment?.establishment_type === 'Industrial'
+          ? 'Chapter 18: Warehouse Compounds'
+          : 'Chapter 8: Educational Facilities',
+        artifacts: res.artifacts,
+        image_results: res.image_results,
       });
-      showSuccess('Phase 1 SIRA Scope Check Complete: Facility is IN-SCOPE (98% Complete).');
+
+      // Automatically sync Phase 1 Readiness score into Phase 2 SIRA Compliance Grader
+      try {
+        const updatedAudit = await siraComplianceApi.evaluateInspectionAudit(inspId, {
+          phase1_readiness_pct: res.completion_pct,
+          auto_evaluate: true,
+        });
+        setSiraAudit(updatedAudit);
+      } catch {
+        // Ignore if secondary sync fails
+      }
+
+      if (res.is_eligible) {
+        showSuccess(
+          `Phase 1 SIRA Scope Check PASSED: Overall Average ${res.completion_pct}% (>= 95% across ${res.photos_evaluated} photo(s)). Synced with Phase 2 SIRA Grader.`
+        );
+      } else {
+        showError(
+          `Phase 1 SIRA Scope Check FAILED: Overall Average ${res.completion_pct}% (< 95% threshold across ${res.photos_evaluated} photo(s)). Facility is OUT OF SCOPE.`
+        );
+      }
     } catch (err: any) {
       showError(err.message || 'Phase 1 scope evaluation failed.');
     } finally {
       setIsEvaluatingPhase1(false);
+    }
+  };
+
+  // Change SIRA Chapter / Subtype Classification for this Inspection
+  const handleChangeSiraCategory = async (categorySlug: string, subtypeCode?: string) => {
+    setIsEvaluatingSira(true);
+    try {
+      const updated = await siraComplianceApi.evaluateInspectionAudit(inspId, {
+        category_slug: categorySlug,
+        subtype_code: subtypeCode,
+        auto_evaluate: true,
+      });
+      setSiraAudit(updated);
+      showSuccess(
+        `SIRA Sector updated to Chapter ${updated.sira_classification.chapter_number}: ${updated.sira_classification.display_name}${
+          updated.sira_classification.active_subtype ? ` (${updated.sira_classification.active_subtype.name})` : ''
+        } — Grade ${updated.grading_summary.letter_grade} (${updated.grading_summary.overall_sira_score}%)`
+      );
+    } catch (err: any) {
+      showError(err.message || 'Failed to update SIRA establishment category.');
+    } finally {
+      setIsEvaluatingSira(false);
+    }
+  };
+
+  // Auto-Evaluate or Bulk-Grade Phase 2 SIRA Compliance Requirements
+  const handleEvaluateSiraAudit = async (bulkStatus?: string) => {
+    setIsEvaluatingSira(true);
+    try {
+      const updated = await siraComplianceApi.evaluateInspectionAudit(inspId, {
+        auto_evaluate: !bulkStatus,
+        bulk_status: bulkStatus,
+        phase1_readiness_pct:
+          constructionReadiness.completion_pct > 0 ? constructionReadiness.completion_pct : undefined,
+      });
+      setSiraAudit(updated);
+      showSuccess(
+        `Phase 2 SIRA Compliance Graded: ${updated.grading_summary.grade_label} — Score: ${updated.grading_summary.overall_sira_score}%`
+      );
+      fetchData();
+    } catch (err: any) {
+      showError(err.message || 'SIRA compliance evaluation failed.');
+    } finally {
+      setIsEvaluatingSira(false);
+    }
+  };
+
+  // Grade a single SIRA requirement row in Phase 2
+  const handleGradeSiraItem = async (item: any, targetStatus: string) => {
+    let naReason: string | undefined;
+    if (targetStatus === 'NOT_APPLICABLE') {
+      const input = window.prompt(
+        `Enter engineering/regulatory justification for marking ${item.requirement_code} (${item.area_or_title}) as NOT APPLICABLE:`,
+        item.not_applicable_explanation || 'Not applicable to this establishment layout per SIRA Resolution No. 13 of 2025'
+      );
+      if (!input || !input.trim()) return;
+      naReason = input.trim();
+    }
+    try {
+      const updated = await siraComplianceApi.gradeInspectionItem(inspId, item.id, {
+        compliance_status: targetStatus,
+        not_applicable_explanation: naReason,
+        assessor_notes:
+          targetStatus === 'COMPLIANT'
+            ? `Verified COMPLIANT against SIRA Resolution No. (13) of 2025 by ${user?.full_name || 'SIRA Inspector'}.`
+            : targetStatus === 'NON_COMPLIANT'
+            ? `Graded NON-COMPLIANT — remediation required per ${item.source_citation_text}.`
+            : naReason,
+        reviewer_name: user?.full_name || 'SIRA Field Inspector',
+      });
+      setSiraAudit(updated);
+      showSuccess(
+        `${item.requirement_code} graded ${targetStatus}. Updated SIRA Score: ${updated.grading_summary.overall_sira_score}% (Grade ${updated.grading_summary.letter_grade})`
+      );
+    } catch (err: any) {
+      showError(err.message || 'Failed to update SIRA requirement grade.');
+    }
+  };
+
+  // Stage 1: Field Inspector Submits SIRA Grade & Approve/Reject Recommendation
+  const handleStage1InspectorDecision = async (decision: 'APPROVE' | 'REJECT') => {
+    if (decision === 'REJECT' && !inspectorDecisionNotes.trim()) {
+      showError('Please enter Inspector deficiency remarks before recommending Rejection.');
+      return;
+    }
+    setIsActionLoading(true);
+    try {
+      const updated = await siraComplianceApi.submitInspectorDecision(inspId, {
+        decision,
+        inspector_notes: inspectorDecisionNotes.trim(),
+        inspector_name: user?.full_name || 'Eng. Rashid Al Mansoori (SIRA Inspector)',
+      });
+      setSiraAudit(updated);
+      showSuccess(
+        decision === 'APPROVE'
+          ? `Stage 1 Inspector Recommendation: APPROVED (Grade ${updated.grading_summary.letter_grade}, ${updated.grading_summary.overall_sira_score}%). Forwarded to Final Reviewer for Recheck & Confirmation.`
+          : `Stage 1 Inspector Recommendation: REJECTED (Grade ${updated.grading_summary.letter_grade}, ${updated.grading_summary.overall_sira_score}%). Forwarded to Final Reviewer for Recheck & Confirmation.`
+      );
+      fetchData();
+      setActiveTab('approval');
+    } catch (err: any) {
+      showError(err.message || 'Failed to submit Stage 1 Inspector decision.');
+    } finally {
+      setIsActionLoading(false);
+    }
+  };
+
+  // Stage 2: Final Reviewer Rechecks, Confirms & Executes Final Approve or Reject
+  const handleStage2FinalReviewerDecision = async (decision: 'APPROVE' | 'REJECT') => {
+    if (!recheckPhase1 || !recheckCategory || !recheckCameraFov || !recheckInspectorGrade) {
+      showError('Final Reviewer must check all 4 Recheck Confirmation boxes before recording a final decision.');
+      return;
+    }
+    if (decision === 'REJECT' && (!reviewerDecisionNotes || reviewerDecisionNotes.trim().length < 5)) {
+      showError('Please provide a clear Final Reviewer rejection & remediation reason (at least 5 characters).');
+      return;
+    }
+    setIsActionLoading(true);
+    try {
+      const updated = await siraComplianceApi.submitReviewerDecision(inspId, {
+        decision,
+        reviewer_notes:
+          reviewerDecisionNotes.trim() ||
+          (decision === 'APPROVE'
+            ? 'Final Reviewer rechecked Phase 1 Scope, SIRA Chapter classification, and Phase 2 Camera/FOV & Technical compliance grade. Approved for SIRA Certification.'
+            : ''),
+        recheck_phase1_scope: recheckPhase1,
+        recheck_sira_category: recheckCategory,
+        recheck_camera_fov_matrix: recheckCameraFov,
+        recheck_inspector_grade: recheckInspectorGrade,
+        allow_override: allowOverride,
+        override_justification: allowOverride ? overrideJustification.trim() : undefined,
+        reviewer_name: user?.full_name || 'Chief SIRA Compliance Reviewer',
+      });
+      setSiraAudit(updated);
+      showSuccess(
+        decision === 'APPROVE'
+          ? `Final Reviewer Confirmed & APPROVED! Official SIRA Security Certificate ${updated.stage2_final_reviewer?.certificate_number || ''} generated.`
+          : 'Final Reviewer Confirmed & REJECTED Inspection. Remediation notice logged.'
+      );
+      fetchData();
+      if (decision === 'APPROVE') {
+        setActiveTab('certificate');
+      }
+    } catch (err: any) {
+      showError(err.message || 'Final Reviewer decision blocked or failed.');
+    } finally {
+      setIsActionLoading(false);
     }
   };
 
@@ -596,27 +838,86 @@ export const InspectionDetailPage: React.FC = () => {
 
       {/* Header Banner Card */}
       <div className="workspace-header-card">
-        <div className="flex items-center gap-4 flex-wrap">
-          <div className="workspace-avatar">
-            <Shield size={32} />
-          </div>
-          <div>
-            <div className="flex items-center gap-3 flex-wrap">
-              <h1 className="workspace-title font-mono">{inspection.inspection_number}</h1>
-              <Badge variant={statusCfg.variant} size="md">
-                {statusCfg.label}
-              </Badge>
-              {complianceSummary && (
-                <span className={`compliance-pill score-${complianceSummary.overall_status.toLowerCase()}`}>
-                  Score: {complianceSummary.compliance_score}% ({complianceSummary.overall_status})
-                </span>
-              )}
+        <div className="flex items-center justify-between gap-4 flex-wrap w-full">
+          <div className="flex items-center gap-4 flex-wrap">
+            <div className="workspace-avatar">
+              <Shield size={32} />
             </div>
-            <p className="workspace-sub">
-              Target Facility: <strong>{establishment?.name || `ID #${inspection.establishment_id}`}</strong> • Type:{' '}
-              {establishment?.establishment_type || 'Commercial'} • Scheduled:{' '}
-              {formatDate(inspection.inspection_date || inspection.created_at)}
-            </p>
+            <div>
+              <div className="flex items-center gap-3 flex-wrap">
+                <h1 className="workspace-title font-mono">{inspection.inspection_number}</h1>
+                <Badge variant={statusCfg.variant} size="md">
+                  {statusCfg.label}
+                </Badge>
+                {siraAudit?.grading_summary && (
+                  <Badge
+                    variant={
+                      siraAudit.grading_summary.letter_grade === 'A' || siraAudit.grading_summary.letter_grade === 'B'
+                        ? 'success'
+                        : siraAudit.grading_summary.letter_grade === 'C'
+                        ? 'warning'
+                        : 'danger'
+                    }
+                    size="md"
+                  >
+                    SIRA Grade {siraAudit.grading_summary.letter_grade} ({siraAudit.grading_summary.overall_sira_score}%)
+                  </Badge>
+                )}
+                {siraAudit?.stage1_inspector_review?.status && siraAudit.stage1_inspector_review.status !== 'PENDING' && (
+                  <Badge
+                    variant={siraAudit.stage1_inspector_review.decision === 'APPROVE' ? 'success' : 'danger'}
+                    size="sm"
+                  >
+                    Stage 1: {siraAudit.stage1_inspector_review.status.replace(/_/g, ' ')}
+                  </Badge>
+                )}
+                {siraAudit?.stage2_final_reviewer?.status &&
+                  siraAudit.stage2_final_reviewer.status !== 'PENDING' &&
+                  siraAudit.stage2_final_reviewer.status !== 'AWAITING_FINAL_REVIEWER' && (
+                    <Badge
+                      variant={siraAudit.stage2_final_reviewer.decision === 'APPROVE' ? 'success' : 'danger'}
+                      size="sm"
+                    >
+                      Stage 2: {siraAudit.stage2_final_reviewer.status.replace(/_/g, ' ')}
+                    </Badge>
+                  )}
+              </div>
+              <p className="workspace-sub">
+                Target Facility: <strong>{establishment?.name || `ID #${inspection.establishment_id}`}</strong> • Type:{' '}
+                {establishment?.establishment_type || 'Commercial'}
+                {siraAudit?.sira_classification && (
+                  <>
+                    {' '}• SIRA Sector:{' '}
+                    <strong>
+                      Ch. {siraAudit.sira_classification.chapter_number}: {siraAudit.sira_classification.display_name}
+                      {siraAudit.sira_classification.active_subtype
+                        ? ` (${siraAudit.sira_classification.active_subtype.name})`
+                        : ''}
+                    </strong>
+                  </>
+                )}{' '}
+                • Scheduled: {formatDate(inspection.inspection_date || inspection.created_at)}
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 flex-wrap">
+            <Button
+              variant="outline"
+              size="sm"
+              leftIcon={<CheckSquare size={15} />}
+              onClick={() => setActiveTab('compliance')}
+            >
+              Phase 2 SIRA Grader
+            </Button>
+            <Button
+              variant="primary"
+              size="sm"
+              leftIcon={<UserCheck size={15} />}
+              onClick={() => setActiveTab('approval')}
+            >
+              2-Stage Approval Gate
+            </Button>
           </div>
         </div>
       </div>
@@ -830,7 +1131,25 @@ export const InspectionDetailPage: React.FC = () => {
                   : "SIRA Scope Gate: Verification of >= 95% Completion Threshold"
               }
               action={
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    leftIcon={<FileText size={14} />}
+                    onClick={() => setIsScopeReportModalOpen(true)}
+                    disabled={
+                      !isAffectionPlanApproved ||
+                      !constructionReadiness.image_results ||
+                      constructionReadiness.image_results.length === 0
+                    }
+                    title={
+                      !constructionReadiness.image_results || constructionReadiness.image_results.length === 0
+                        ? "Run Scope Vision AI first to view detailed report"
+                        : "View per-image 4-pillar analysis report"
+                    }
+                  >
+                    Report
+                  </Button>
                   <Button
                     variant="outline"
                     size="sm"
@@ -918,37 +1237,147 @@ export const InspectionDetailPage: React.FC = () => {
                     <span>SIRA Ready (95% - 100%)</span>
                   </div>
 
-                  <div className={`alert-banner ${constructionReadiness.status === 'PENDING_EVALUATION' ? 'alert-warning' : 'alert-info'} mb-4`}>
-                    <ShieldCheck size={18} />
+                  <div
+                    className={`alert-banner ${
+                      constructionReadiness.status === 'PENDING_EVALUATION'
+                        ? 'alert-warning'
+                        : constructionReadiness.is_eligible
+                        ? 'alert-success'
+                        : 'alert-danger'
+                    }`}
+                  >
+                    {constructionReadiness.status === 'OUT_OF_SCOPE' ? (
+                      <XCircle size={18} />
+                    ) : (
+                      <ShieldCheck size={18} />
+                    )}
                     <div className="alert-content">
                       <strong>SIRA Scope Decision Matrix:</strong>
                       <span>{constructionReadiness.message}</span>
                     </div>
                   </div>
-
-                  <div className="mt-3">
-                    <h4 className="text-xs font-bold uppercase text-muted tracking-wider mb-2">
-                      Verified Architectural Finishes (AI Vision):
-                    </h4>
-                    {constructionReadiness.artifacts.length === 0 ? (
-                      <p className="text-xs text-muted italic">
-                        No photographic evidence evaluated yet. Upload site photos or click "Run Scope Vision AI" above.
-                      </p>
-                    ) : (
-                      <ul className="text-xs space-y-1.5 text-secondary">
-                        {constructionReadiness.artifacts.map((art, idx) => (
-                          <li key={idx} className="flex items-center gap-2">
-                            <CheckCircle2 size={14} className="text-emerald-400 flex-shrink-0" />
-                            <span>{art}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
                 </div>
               )}
             </Card>
           </div>
+
+          {/* Phase 1 SIRA Category Classification & Handover to Phase 2 Card */}
+          {siraAudit && (
+            <Card
+              title="Phase 1 SIRA Establishment Classification & Handover to Phase 2 Compliance Check"
+              subtitle="Maps this facility's category & Phase 1 verification details directly to SIRA Resolution No. (13) of 2025 (43 Chapters / 68 Subtypes)"
+              action={
+                <div className="flex gap-2 flex-wrap">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    leftIcon={<RefreshCw size={14} />}
+                    onClick={() => handleEvaluateSiraAudit()}
+                    isLoading={isEvaluatingSira}
+                  >
+                    Sync & Auto-Grade Phase 2
+                  </Button>
+                  <Button
+                    variant="primary"
+                    size="sm"
+                    leftIcon={<CheckSquare size={14} />}
+                    onClick={() => setActiveTab('compliance')}
+                  >
+                    Proceed to Phase 2 SIRA Compliance Grader →
+                  </Button>
+                </div>
+              }
+            >
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="p-3.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/50">
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted block mb-1">
+                    1. SIRA Part Three Chapter (1–43)
+                  </span>
+                  <select
+                    className="form-select text-sm font-semibold"
+                    value={siraAudit.sira_classification?.category_slug || 'est-ch08'}
+                    onChange={(e) => handleChangeSiraCategory(e.target.value, undefined)}
+                    disabled={isEvaluatingSira}
+                  >
+                    {siraChapters.map((ch) => (
+                      <option key={ch.slug} value={ch.slug}>
+                        Ch. {ch.chapter_number}: {ch.display_name} (pp. {ch.start_page}–{ch.end_page})
+                      </option>
+                    ))}
+                  </select>
+                  <p className="text-xs text-muted mt-1.5">
+                    Auto-mapped from Facility Profile: <strong>{establishment?.establishment_type}</strong>
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/50">
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted block mb-1">
+                    2. Specialized Establishment Subtype
+                  </span>
+                  {siraAudit.sira_classification?.available_subtypes &&
+                  siraAudit.sira_classification.available_subtypes.length > 0 ? (
+                    <select
+                      className="form-select text-sm font-semibold"
+                      value={siraAudit.sira_classification.active_subtype?.subtype_code || ''}
+                      onChange={(e) =>
+                        handleChangeSiraCategory(
+                          siraAudit.sira_classification.category_slug,
+                          e.target.value || undefined
+                        )
+                      }
+                      disabled={isEvaluatingSira}
+                    >
+                      {siraAudit.sira_classification.available_subtypes.map((sub: any) => (
+                        <option key={sub.subtype_code} value={sub.subtype_code}>
+                          {sub.name} (pp. {sub.start_page}–{sub.end_page})
+                        </option>
+                      ))}
+                    </select>
+                  ) : (
+                    <div className="text-sm font-semibold text-main py-2">
+                      Standard Sector Schedule ({siraAudit.sira_classification?.display_name})
+                    </div>
+                  )}
+                  <p className="text-xs text-muted mt-1.5">
+                    Industry Sector: <strong>{siraAudit.sira_classification?.industry_sector}</strong>
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/50 flex flex-col justify-between">
+                  <div>
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs font-bold uppercase tracking-wider text-muted">
+                        3. Phase 1 + Phase 2 SIRA Grade
+                      </span>
+                      <Badge
+                        variant={
+                          siraAudit.grading_summary?.letter_grade === 'A' ||
+                          siraAudit.grading_summary?.letter_grade === 'B'
+                            ? 'success'
+                            : siraAudit.grading_summary?.letter_grade === 'C'
+                            ? 'warning'
+                            : 'danger'
+                        }
+                        size="sm"
+                      >
+                        Grade {siraAudit.grading_summary?.letter_grade} ({siraAudit.grading_summary?.overall_sira_score}%)
+                      </Badge>
+                    </div>
+                    <p className="text-xs text-main font-semibold">
+                      {siraAudit.grading_summary?.grade_label}
+                    </p>
+                  </div>
+                  <div className="text-xs text-muted mt-2 font-mono">
+                    Affection Plan: <strong>{siraAudit.phase1_verification?.pillars_passed}/4 Pass</strong> • Readiness:{' '}
+                    <strong>{siraAudit.phase1_verification?.construction_readiness_pct}%</strong> • SIRA Rules:{' '}
+                    <strong>
+                      {siraAudit.grading_summary?.counts?.compliant}/{siraAudit.grading_summary?.counts?.total_requirements} Compliant
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          )}
         </div>
       )}
 
@@ -1164,11 +1593,19 @@ export const InspectionDetailPage: React.FC = () => {
 
                     {/* Image or PDF embed */}
                     <div className="doc-media-wrapper">
-                      {activeDoc.file_type?.startsWith('image/') ? (
+                      {activeDoc.file_type?.startsWith('image/') ||
+                      activeDoc.original_filename?.toLowerCase().match(/\.(jpg|jpeg|png)$/) ? (
                         <img
                           src={documentApi.getDocumentViewUrl(activeDoc.id)}
                           alt={activeDoc.original_filename}
                           className="evidence-image-preview"
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            if (!target.dataset.retried) {
+                              target.dataset.retried = 'true';
+                              target.src = `/api/v1/documents/${activeDoc.id}/file`;
+                            }
+                          }}
                         />
                       ) : (
                         <div className="pdf-embed-box">
@@ -1195,6 +1632,109 @@ export const InspectionDetailPage: React.FC = () => {
                         {activeDoc.extracted_text || 'No text extracted yet. Click "Run OCR" to parse text and Arabic clauses.'}
                       </div>
                     </div>
+
+                    {/* Phase 2 SIRA Compliance Check & Grading Summary inside Evidence & Layout */}
+                    {siraAudit && (
+                      <div className="mt-4 p-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-900/60 space-y-3">
+                        <div className="flex items-center justify-between gap-3 flex-wrap">
+                          <div>
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <ShieldCheck size={18} className="text-primary" />
+                              <h4 className="font-bold text-sm text-main">
+                                Phase 2 SIRA Preventive Systems Compliance Check & Grading
+                              </h4>
+                              <Badge
+                                variant={
+                                  siraAudit.grading_summary?.letter_grade === 'A' ||
+                                  siraAudit.grading_summary?.letter_grade === 'B'
+                                    ? 'success'
+                                    : siraAudit.grading_summary?.letter_grade === 'C'
+                                    ? 'warning'
+                                    : 'danger'
+                                }
+                                size="sm"
+                              >
+                                {siraAudit.grading_summary?.grade_label} ({siraAudit.grading_summary?.overall_sira_score}%)
+                              </Badge>
+                            </div>
+                            <p className="text-xs text-muted mt-0.5">
+                              SIRA Sector: <strong>Ch. {siraAudit.sira_classification?.chapter_number}: {siraAudit.sira_classification?.display_name}</strong>
+                              {siraAudit.sira_classification?.active_subtype
+                                ? ` — ${siraAudit.sira_classification.active_subtype.name}`
+                                : ''}{' '}
+                              (Resolution No. 13 of 2025, PDF pp. {siraAudit.sira_classification?.start_page}–{siraAudit.sira_classification?.end_page})
+                            </p>
+                          </div>
+
+                          <div className="flex gap-2 flex-wrap">
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              leftIcon={<RefreshCw size={13} />}
+                              onClick={() => handleEvaluateSiraAudit()}
+                              isLoading={isEvaluatingSira}
+                            >
+                              Auto-Grade SIRA Compliance
+                            </Button>
+                            <Button
+                              variant="primary"
+                              size="sm"
+                              leftIcon={<CheckSquare size={13} />}
+                              onClick={() => setActiveTab('compliance')}
+                            >
+                              Open Full SIRA Grading Matrix ({siraAudit.grading_summary?.counts?.total_requirements} Rules)
+                            </Button>
+                            <Button
+                              variant="secondary"
+                              size="sm"
+                              leftIcon={<UserCheck size={13} />}
+                              onClick={() => setActiveTab('approval')}
+                            >
+                              Stage 1 & 2 Approval Gate
+                            </Button>
+                          </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 text-xs">
+                          <div className="p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80">
+                            <span className="text-muted block">Phase 1 Scope & Plan (25%)</span>
+                            <strong className="text-main text-sm">
+                              {siraAudit.grading_summary?.component_scores?.phase1_scope_score}%
+                            </strong>
+                            <span className="block text-muted mt-0.5 font-mono">
+                              Plan: {siraAudit.phase1_verification?.pillars_passed}/4 • Ready: {siraAudit.phase1_verification?.construction_readiness_pct}%
+                            </span>
+                          </div>
+                          <div className="p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80">
+                            <span className="text-muted block">Camera Placement & FOV (40%)</span>
+                            <strong className="text-main text-sm">
+                              {siraAudit.grading_summary?.component_scores?.camera_fov_score}%
+                            </strong>
+                            <span className="block text-muted mt-0.5 font-mono">
+                              {siraAudit.grading_summary?.counts?.camera_rules_compliant}/{siraAudit.grading_summary?.counts?.camera_rules_total} Locations Pass
+                            </span>
+                          </div>
+                          <div className="p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80">
+                            <span className="text-muted block">Alarms, Access & Guarding (20%)</span>
+                            <strong className="text-main text-sm">
+                              {siraAudit.grading_summary?.component_scores?.alarm_access_guard_score}%
+                            </strong>
+                            <span className="block text-muted mt-0.5 font-mono">
+                              {siraAudit.grading_summary?.counts?.sector_controls_compliant}/{siraAudit.grading_summary?.counts?.sector_controls_total} Controls Pass
+                            </span>
+                          </div>
+                          <div className="p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80">
+                            <span className="text-muted block">Part 1 & 2 Tech Standards (15%)</span>
+                            <strong className="text-main text-sm">
+                              {siraAudit.grading_summary?.component_scores?.technical_standards_score}%
+                            </strong>
+                            <span className="block text-muted mt-0.5 font-mono">
+                              {siraAudit.grading_summary?.counts?.technical_standards_compliant}/{siraAudit.grading_summary?.counts?.technical_standards_total} Specs Pass
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
@@ -1405,30 +1945,436 @@ export const InspectionDetailPage: React.FC = () => {
         </div>
       )}
 
-      {/* TAB 4: UAE REGULATIONS & COMPLIANCE ENGINE */}
+      {/* TAB 4: PHASE 2 SIRA PREVENTIVE SYSTEMS COMPLIANCE CHECKER & GRADER */}
       {activeTab === 'compliance' && (
         <div className="space-y-4">
+          {siraAudit && (
+            <Card
+              title="Phase 2: SIRA Preventive Systems Compliance Checker & Grading Matrix (Resolution No. 13 of 2025)"
+              subtitle={`Evaluates Phase 1 details (Affection Plan + Construction Readiness) and Phase 2 SIRA Sector Requirements for Ch. ${siraAudit.sira_classification?.chapter_number}: ${siraAudit.sira_classification?.display_name}`}
+              action={
+                <div className="flex gap-2 flex-wrap">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    leftIcon={<RefreshCw size={14} />}
+                    onClick={() => handleEvaluateSiraAudit()}
+                    isLoading={isEvaluatingSira}
+                  >
+                    Auto-Check from Phase 1 & 2 Evidence
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    leftIcon={<Check size={14} />}
+                    onClick={() => handleEvaluateSiraAudit('COMPLIANT')}
+                    isLoading={isEvaluatingSira}
+                  >
+                    Mark All SIRA Rules Compliant
+                  </Button>
+                  <a
+                    href={siraComplianceApi.getSourcePdfUrl(siraAudit.sira_classification?.start_page || 1)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-outline btn-sm flex items-center gap-1"
+                  >
+                    <ExternalLink size={14} /> Source PDF (p. {siraAudit.sira_classification?.start_page})
+                  </a>
+                </div>
+              }
+            >
+              {/* SIRA Chapter & Subtype Selector + Phase 1 Context */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4 p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/50">
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider text-muted block mb-1">
+                    SIRA Part Three Chapter (43 Chapters)
+                  </label>
+                  <select
+                    className="form-select text-sm font-semibold"
+                    value={siraAudit.sira_classification?.category_slug || 'est-ch08'}
+                    onChange={(e) => handleChangeSiraCategory(e.target.value, undefined)}
+                    disabled={isEvaluatingSira}
+                  >
+                    {siraChapters.map((ch) => (
+                      <option key={ch.slug} value={ch.slug}>
+                        Ch. {ch.chapter_number}: {ch.display_name} (pp. {ch.start_page}–{ch.end_page})
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider text-muted block mb-1">
+                    Establishment Subtype (68 Subtypes)
+                  </label>
+                  {siraAudit.sira_classification?.available_subtypes &&
+                  siraAudit.sira_classification.available_subtypes.length > 0 ? (
+                    <select
+                      className="form-select text-sm font-semibold"
+                      value={siraAudit.sira_classification.active_subtype?.subtype_code || ''}
+                      onChange={(e) =>
+                        handleChangeSiraCategory(
+                          siraAudit.sira_classification.category_slug,
+                          e.target.value || undefined
+                        )
+                      }
+                      disabled={isEvaluatingSira}
+                    >
+                      {siraAudit.sira_classification.available_subtypes.map((sub: any) => (
+                        <option key={sub.subtype_code} value={sub.subtype_code}>
+                          {sub.name} (pp. {sub.start_page}–{sub.end_page})
+                        </option>
+                      ))}
+                    </select>
+                  ) : (
+                    <div className="text-sm font-semibold text-main py-2">
+                      Unified Chapter Schedule ({siraAudit.sira_classification?.display_name})
+                    </div>
+                  )}
+                </div>
+
+                <div>
+                  <label className="text-xs font-bold uppercase tracking-wider text-muted block mb-1">
+                    Phase 1 Verification Carry-Over
+                  </label>
+                  <div className="flex flex-wrap gap-2 items-center pt-1">
+                    <Badge variant={siraAudit.phase1_verification?.affection_plan_pass ? 'success' : 'danger'} size="sm">
+                      Affection Plan: {siraAudit.phase1_verification?.pillars_passed}/4 Pillars
+                    </Badge>
+                    <Badge variant={siraAudit.phase1_verification?.readiness_in_scope ? 'success' : 'danger'} size="sm">
+                      Readiness: {siraAudit.phase1_verification?.construction_readiness_pct}%{' '}
+                      {siraAudit.phase1_verification?.readiness_in_scope ? '(>=95% IN SCOPE)' : '(<95% OUT OF SCOPE)'}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4-Component Weighted SIRA Score & Grade Banner */}
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-3 mb-4">
+                <div className="p-3.5 rounded-xl border-2 border-primary/40 bg-primary/5 flex flex-col justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-muted">Overall SIRA Grade</span>
+                  <div className="flex items-baseline gap-2 my-1">
+                    <span className="text-3xl font-extrabold text-primary">
+                      Grade {siraAudit.grading_summary?.letter_grade}
+                    </span>
+                    <span className="text-lg font-bold text-main">
+                      ({siraAudit.grading_summary?.overall_sira_score}%)
+                    </span>
+                  </div>
+                  <Badge
+                    variant={siraAudit.grading_summary?.recommended_decision === 'APPROVE' ? 'success' : 'danger'}
+                    size="sm"
+                  >
+                    Recommended: {siraAudit.grading_summary?.recommended_decision}
+                  </Badge>
+                </div>
+
+                <div className="p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/50">
+                  <span className="text-xs font-semibold text-muted block">1. Phase 1 Scope & Plan (25% Wt)</span>
+                  <div className="text-2xl font-bold text-main mt-1">
+                    {siraAudit.grading_summary?.component_scores?.phase1_scope_score}%
+                  </div>
+                  <p className="text-xs text-muted mt-1">
+                    4-Pillar Plan ({siraAudit.phase1_verification?.affection_score}%) + AI Readiness ({siraAudit.phase1_verification?.construction_readiness_pct}%)
+                  </p>
+                </div>
+
+                <div className="p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/50">
+                  <span className="text-xs font-semibold text-muted block">2. Camera FOV Matrix (40% Wt)</span>
+                  <div className="text-2xl font-bold text-emerald-500 mt-1">
+                    {siraAudit.grading_summary?.component_scores?.camera_fov_score}%
+                  </div>
+                  <p className="text-xs text-muted mt-1">
+                    {siraAudit.grading_summary?.counts?.camera_rules_compliant} of {siraAudit.grading_summary?.counts?.camera_rules_total} Camera Locations Compliant
+                  </p>
+                </div>
+
+                <div className="p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/50">
+                  <span className="text-xs font-semibold text-muted block">3. Alarms, Access & Guard (20% Wt)</span>
+                  <div className="text-2xl font-bold text-main mt-1">
+                    {siraAudit.grading_summary?.component_scores?.alarm_access_guard_score}%
+                  </div>
+                  <p className="text-xs text-muted mt-1">
+                    {siraAudit.grading_summary?.counts?.sector_controls_compliant} of {siraAudit.grading_summary?.counts?.sector_controls_total} Sector Systems Compliant
+                  </p>
+                </div>
+
+                <div className="p-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900/50">
+                  <span className="text-xs font-semibold text-muted block">4. Part 1 & 2 Tech Specs (15% Wt)</span>
+                  <div className="text-2xl font-bold text-main mt-1">
+                    {siraAudit.grading_summary?.component_scores?.technical_standards_score}%
+                  </div>
+                  <p className="text-xs text-muted mt-1">
+                    {siraAudit.grading_summary?.counts?.technical_standards_compliant} of {siraAudit.grading_summary?.counts?.technical_standards_total} Hardware/Ops Standards Pass
+                  </p>
+                </div>
+              </div>
+
+              {/* Blockers / Regulatory Findings Banner */}
+              {siraAudit.grading_summary?.blockers && siraAudit.grading_summary.blockers.length > 0 ? (
+                <div className="alert-banner alert-danger mb-4">
+                  <AlertTriangle size={18} />
+                  <div className="alert-content">
+                    <strong>SIRA Compliance Deficiencies Detected ({siraAudit.grading_summary.blockers.length}):</strong>
+                    <span>{siraAudit.grading_summary.blockers.join(' • ')}</span>
+                  </div>
+                </div>
+              ) : (
+                <div className="alert-banner alert-success mb-4">
+                  <ShieldCheck size={18} />
+                  <div className="alert-content">
+                    <strong>All Phase 1 & Phase 2 SIRA Preventive Systems Requirements Satisfied:</strong>
+                    <span>
+                      Facility meets SIRA Resolution No. (13) of 2025 criteria ({siraAudit.grading_summary?.grade_label}). Ready for Stage 1 Inspector Approval & Stage 2 Final Reviewer Confirmation.
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              {/* Filter Tabs for SIRA Requirements Table */}
+              <div className="flex items-center justify-between gap-2 flex-wrap mb-3">
+                <div className="flex gap-1.5 flex-wrap">
+                  {[
+                    { id: 'ALL', label: `All SIRA Rules (${siraAudit.items?.length || 0})` },
+                    {
+                      id: 'CAMERA_PLACEMENT',
+                      label: `Camera Placement & FOV (${siraAudit.grading_summary?.counts?.camera_rules_total || 0})`,
+                    },
+                    {
+                      id: 'SECTOR_CONTROLS',
+                      label: `Alarms, Access & Guarding (${siraAudit.grading_summary?.counts?.sector_controls_total || 0})`,
+                    },
+                    {
+                      id: 'TECHNICAL_STANDARDS',
+                      label: `Part 1 & 2 Tech Standards (${siraAudit.grading_summary?.counts?.technical_standards_total || 0})`,
+                    },
+                    {
+                      id: 'DEFICIENCIES',
+                      label: `Non-Compliant / Pending (${
+                        (siraAudit.grading_summary?.counts?.non_compliant || 0) +
+                        (siraAudit.grading_summary?.counts?.pending_verification || 0)
+                      })`,
+                    },
+                  ].map((tab) => (
+                    <Button
+                      key={tab.id}
+                      variant={siraRuleFilter === tab.id ? 'primary' : 'outline'}
+                      size="sm"
+                      onClick={() => setSiraRuleFilter(tab.id as any)}
+                    >
+                      {tab.label}
+                    </Button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Interactive SIRA Requirement Grading Table */}
+              <div className="compliance-table-wrapper">
+                <table className="compliance-table">
+                  <thead>
+                    <tr>
+                      <th>Req Code</th>
+                      <th>Establishment Location / Control</th>
+                      <th>Required Camera FOV / Spec</th>
+                      <th>Official SIRA Manual Requirement & Remarks</th>
+                      <th>Source PDF</th>
+                      <th>Current Grade</th>
+                      <th>Inspector Check (Pass / Fail / N/A)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(siraAudit.items || [])
+                      .filter((it: any) => {
+                        if (siraRuleFilter === 'CAMERA_PLACEMENT') return it.section_group === 'CAMERA_PLACEMENT';
+                        if (siraRuleFilter === 'TECHNICAL_STANDARDS')
+                          return it.section_group === 'TECHNICAL_OPERATIONAL_STANDARD';
+                        if (siraRuleFilter === 'SECTOR_CONTROLS')
+                          return (
+                            it.section_group !== 'CAMERA_PLACEMENT' &&
+                            it.section_group !== 'TECHNICAL_OPERATIONAL_STANDARD'
+                          );
+                        if (siraRuleFilter === 'DEFICIENCIES')
+                          return it.compliance_status !== 'COMPLIANT' && it.compliance_status !== 'NOT_APPLICABLE';
+                        return true;
+                      })
+                      .map((it: any) => {
+                        const isPass = it.compliance_status === 'COMPLIANT';
+                        const isFail = it.compliance_status === 'NON_COMPLIANT';
+                        const isNA = it.compliance_status === 'NOT_APPLICABLE';
+                        return (
+                          <tr key={it.id} className={isFail ? 'row-fail' : ''}>
+                            <td>
+                              <strong className="font-mono text-primary text-xs">{it.requirement_code}</strong>
+                              <div className="mt-1">
+                                <Badge
+                                  variant={it.applicability_type === 'MANDATORY' ? 'info' : 'warning'}
+                                  size="sm"
+                                >
+                                  {it.applicability_type}
+                                </Badge>
+                              </div>
+                            </td>
+                            <td>
+                              <strong className="text-main text-sm">{it.area_or_title}</strong>
+                              <p className="text-xs text-muted font-mono mt-0.5">{it.section_group}</p>
+                            </td>
+                            <td>
+                              <Badge
+                                variant={
+                                  (it.required_fov_or_threshold || '').includes('Identification')
+                                    ? 'danger'
+                                    : (it.required_fov_or_threshold || '').includes('Recognition')
+                                    ? 'warning'
+                                    : 'info'
+                                }
+                                size="sm"
+                              >
+                                {it.required_fov_or_threshold || 'Mandatory'}
+                              </Badge>
+                            </td>
+                            <td className="max-w-md">
+                              <p className="text-xs text-main">{it.exact_wording}</p>
+                              {it.remarks_and_conditions && (
+                                <p className="text-xs text-muted mt-1">
+                                  <strong>Conditions/Remarks:</strong> {it.remarks_and_conditions}
+                                </p>
+                              )}
+                              {it.assessor_notes && (
+                                <p className="text-xs text-primary mt-1 font-medium">{it.assessor_notes}</p>
+                              )}
+                            </td>
+                            <td>
+                              <a
+                                href={siraComplianceApi.getSourcePdfUrl(it.pdf_page)}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-xs font-mono text-primary underline flex items-center gap-1"
+                              >
+                                Page {it.pdf_page} <ExternalLink size={11} />
+                              </a>
+                            </td>
+                            <td>
+                              <Badge
+                                variant={isPass ? 'success' : isFail ? 'danger' : isNA ? 'neutral' : 'warning'}
+                                size="sm"
+                              >
+                                {it.compliance_status}
+                              </Badge>
+                            </td>
+                            <td>
+                              <div className="flex gap-1 flex-wrap">
+                                <Button
+                                  variant={isPass ? 'primary' : 'outline'}
+                                  size="sm"
+                                  leftIcon={<Check size={12} />}
+                                  onClick={() => handleGradeSiraItem(it, 'COMPLIANT')}
+                                >
+                                  Pass
+                                </Button>
+                                <Button
+                                  variant={isFail ? 'danger' : 'outline'}
+                                  size="sm"
+                                  leftIcon={<X size={12} />}
+                                  onClick={() => handleGradeSiraItem(it, 'NON_COMPLIANT')}
+                                >
+                                  Fail
+                                </Button>
+                                <Button
+                                  variant={isNA ? 'secondary' : 'ghost'}
+                                  size="sm"
+                                  onClick={() => handleGradeSiraItem(it, 'NOT_APPLICABLE')}
+                                >
+                                  N/A
+                                </Button>
+                              </div>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Stage 1 Inspector Decision Submission Box right inside Phase 2 SIRA Rules Tab */}
+              <div className="mt-5 p-4 rounded-xl border-2 border-slate-300 dark:border-slate-700 bg-slate-50/90 dark:bg-slate-900/70">
+                <div className="flex items-center justify-between gap-3 flex-wrap mb-3">
+                  <div>
+                    <h4 className="font-bold text-base text-main flex items-center gap-2">
+                      <UserCheck size={18} className="text-primary" />
+                      Stage 1 Field Inspector Assessment & Recommendation (Approve or Reject)
+                    </h4>
+                    <p className="text-xs text-muted">
+                      Based on Phase 1 Scope & Phase 2 SIRA Compliance Grade (<strong>Grade {siraAudit.grading_summary?.letter_grade} — {siraAudit.grading_summary?.overall_sira_score}%</strong>), record the Inspector decision and forward to the Final Reviewer for recheck & confirmation.
+                    </p>
+                  </div>
+                  {siraAudit.stage1_inspector_review?.status &&
+                    siraAudit.stage1_inspector_review.status !== 'PENDING' && (
+                      <Badge
+                        variant={siraAudit.stage1_inspector_review.decision === 'APPROVE' ? 'success' : 'danger'}
+                        size="md"
+                      >
+                        {siraAudit.stage1_inspector_review.status.replace(/_/g, ' ')} ({siraAudit.stage1_inspector_review.decision_at})
+                      </Badge>
+                    )}
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 items-end">
+                  <div className="md:col-span-2">
+                    <label className="form-label text-xs">
+                      Stage 1 Inspector Assessment Remarks / Deficiency Findings
+                    </label>
+                    <input
+                      type="text"
+                      className="form-input text-sm"
+                      placeholder="Enter inspector grading notes (e.g., All Ch. 8 camera FOVs verified, or Reject due to <95% construction readiness)..."
+                      value={inspectorDecisionNotes}
+                      onChange={(e) => setInspectorDecisionNotes(e.target.value)}
+                    />
+                  </div>
+                  <div className="flex gap-2 flex-wrap">
+                    <Button
+                      variant="primary"
+                      leftIcon={<ShieldCheck size={15} />}
+                      onClick={() => handleStage1InspectorDecision('APPROVE')}
+                      isLoading={isActionLoading}
+                    >
+                      Inspector Approve → Final Reviewer
+                    </Button>
+                    <Button
+                      variant="danger"
+                      leftIcon={<XCircle size={15} />}
+                      onClick={() => handleStage1InspectorDecision('REJECT')}
+                      isLoading={isActionLoading}
+                    >
+                      Inspector Reject → Final Reviewer
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          )}
+
+          {/* Secondary Card: Baseline Civil Defense Object Detection Rules */}
           <Card
-            title="UAE Civil Defense Regulatory Compliance"
-            subtitle="Comparison of verified evidence against official safety standards (دليل الإمارات للسلامة والوقاية من الحريق)"
+            title="Baseline Facility Safety & Object Detection Rules"
+            subtitle="Automated comparison of AI computer vision detections against baseline facility safety counts"
             action={
               <Button
-                variant="primary"
+                variant="outline"
                 size="sm"
                 leftIcon={<RefreshCw size={14} />}
                 onClick={handleEvaluateCompliance}
                 isLoading={isEvaluatingCompliance}
               >
-                Run Compliance Engine
+                Re-Evaluate Detections
               </Button>
             }
           >
-            {/* Score & Summary Banner */}
             {complianceSummary && (
               <div className="compliance-summary-hero">
                 <div className="hero-stat-card">
                   <span className="stat-num">{complianceSummary.compliance_score}%</span>
-                  <span className="stat-lbl">Compliance Score</span>
+                  <span className="stat-lbl">Baseline Score</span>
                 </div>
                 <div className="hero-stat-card">
                   <span className="stat-num text-success">{complianceSummary.satisfied_count}</span>
@@ -1446,155 +2392,297 @@ export const InspectionDetailPage: React.FC = () => {
                   <span className={`status-badge-lg badge-${complianceSummary.overall_status.toLowerCase()}`}>
                     {complianceSummary.overall_status}
                   </span>
-                  <span className="stat-lbl">Overall Verdict</span>
+                  <span className="stat-lbl">Baseline Verdict</span>
                 </div>
-              </div>
-            )}
-
-            {/* Compliance Items Breakdown Table */}
-            {!complianceSummary || complianceSummary.items.length === 0 ? (
-              <EmptyState
-                title="Compliance Matrix Empty"
-                description="Click 'Run Compliance Engine' to evaluate current verified evidence against UAE safety codes."
-                actionText="Evaluate Now"
-                onAction={handleEvaluateCompliance}
-                icon={<CheckSquare size={36} />}
-              />
-            ) : (
-              <div className="compliance-table-wrapper">
-                <table className="compliance-table">
-                  <thead>
-                    <tr>
-                      <th>Req Code</th>
-                      <th>Regulatory Standard & Title</th>
-                      <th>Source Document & Citation</th>
-                      <th>Required</th>
-                      <th>Verified</th>
-                      <th>Status</th>
-                      {hasRole('REVIEWER') || hasRole('ADMIN') ? <th>Override</th> : null}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {complianceSummary.items.map((item: InspectionComplianceItem) => {
-                      const isPass = item.status === 'COMPLIANT';
-                      const isFail = item.status === 'NON_COMPLIANT';
-                      const isPending = item.status === 'REQUIRES_MANUAL_REVIEW';
-
-                      return (
-                        <tr key={item.id} className={isFail ? 'row-fail' : ''}>
-                          <td>
-                            <strong className="font-mono text-primary">{item.requirement_code}</strong>
-                            {item.is_mandatory && <span className="mandatory-tag">Mandatory</span>}
-                          </td>
-                          <td>
-                            <strong className="text-main">{item.requirement_title}</strong>
-                            <p className="text-xs text-muted">{item.notes}</p>
-                          </td>
-                          <td dir="auto" className="citation-cell">
-                            <span className="text-xs text-secondary font-medium">
-                              {item.source_document || 'دليل نظم وقائية (2).pdf'}
-                            </span>
-                            {item.source_section && (
-                              <p className="text-xs text-muted">Section: {item.source_section}</p>
-                            )}
-                          </td>
-                          <td>
-                            <span className="font-semibold">{item.required_value_text || item.required_quantity || 'Yes'}</span>
-                          </td>
-                          <td>
-                            <span className={`font-semibold ${item.is_satisfied ? 'text-success' : 'text-danger'}`}>
-                              {item.detected_value_text || item.detected_quantity || '0'}
-                            </span>
-                          </td>
-                          <td>
-                            <Badge
-                              variant={isPass ? 'success' : isFail ? 'danger' : isPending ? 'warning' : 'neutral'}
-                              size="sm"
-                            >
-                              {item.status}
-                            </Badge>
-                            {item.is_overridden && <span className="override-indicator">(Overridden)</span>}
-                          </td>
-                          {hasRole('REVIEWER') || hasRole('ADMIN') ? (
-                            <td>
-                              <Button
-                                variant="outline"
-                                size="sm"
-                                onClick={() => {
-                                  setSelectedItemToOverride(item);
-                                  setOverrideStatus(item.status);
-                                  setIsOverrideModalOpen(true);
-                                }}
-                              >
-                                Override
-                              </Button>
-                            </td>
-                          ) : null}
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
               </div>
             )}
           </Card>
         </div>
       )}
 
-      {/* TAB 5: APPROVAL WORKFLOW */}
+      {/* TAB 5: TWO-STAGE APPROVAL & FINAL REVIEWER RECHECK WORKFLOW */}
       {activeTab === 'approval' && (
         <div className="space-y-4">
-          <Card title="Formal Inspection Governance & Approval" subtitle="Authorized sign-off and certificate issuance pipeline">
-            <div className="approval-stage-card">
-              <div className="flex items-center gap-3">
-                <div className="stage-icon-circle">
-                  <ShieldCheck size={28} className="text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Current Status: {inspection.status}</h3>
-                  <p className="text-sm text-secondary">
-                    {inspection.status === 'DRAFT' && 'Inspection record created. Attach evidence and run AI analysis.'}
-                    {inspection.status === 'IN_PROGRESS' && 'Audit underway. Complete evidence verification.'}
-                    {inspection.status === 'AWAITING_REVIEW' && 'Submitted by Inspector. Awaiting formal Reviewer / Admin signoff.'}
-                    {inspection.status === 'APPROVED' && 'Approved by Reviewer. Official Security Certificate generated.'}
-                    {inspection.status === 'REJECTED' && 'Rejected. Identified non-compliance violations must be remedied.'}
-                  </p>
-                </div>
-              </div>
+          <div className="dashboard-grid-2">
+            {/* STAGE 1 CARD: FIELD INSPECTOR SIRA GRADING & RECOMMENDATION */}
+            <Card
+              title="Stage 1: Field Inspector SIRA Compliance Grading & Decision"
+              subtitle="First-tier evaluation of Phase 1 Scope & Phase 2 SIRA Resolution No. (13) of 2025 requirements"
+            >
+              {siraAudit && (
+                <div className="space-y-4">
+                  <div className="p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-900/60">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-bold uppercase tracking-wider text-muted">
+                        Computed SIRA Compliance Grade
+                      </span>
+                      <Badge
+                        variant={
+                          siraAudit.grading_summary?.letter_grade === 'A' ||
+                          siraAudit.grading_summary?.letter_grade === 'B'
+                            ? 'success'
+                            : siraAudit.grading_summary?.letter_grade === 'C'
+                            ? 'warning'
+                            : 'danger'
+                        }
+                        size="md"
+                      >
+                        Grade {siraAudit.grading_summary?.letter_grade} ({siraAudit.grading_summary?.overall_sira_score}%)
+                      </Badge>
+                    </div>
+                    <p className="text-sm font-semibold text-main">{siraAudit.grading_summary?.grade_label}</p>
+                    <div className="grid grid-cols-2 gap-2 mt-3 text-xs font-mono text-muted">
+                      <div>
+                        • Phase 1 Plan: <strong>{siraAudit.phase1_verification?.pillars_passed}/4 Pass</strong>
+                      </div>
+                      <div>
+                        • Phase 1 Readiness: <strong>{siraAudit.phase1_verification?.construction_readiness_pct}%</strong>
+                      </div>
+                      <div>
+                        • Camera FOV Rules:{' '}
+                        <strong>
+                          {siraAudit.grading_summary?.counts?.camera_rules_compliant}/
+                          {siraAudit.grading_summary?.counts?.camera_rules_total}
+                        </strong>
+                      </div>
+                      <div>
+                        • Alarms/Access/Specs:{' '}
+                        <strong>
+                          {(siraAudit.grading_summary?.counts?.sector_controls_compliant || 0) +
+                            (siraAudit.grading_summary?.counts?.technical_standards_compliant || 0)}
+                          /
+                          {(siraAudit.grading_summary?.counts?.sector_controls_total || 0) +
+                            (siraAudit.grading_summary?.counts?.technical_standards_total || 0)}
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
 
-              {/* Action Buttons */}
-              <div className="approval-actions-bar mt-4 flex gap-3 flex-wrap">
-                {(inspection.status === 'DRAFT' || inspection.status === 'IN_PROGRESS') && (
-                  <Button
-                    variant="primary"
-                    leftIcon={<CheckSquare size={16} />}
-                    onClick={() => setIsSubmitReviewModalOpen(true)}
-                  >
-                    Submit Inspection for Formal Review
-                  </Button>
-                )}
+                  {/* Current Stage 1 Status */}
+                  <div className="p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/60">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs font-bold uppercase text-muted">Stage 1 Inspector Status</span>
+                      <Badge
+                        variant={
+                          siraAudit.stage1_inspector_review?.status === 'APPROVED_BY_INSPECTOR'
+                            ? 'success'
+                            : siraAudit.stage1_inspector_review?.status === 'REJECTED_BY_INSPECTOR'
+                            ? 'danger'
+                            : 'warning'
+                        }
+                        size="sm"
+                      >
+                        {siraAudit.stage1_inspector_review?.status || 'PENDING'}
+                      </Badge>
+                    </div>
+                    {siraAudit.stage1_inspector_review?.inspector_name ? (
+                      <div className="text-xs text-secondary space-y-1 mt-1">
+                        <p>
+                          <strong>Inspector:</strong> {siraAudit.stage1_inspector_review.inspector_name} •{' '}
+                          <strong>Time:</strong> {siraAudit.stage1_inspector_review.decision_at}
+                        </p>
+                        <p>
+                          <strong>Remarks:</strong> {siraAudit.stage1_inspector_review.notes}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="text-xs text-muted">
+                        Inspector has not submitted a Stage 1 recommendation yet. Enter notes below and click Approve or Reject.
+                      </p>
+                    )}
+                  </div>
 
-                {inspection.status === 'AWAITING_REVIEW' && (hasRole('REVIEWER') || hasRole('ADMIN')) && (
-                  <>
+                  <div className="form-group">
+                    <label className="form-label text-xs">Stage 1 Inspector Findings & Recommendation Notes</label>
+                    <textarea
+                      className="form-textarea text-sm"
+                      rows={3}
+                      placeholder="Summarize Phase 1 & Phase 2 SIRA compliance findings for the Final Reviewer..."
+                      value={inspectorDecisionNotes}
+                      onChange={(e) => setInspectorDecisionNotes(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="flex gap-2.5 flex-wrap">
                     <Button
                       variant="primary"
-                      leftIcon={<ShieldCheck size={16} />}
-                      onClick={() => setIsApproveModalOpen(true)}
+                      leftIcon={<CheckSquare size={16} />}
+                      onClick={() => handleStage1InspectorDecision('APPROVE')}
+                      isLoading={isActionLoading}
                     >
-                      Approve Inspection & Issue Certificate
+                      Stage 1 Inspector: Approve & Forward
                     </Button>
                     <Button
                       variant="danger"
                       leftIcon={<XCircle size={16} />}
-                      onClick={() => setIsRejectModalOpen(true)}
+                      onClick={() => handleStage1InspectorDecision('REJECT')}
+                      isLoading={isActionLoading}
                     >
-                      Reject Inspection
+                      Stage 1 Inspector: Reject & Forward
                     </Button>
-                  </>
-                )}
-              </div>
-            </div>
-          </Card>
+                  </div>
+                </div>
+              )}
+            </Card>
+
+            {/* STAGE 2 CARD: FINAL REVIEWER RECHECK, CONFIRMATION & FINAL DECISION */}
+            <Card
+              title="Stage 2: Final Reviewer Recheck, Confirmation & Final Decision"
+              subtitle="Second-tier independent verification of Phase 1 Scope, Phase 2 SIRA Compliance Grade, and Inspector findings"
+            >
+              {siraAudit && (
+                <div className="space-y-4">
+                  {/* Stage 2 Status Banner */}
+                  <div className="p-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/60">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs font-bold uppercase text-muted">Stage 2 Final Reviewer Status</span>
+                      <Badge
+                        variant={
+                          siraAudit.stage2_final_reviewer?.status === 'FINAL_APPROVED' || inspection.status === 'APPROVED'
+                            ? 'success'
+                            : siraAudit.stage2_final_reviewer?.status === 'FINAL_REJECTED' ||
+                              inspection.status === 'REJECTED'
+                            ? 'danger'
+                            : 'warning'
+                        }
+                        size="sm"
+                      >
+                        {siraAudit.stage2_final_reviewer?.status || inspection.status}
+                      </Badge>
+                    </div>
+                    {siraAudit.stage2_final_reviewer?.reviewer_name && (
+                      <div className="text-xs text-secondary space-y-1 mt-1">
+                        <p>
+                          <strong>Final Reviewer:</strong> {siraAudit.stage2_final_reviewer.reviewer_name} •{' '}
+                          <strong>Time:</strong> {siraAudit.stage2_final_reviewer.decision_at}
+                        </p>
+                        <p>
+                          <strong>Decision Notes:</strong> {siraAudit.stage2_final_reviewer.notes}
+                        </p>
+                        {siraAudit.stage2_final_reviewer.certificate_number && (
+                          <p className="text-emerald-500 font-mono font-bold">
+                            Issued Certificate: #{siraAudit.stage2_final_reviewer.certificate_number}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Mandatory 4-Point Final Reviewer Recheck Checklist */}
+                  <div className="p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-900/60 space-y-2.5">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-main">
+                      Mandatory Final Reviewer 4-Point Recheck & Verification
+                    </h4>
+                    <label className="flex items-start gap-2.5 text-xs cursor-pointer">
+                      <input
+                        type="checkbox"
+                        className="mt-0.5"
+                        checked={recheckPhase1}
+                        onChange={(e) => setRecheckPhase1(e.target.checked)}
+                      />
+                      <span>
+                        <strong>1. Confirm Phase 1 Eligibility & Scope:</strong> Verified Dubai Municipality Affection Plan ({siraAudit.phase1_verification?.pillars_passed}/4 Pillars) & Construction Readiness AI Index ({siraAudit.phase1_verification?.construction_readiness_pct}%).
+                      </span>
+                    </label>
+                    <label className="flex items-start gap-2.5 text-xs cursor-pointer">
+                      <input
+                        type="checkbox"
+                        className="mt-0.5"
+                        checked={recheckCategory}
+                        onChange={(e) => setRecheckCategory(e.target.checked)}
+                      />
+                      <span>
+                        <strong>2. Confirm SIRA Establishment Classification:</strong> Verified Ch. {siraAudit.sira_classification?.chapter_number} ({siraAudit.sira_classification?.display_name}
+                        {siraAudit.sira_classification?.active_subtype
+                          ? ` — ${siraAudit.sira_classification.active_subtype.name}`
+                          : ''}
+                        ) matches Trade License & Affection Plan Land Use.
+                      </span>
+                    </label>
+                    <label className="flex items-start gap-2.5 text-xs cursor-pointer">
+                      <input
+                        type="checkbox"
+                        className="mt-0.5"
+                        checked={recheckCameraFov}
+                        onChange={(e) => setRecheckCameraFov(e.target.checked)}
+                      />
+                      <span>
+                        <strong>3. Confirm Phase 2 Camera FOV & Security Controls:</strong> Rechecked {siraAudit.grading_summary?.counts?.camera_rules_compliant}/{siraAudit.grading_summary?.counts?.camera_rules_total} Camera FOV locations, Alarms, Access Control, Guarding & Part 1/2 Technical Specs.
+                      </span>
+                    </label>
+                    <label className="flex items-start gap-2.5 text-xs cursor-pointer">
+                      <input
+                        type="checkbox"
+                        className="mt-0.5"
+                        checked={recheckInspectorGrade}
+                        onChange={(e) => setRecheckInspectorGrade(e.target.checked)}
+                      />
+                      <span>
+                        <strong>4. Confirm Overall SIRA Grade & Stage 1 Inspector Verdict:</strong> Reviewed Grade {siraAudit.grading_summary?.letter_grade} ({siraAudit.grading_summary?.overall_sira_score}%) and Stage 1 Inspector notes ({siraAudit.stage1_inspector_review?.status || 'PENDING'}).
+                      </span>
+                    </label>
+                  </div>
+
+                  {/* Executive Override Option if blockers exist */}
+                  {!siraAudit.grading_summary?.is_eligible_for_approval && (
+                    <div className="p-3 rounded-lg border border-amber-500/40 bg-amber-500/10 space-y-2">
+                      <label className="flex items-center gap-2 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={allowOverride}
+                          onChange={(e) => setAllowOverride(e.target.checked)}
+                        />
+                        <span className="text-xs font-bold text-amber-600 dark:text-amber-400">
+                          Enable Final Reviewer Executive Override (Required to Approve when Phase 1 &lt; 95% or items failed)
+                        </span>
+                      </label>
+                      {allowOverride && (
+                        <input
+                          type="text"
+                          className="form-input text-xs"
+                          placeholder="Enter mandatory regulatory override justification (e.g., Conditional SIRA dispensation granted)..."
+                          value={overrideJustification}
+                          onChange={(e) => setOverrideJustification(e.target.value)}
+                        />
+                      )}
+                    </div>
+                  )}
+
+                  <div className="form-group">
+                    <label className="form-label text-xs">
+                      Final Reviewer Confirmation Remarks / Remediation Directives
+                    </label>
+                    <textarea
+                      className="form-textarea text-sm"
+                      rows={2}
+                      placeholder="Enter Final Reviewer sign-off notes or mandatory rejection remediation reasons..."
+                      value={reviewerDecisionNotes}
+                      onChange={(e) => setReviewerDecisionNotes(e.target.value)}
+                    />
+                  </div>
+
+                  <div className="flex gap-2.5 flex-wrap">
+                    <Button
+                      variant="primary"
+                      leftIcon={<ShieldCheck size={16} />}
+                      onClick={() => handleStage2FinalReviewerDecision('APPROVE')}
+                      isLoading={isActionLoading}
+                    >
+                      Final Reviewer: Confirm & Approve (Issue Certificate)
+                    </Button>
+                    <Button
+                      variant="danger"
+                      leftIcon={<XCircle size={16} />}
+                      onClick={() => handleStage2FinalReviewerDecision('REJECT')}
+                      isLoading={isActionLoading}
+                    >
+                      Final Reviewer: Confirm & Reject
+                    </Button>
+                  </div>
+                </div>
+              )}
+            </Card>
+          </div>
         </div>
       )}
 
@@ -1686,30 +2774,46 @@ export const InspectionDetailPage: React.FC = () => {
       {/* UPLOAD EVIDENCE MODAL */}
       <Modal
         isOpen={isUploadModalOpen}
-        onClose={() => setIsUploadModalOpen(false)}
+        onClose={() => {
+          setIsUploadModalOpen(false);
+          setUploadFiles([]);
+        }}
         title="Upload Inspection Evidence"
-        subtitle={`Attach photos, floor plans, or PDFs to Inspection #${inspection.inspection_number}`}
+        subtitle={`Attach one or multiple photos, floor plans, or PDFs to Inspection #${inspection.inspection_number}`}
         maxWidth="md"
         footer={
           <div className="flex gap-2 justify-end w-full">
-            <Button variant="outline" onClick={() => setIsUploadModalOpen(false)} disabled={isActionLoading}>
+            <Button
+              variant="outline"
+              onClick={() => {
+                setIsUploadModalOpen(false);
+                setUploadFiles([]);
+              }}
+              disabled={isActionLoading}
+            >
               Cancel
             </Button>
             <Button variant="primary" onClick={handleUploadFile} isLoading={isActionLoading}>
-              Upload File
+              {uploadFiles.length > 1 ? `Upload ${uploadFiles.length} Files` : 'Upload File'}
             </Button>
           </div>
         }
       >
         <form onSubmit={handleUploadFile} className="form-stack">
           <div className="form-group">
-            <label className="form-label required">Select Evidence File (JPG, PNG, PDF)</label>
+            <label className="form-label required">Select Evidence File(s) (JPG, PNG, PDF — Multi-select enabled)</label>
             <input
               type="file"
+              multiple
               accept=".pdf,.jpg,.jpeg,.png"
               className="form-input"
-              onChange={(e) => setUploadFile(e.target.files?.[0] || null)}
+              onChange={(e) => setUploadFiles(e.target.files ? Array.from(e.target.files) : [])}
             />
+            {uploadFiles.length > 0 && (
+              <p className="text-xs text-emerald-400 mt-1.5 font-mono">
+                {uploadFiles.length} file(s) selected: {uploadFiles.map((f) => f.name).join(', ')}
+              </p>
+            )}
           </div>
           <div className="form-group">
             <label className="form-label required">Evidence Category</label>
@@ -1719,6 +2823,9 @@ export const InspectionDetailPage: React.FC = () => {
               onChange={(e) => setUploadDocType(e.target.value)}
             >
               <option value="AFFECTION_PLAN">Official Affection Plan (خارطة الموقع) / Site Plan</option>
+              <option value="SITE_PHOTO">Premises Site Photos (Phase 1 Construction Readiness)</option>
+              <option value="FLOOR_PLAN">Architectural Layout / Floor Plan (Phase 2)</option>
+              <option value="OTHER">Supporting Inspection Evidence</option>
             </select>
           </div>
           <div className="form-group">
@@ -1726,7 +2833,7 @@ export const InspectionDetailPage: React.FC = () => {
             <textarea
               className="form-textarea"
               rows={3}
-              placeholder="e.g. Ground floor CCTV camera placement schematic"
+              placeholder="e.g. Premises site photos for Phase 1 construction readiness evaluation"
               value={uploadDescription}
               onChange={(e) => setUploadDescription(e.target.value)}
             />
@@ -1947,6 +3054,87 @@ export const InspectionDetailPage: React.FC = () => {
             />
           </div>
         </form>
+      </Modal>
+
+      {/* PHASE 1 SCOPE VISION AI REPORT MODAL */}
+      <Modal
+        isOpen={isScopeReportModalOpen}
+        onClose={() => setIsScopeReportModalOpen(false)}
+        title="Scope Vision AI — Per-Image 4-Pillar Analysis Report"
+        subtitle={`OpenCV + YOLOv8 Construction Readiness Breakdown (${constructionReadiness.image_results?.length || 0} Site Photos Analyzed)`}
+        maxWidth="lg"
+        footer={
+          <div className="flex justify-between items-center w-full">
+            <span className="text-xs text-muted font-mono">
+              Overall Average: <strong>{constructionReadiness.completion_pct}%</strong> (Mandatory SIRA Threshold: &gt;= 95.0%)
+            </span>
+            <Button variant="primary" onClick={() => setIsScopeReportModalOpen(false)}>
+              Close Report
+            </Button>
+          </div>
+        }
+      >
+        <div className="space-y-4">
+          <div
+            className={`alert-banner ${
+              constructionReadiness.is_eligible ? 'alert-success' : 'alert-danger'
+            }`}
+          >
+            {constructionReadiness.is_eligible ? (
+              <ShieldCheck size={18} />
+            ) : (
+              <XCircle size={18} />
+            )}
+            <div className="alert-content">
+              <strong>
+                Final Scope Decision:{' '}
+                {constructionReadiness.is_eligible
+                  ? 'IN SIRA SCOPE (>= 95%)'
+                  : 'OUT OF SCOPE (< 95%)'}
+              </strong>
+              <span>{constructionReadiness.message}</span>
+            </div>
+          </div>
+
+          <div className="space-y-2.5 max-h-[60vh] overflow-y-auto pr-1">
+            {constructionReadiness.image_results && constructionReadiness.image_results.length > 0 ? (
+              constructionReadiness.image_results.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="p-3 rounded-lg border border-slate-700/80 bg-slate-900/60 text-xs"
+                >
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <div className="flex items-center gap-2 font-semibold text-main text-sm">
+                      {img.passed ? (
+                        <CheckCircle2 size={16} className="text-emerald-400 flex-shrink-0" />
+                      ) : (
+                        <XCircle size={16} className="text-red-400 flex-shrink-0" />
+                      )}
+                      <span>{img.filename}</span>
+                      <span className="text-muted font-mono text-xs">({img.scene_type})</span>
+                    </div>
+                    <Badge variant={img.passed ? 'success' : 'danger'} size="sm">
+                      {img.completion_pct.toFixed(1)}% ({img.status})
+                    </Badge>
+                  </div>
+                  <div className="text-muted font-mono text-xs mb-1.5">
+                    Ceiling: <strong className="text-main">{img.ceiling_score}</strong>/25 • Floor:{' '}
+                    <strong className="text-main">{img.floor_score}</strong>/25 • Finishes:{' '}
+                    <strong className="text-main">{img.finishes_score}</strong>/25 • No-Debris:{' '}
+                    <strong className="text-main">{img.debris_score}</strong>/25
+                  </div>
+                  <div className="text-secondary text-xs">
+                    {img.findings.join(' • ')}
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-sm text-muted italic text-center py-4">
+                No site photos have been evaluated yet. Click &quot;Run Scope Vision AI&quot; first.
+              </p>
+            )}
+          </div>
+        </div>
       </Modal>
     </div>
   );

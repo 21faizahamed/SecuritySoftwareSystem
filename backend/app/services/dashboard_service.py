@@ -62,12 +62,13 @@ class DashboardService:
         # 2. Inspections
         total_insp = insp_query.count()
         active_insp = insp_query.filter(
-            Inspection.status.in_(["IN_PROGRESS", "AWAITING_VERIFICATION", "AWAITING_REVIEW"])
+            Inspection.status.in_(["DRAFT", "PENDING", "IN_PROGRESS", "AWAITING_VERIFICATION", "AWAITING_REVIEW"])
         ).count()
-        pending_verif = insp_query.filter(Inspection.status == "AWAITING_VERIFICATION").count()
+        pending_verif = insp_query.filter(Inspection.status.in_(["PENDING", "DRAFT", "AWAITING_VERIFICATION"])).count()
         awaiting_rev = insp_query.filter(Inspection.status == "AWAITING_REVIEW").count()
-        approved_insp = insp_query.filter(Inspection.status == "APPROVED").count()
+        approved_insp = insp_query.filter(Inspection.status.in_(["APPROVED", "COMPLETED"])).count()
         rejected_insp = insp_query.filter(Inspection.status == "REJECTED").count()
+        compliance_rate = round((approved_insp / total_insp) * 100.0, 1) if total_insp > 0 else 0.0
 
         # 3. Certificates
         total_certs = cert_query.count()
@@ -122,12 +123,20 @@ class DashboardService:
             active_establishments=active_est,
             total_inspections=total_insp,
             active_inspections=active_insp,
+            pending_inspections=pending_verif,
+            completed_inspections=approved_insp,
             pending_verification_inspections=pending_verif,
             awaiting_review_inspections=awaiting_rev,
+            inspections_awaiting_review=awaiting_rev,
             approved_inspections=approved_insp,
+            compliant_inspections=approved_insp,
             rejected_inspections=rejected_insp,
+            non_compliant_inspections=rejected_insp,
+            compliance_rate=compliance_rate,
             total_certificates=total_certs,
             active_certificates=active_certs,
+            certificates_issued=active_certs,
+            certificates_expiring_soon=0,
             average_compliance_score=avg_score,
             inspection_status_breakdown=status_breakdown,
             establishment_type_breakdown=type_breakdown,

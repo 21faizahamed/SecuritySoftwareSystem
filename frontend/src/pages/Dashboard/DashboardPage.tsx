@@ -205,14 +205,14 @@ export const DashboardPage: React.FC = () => {
 
       {/* Quick Access Action Cards */}
       <div className="quick-access-grid mb-6">
-        <Link to="/requirements" className="quick-access-card">
+        <Link to="/sira-compliance" className="quick-access-card">
           <div className="quick-icon-wrap" style={{ background: '#0284c7' }}>
             <BookOpen size={20} className="text-white" />
           </div>
           <div>
-            <h4 className="font-bold text-main">Regulatory Standards Catalog</h4>
+            <h4 className="font-bold text-main">SIRA Preventive Systems Explorer</h4>
             <p className="text-xs text-secondary">
-              Browse UAE Civil Defense safety codes (دليل الإمارات للسلامة والوقاية من الحريق)
+              Resolution No. 13 of 2025 • 43 Chapters, Camera FOV Matrix & Checklists
             </p>
           </div>
         </Link>

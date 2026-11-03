@@ -17,6 +17,7 @@ from app.api.routes import (
     audit_logs_router,
     notifications_router,
     dashboard_router,
+    sira_compliance_router,
 )
 
 api_v1_router = APIRouter(prefix="/api/v1")
@@ -39,5 +40,6 @@ api_v1_router.include_router(reports_router)
 api_v1_router.include_router(audit_logs_router)
 api_v1_router.include_router(notifications_router)
 api_v1_router.include_router(dashboard_router)
+api_v1_router.include_router(sira_compliance_router)
 
 __all__ = ["api_v1_router"]

@@ -14,8 +14,29 @@ from app.schemas.detection import (
 )
 from app.schemas.common import MessageResponse
 from app.services.ai_service import AIService
+from app.services.construction_readiness_service import ConstructionReadinessService
 
 router = APIRouter(prefix="/ai", tags=["AI Computer Vision & Detections"])
+
+@router.post(
+    "/evaluate-scope/{inspection_id}",
+    summary="Run Phase 1 Image-Based Construction Readiness AI Model on Uploaded Site Photos"
+)
+def evaluate_phase1_scope(
+    inspection_id: int,
+    db: Session = Depends(get_db),
+    current_user: Optional[User] = Depends(get_optional_current_user),
+):
+    """
+    Analyzes all uploaded site photos (.jpg/.jpeg/.png) for the inspection across 4 SIRA readiness points
+    (Ceiling & Lighting, Floor Slab, Structural Finishes/Glazing, Absence of Construction Equipment/Debris),
+    prints per-image breakdown in the console, and evaluates whether the overall average is >= 95.0%.
+    """
+    return ConstructionReadinessService.evaluate_inspection_scope(
+        db=db,
+        inspection_id=inspection_id,
+        user=current_user,
+    )
 
 @router.post(
     "/analyze-document/{document_id}",

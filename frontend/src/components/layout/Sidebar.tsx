@@ -63,19 +63,15 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggleCollapse 
 
   const phase2Items = [
     {
+      to: '/sira-compliance',
+      label: 'SIRA Compliance',
+      icon: BookOpen,
+    },
+    {
       to: '/documents',
       label: 'Documents',
       icon: FileText,
     },
-    ...(isAdmin
-      ? [
-          {
-            to: '/requirements',
-            label: 'UAE Standards',
-            icon: BookOpen,
-          },
-        ]
-      : []),
     {
       to: '/certificates',
       label: 'Certificates',

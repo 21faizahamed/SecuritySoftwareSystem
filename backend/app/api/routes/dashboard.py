@@ -15,6 +15,11 @@ router = APIRouter(prefix="/dashboard", tags=["Dashboard & Real-Time Metrics"])
     response_model=DashboardStatsResponse,
     summary="Get Real-Time Database Metrics for Dashboard"
 )
+@router.get(
+    "/summary",
+    response_model=DashboardStatsResponse,
+    summary="Get Real-Time Database Summary for Dashboard (Alias)"
+)
 def get_dashboard_statistics(
     db: Session = Depends(get_db),
     current_user: Optional[User] = Depends(get_optional_current_user),

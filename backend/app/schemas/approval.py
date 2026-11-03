@@ -4,11 +4,15 @@ from datetime import datetime
 
 class SubmitForReviewRequest(BaseModel):
     inspector_notes: Optional[str] = None
+    submission_notes: Optional[str] = None
 
 class ReviewApprovalRequest(BaseModel):
     reviewer_notes: Optional[str] = None
+    approval_notes: Optional[str] = None
     force_override: bool = False
+    allow_override: bool = False
     override_reason: Optional[str] = None
+    override_justification: Optional[str] = None
 
 class ReviewRejectionRequest(BaseModel):
     rejection_reason: str

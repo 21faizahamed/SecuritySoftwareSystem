@@ -80,4 +80,38 @@ export const aiApi = {
   async getDetectionCounts(inspectionId: number): Promise<DetectionCountSummary> {
     return apiClient<DetectionCountSummary>(`/ai/counts/${inspectionId}`);
   },
+
+  /**
+   * Run Phase 1 Image-Based Construction Readiness AI Model on all uploaded site photos
+   */
+  async evaluatePhase1Scope(inspectionId: number): Promise<{
+    inspection_id: number;
+    photos_evaluated: number;
+    passed_photos: number;
+    failed_photos: number;
+    completion_pct: number;
+    threshold_pct: number;
+    is_eligible: boolean;
+    status: 'IN_SCOPE' | 'OUT_OF_SCOPE';
+    message: string;
+    artifacts: string[];
+    image_results: Array<{
+      document_id?: number;
+      filename: string;
+      scene_type: string;
+      ceiling_score: number;
+      floor_score: number;
+      finishes_score: number;
+      debris_score: number;
+      completion_pct: number;
+      passed: boolean;
+      status: string;
+      findings: string[];
+    }>;
+    console_report: string;
+  }> {
+    return apiClient(`/ai/evaluate-scope/${inspectionId}`, {
+      method: 'POST',
+    });
+  },
 };

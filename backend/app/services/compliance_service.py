@@ -169,28 +169,57 @@ class ComplianceService:
             elif status_result == "NOT_APPLICABLE":
                 not_applicable_count += 1
 
+            # Enrich dynamic display attributes for frontend table
+            item.requirement_code = req.requirement_code
+            item.requirement_title = req.title
+            item.category = req.category
+            item.is_mandatory = bool(req.is_mandatory)
+            item.required_value_text = f"{req_qty} {req.unit or 'units'}"
+            item.detected_value_text = f"{ver_qty} verified ({det_qty} detected)"
+            item.is_satisfied = (status_result == "COMPLIANT")
+            item.source_document = req.source_document
+            item.source_section = req.source_section
+            item.source_page = req.source_page
+            item.notes = evidence_notes
+
             compliance_items_responses.append(item)
 
         # Calculate final compliance score (0.0 to 100.0)
         final_score = round((earned_weight / total_weight) * 100.0, 1) if total_weight > 0 else 100.0
 
         is_eligible = (mandatory_violations == 0 and pending_verification_count == 0 and unsatisfied_count == 0)
+        overall_status = (
+            "COMPLIANT"
+            if is_eligible
+            else ("NON_COMPLIANT" if unsatisfied_count > 0 else "REQUIRES_MANUAL_REVIEW")
+        )
 
         # Persist score and summary on Inspection
         summary_dict = {
             "total_requirements": len(applicable_reqs),
             "satisfied": satisfied_count,
             "unsatisfied": unsatisfied_count,
+            "non_compliant_count": unsatisfied_count,
             "pending_verification": pending_verification_count,
+            "manual_review_count": pending_verification_count,
             "not_applicable": not_applicable_count,
             "overridden": overridden_count,
             "mandatory_violations": mandatory_violations,
             "compliance_score": final_score,
+            "overall_status": overall_status,
             "is_eligible_for_approval": is_eligible,
         }
 
         inspection.compliance_score = final_score
-        inspection.compliance_summary = json.dumps(summary_dict)
+        # Preserve any existing SIRA audit state in compliance_summary if present
+        existing_meta = {}
+        if inspection.compliance_summary:
+            try:
+                existing_meta = json.loads(inspection.compliance_summary)
+            except Exception:
+                existing_meta = {}
+        existing_meta.update(summary_dict)
+        inspection.compliance_summary = json.dumps(existing_meta)
         db.commit()
 
         # Audit evaluation
@@ -214,11 +243,14 @@ class ComplianceService:
             total_requirements=len(applicable_reqs),
             satisfied_count=satisfied_count,
             unsatisfied_count=unsatisfied_count,
+            non_compliant_count=unsatisfied_count,
             pending_verification_count=pending_verification_count,
+            manual_review_count=pending_verification_count,
             not_applicable_count=not_applicable_count,
             overridden_count=overridden_count,
             mandatory_violations=mandatory_violations,
             compliance_score=final_score,
+            overall_status=overall_status,
             is_eligible_for_approval=is_eligible,
             summary_message=msg,
             evaluated_at=datetime.now(),

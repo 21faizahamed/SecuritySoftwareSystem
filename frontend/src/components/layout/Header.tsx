@@ -9,6 +9,8 @@ import {
   ShieldAlert,
   Award,
   FileText,
+  Sun,
+  Moon,
 } from 'lucide-react';
 import { systemApi } from '../../services/systemApi';
 import { notificationApi } from '../../services/notificationApi';
@@ -21,6 +23,21 @@ export const Header: React.FC = () => {
   const [health, setHealth] = useState<SystemHealth | null>(null);
   const [dbStatus, setDbStatus] = useState<DatabaseStatus | null>(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
+
+  // Theme State (White / Light Theme as main default, Dark as option)
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    const saved = localStorage.getItem('scis_theme');
+    return saved === 'dark' ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('scis_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
 
   // Notification State
   const [notifications, setNotifications] = useState<Notification[]>([]);
@@ -45,6 +62,8 @@ export const Header: React.FC = () => {
         return 'Compliance Inspections';
       case '/documents':
         return 'Document Records';
+      case '/sira-compliance':
+        return 'SIRA Preventive Systems Compliance Explorer';
       case '/requirements':
         return 'UAE Civil Defense Standards';
       case '/certificates':
@@ -165,6 +184,27 @@ export const Header: React.FC = () => {
             {isDbOk ? 'MySQL Connected' : 'DB Disconnected'}
           </span>
         </div>
+
+        {/* Light / Dark Theme Toggle */}
+        <button
+          type="button"
+          className="theme-toggle-btn"
+          onClick={toggleTheme}
+          title={theme === 'light' ? 'Switch to Dark Theme' : 'Switch to White (Light) Theme'}
+          aria-label="Toggle Theme"
+        >
+          {theme === 'light' ? (
+            <>
+              <Moon size={14} />
+              <span>Dark Mode</span>
+            </>
+          ) : (
+            <>
+              <Sun size={14} />
+              <span>Light Mode</span>
+            </>
+          )}
+        </button>
 
         {/* Notifications Bell Dropdown */}
         <div className="relative" ref={notifRef}>

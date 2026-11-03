@@ -16,7 +16,6 @@ router = APIRouter(prefix="/compliance", tags=["Compliance Engine & Rule Evaluat
 
 @router.post(
     "/evaluate/{inspection_id}",
-    response_model=ComplianceSummary,
     summary="Evaluate Inspection Compliance Against Regulatory Requirements"
 )
 def evaluate_inspection_compliance(
@@ -29,12 +28,22 @@ def evaluate_inspection_compliance(
     Compares Required standards against Verified evidence, calculates weighted score,
     identifies compliance outcomes, and checks approval eligibility.
     """
-    return ComplianceService.evaluate_inspection(db, inspection_id, user=current_user)
+    summary = ComplianceService.evaluate_inspection(db, inspection_id, user=current_user)
+    return {
+        "inspection_id": inspection_id,
+        "summary": summary,
+        "message": summary.summary_message,
+    }
 
 @router.get(
     "/inspections/{inspection_id}",
     response_model=ComplianceSummary,
     summary="Get Current Compliance Summary for Inspection"
+)
+@router.get(
+    "/summary/{inspection_id}",
+    response_model=ComplianceSummary,
+    summary="Get Current Compliance Summary for Inspection (Alias)"
 )
 def get_inspection_compliance(
     inspection_id: int,
@@ -58,10 +67,11 @@ def override_compliance_item(
     Allows an authorized Reviewer or Admin to override a non-compliant or manual-review item
     with an explicit justification recorded in the immutable audit trail.
     """
+    target_st = data.status or data.target_status or "COMPLIANT"
     return ComplianceService.override_item(
         db=db,
         item_id=item_id,
         reason=data.override_reason,
-        target_status=data.target_status,
+        target_status=target_st,
         user=current_user
     )

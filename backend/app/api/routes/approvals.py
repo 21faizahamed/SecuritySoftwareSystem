@@ -20,6 +20,11 @@ router = APIRouter(prefix="/approvals", tags=["Inspection Review & Approval Work
     response_model=ApprovalResponse,
     summary="Inspector Submits Inspection for Formal Compliance Review"
 )
+@router.post(
+    "/{inspection_id}/submit",
+    response_model=ApprovalResponse,
+    summary="Inspector Submits Inspection for Formal Compliance Review (Alias)"
+)
 def submit_for_review(
     inspection_id: int,
     data: SubmitForReviewRequest = SubmitForReviewRequest(),
@@ -30,17 +35,23 @@ def submit_for_review(
     Submits an inspection with verified evidence for formal review.
     Transitions status to 'AWAITING_REVIEW'.
     """
+    notes = data.inspector_notes or data.submission_notes
     return ApprovalService.submit_for_review(
         db=db,
         inspection_id=inspection_id,
         user=current_user,
-        inspector_notes=data.inspector_notes
+        inspector_notes=notes
     )
 
 @router.post(
     "/approve/{inspection_id}",
     response_model=ApprovalResponse,
     summary="Authorized Reviewer/Admin Approves Inspection & Issues Certificate"
+)
+@router.post(
+    "/{inspection_id}/approve",
+    response_model=ApprovalResponse,
+    summary="Authorized Reviewer/Admin Approves Inspection & Issues Certificate (Alias)"
 )
 def approve_inspection(
     inspection_id: int,
@@ -53,19 +64,27 @@ def approve_inspection(
     Blocks approval if unresolved mandatory requirements exist unless explicitly overridden.
     Automatically generates official PDF Certificate upon approval.
     """
+    notes = data.reviewer_notes or data.approval_notes
+    force = data.force_override or data.allow_override
+    reason = data.override_reason or data.override_justification
     return ApprovalService.approve_inspection(
         db=db,
         inspection_id=inspection_id,
         user=current_user,
-        reviewer_notes=data.reviewer_notes,
-        force_override=data.force_override,
-        override_reason=data.override_reason,
+        reviewer_notes=notes,
+        force_override=force,
+        override_reason=reason,
     )
 
 @router.post(
     "/reject/{inspection_id}",
     response_model=ApprovalResponse,
     summary="Reviewer Rejects Inspection Cycle with Formal Feedback"
+)
+@router.post(
+    "/{inspection_id}/reject",
+    response_model=ApprovalResponse,
+    summary="Reviewer Rejects Inspection Cycle with Formal Feedback (Alias)"
 )
 def reject_inspection(
     inspection_id: int,

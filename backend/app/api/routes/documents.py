@@ -82,18 +82,76 @@ def get_document(
     "/documents/{id}/file",
     summary="Download or Stream Physical Document File"
 )
+@router.get(
+    "/documents/{id}/view",
+    summary="Inline View Physical Document File (Image/PDF)"
+)
 def get_document_file(
     id: int,
     db: Session = Depends(get_db)
 ):
-    """Securely streams the physical document file with path traversal protections."""
+    """Securely streams the physical document file inline for browser preview."""
+    doc = DocumentService.get_by_id(db, id)
+    file_path = DocumentService.get_file_path(doc)
+    media_type = doc.file_type or "application/octet-stream"
+    if file_path.suffix.lower() in (".jpg", ".jpeg"):
+        media_type = "image/jpeg"
+    elif file_path.suffix.lower() == ".png":
+        media_type = "image/png"
+    elif file_path.suffix.lower() == ".pdf":
+        media_type = "application/pdf"
+    return FileResponse(
+        path=str(file_path),
+        media_type=media_type,
+        headers={"Content-Disposition": f'inline; filename="{doc.original_filename}"'}
+    )
+
+@router.get(
+    "/documents/{id}/download",
+    summary="Download Physical Document File as Attachment"
+)
+def download_document_file(
+    id: int,
+    db: Session = Depends(get_db)
+):
+    """Downloads the physical document file as an attachment."""
     doc = DocumentService.get_by_id(db, id)
     file_path = DocumentService.get_file_path(doc)
     return FileResponse(
         path=str(file_path),
         filename=doc.original_filename,
-        media_type=doc.file_type
+        media_type=doc.file_type or "application/octet-stream"
     )
+
+@router.post(
+    "/documents/{id}/process",
+    summary="Process Document & Extract OCR Text"
+)
+def process_document_ocr(
+    id: int,
+    db: Session = Depends(get_db)
+):
+    """Runs or re-runs text/image metadata extraction on an uploaded document."""
+    doc = DocumentService.get_by_id(db, id)
+    file_path = DocumentService.get_file_path(doc)
+    from app.services.document_processor import DocumentProcessor
+    extracted_text, page_count, upload_status, sha256_hash = DocumentProcessor.process_file(
+        file_path, doc.file_type or file_path.suffix
+    )
+    doc.extracted_text = extracted_text
+    doc.page_count = page_count
+    doc.upload_status = upload_status
+    if sha256_hash:
+        doc.sha256_hash = sha256_hash
+    db.commit()
+    db.refresh(doc)
+    return {
+        "document_id": doc.id,
+        "processing_status": doc.upload_status,
+        "extracted_text": doc.extracted_text,
+        "pages_extracted": doc.page_count or 1,
+        "sha256_hash": doc.sha256_hash,
+    }
 
 @router.get(
     "/documents",

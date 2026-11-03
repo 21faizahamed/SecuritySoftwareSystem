@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError, OperationalError
 
 from app.core.config import settings
 from app.core.logging import logger, RequestLoggingMiddleware
-from app.core.database import Base, engine, check_db_connection
+from app.core.database import Base, engine, check_db_connection, ensure_database_ready
 from app.api.router import api_v1_router
 from app.utils.errors import (
     AppException,
@@ -20,23 +20,14 @@ async def lifespan(app: FastAPI):
     """Application lifespan context for startup and shutdown procedures."""
     logger.info(f"Starting {settings.APP_NAME} v{settings.VERSION} [{settings.APP_ENV}]...")
     try:
-        # Initialize tables from SQLAlchemy metadata
-        Base.metadata.create_all(bind=engine)
+        # Ensure database schema and seed data are healthy (repairs MySQL #1932 if needed)
+        ensure_database_ready()
         db_info = check_db_connection()
         logger.info(
             f"Database initialized: {db_info['status'].upper()} | "
             f"DB: '{db_info.get('database')}' on {db_info.get('host')}:{db_info.get('port')} "
             f"({db_info.get('version', 'unknown')})"
         )
-
-        # Seed roles, permissions, initial admin user, and regulatory standards
-        from app.core.database import SessionLocal
-        from app.services.role_service import RoleService
-        from app.services.requirement_service import RequirementService
-        with SessionLocal() as db:
-            RoleService.seed_default_roles_and_permissions(db)
-            RoleService.seed_initial_admin(db)
-            RequirementService.seed_default_regulatory_requirements(db)
 
     except Exception as e:
         logger.warning(f"Database initialization warning on startup: {e}")

@@ -11,6 +11,7 @@ import { InspectionListPage } from '../pages/Inspections/InspectionListPage';
 import { InspectionDetailPage } from '../pages/Inspections/InspectionDetailPage';
 import { DocumentListPage } from '../pages/Documents/DocumentListPage';
 import { RequirementsPage } from '../pages/Requirements/RequirementsPage';
+import { SiraCompliancePage } from '../pages/SiraCompliance/SiraCompliancePage';
 import { CertificatesPage } from '../pages/Certificates/CertificatesPage';
 import { AuditLogsPage } from '../pages/Audit/AuditLogsPage';
 import { PublicVerifyPage } from '../pages/Verify/PublicVerifyPage';
@@ -39,6 +40,7 @@ export const AppRouter: React.FC = () => {
               <Route path="inspections" element={<InspectionListPage />} />
               <Route path="inspections/:id" element={<InspectionDetailPage />} />
               <Route path="documents" element={<DocumentListPage />} />
+              <Route path="sira-compliance" element={<SiraCompliancePage />} />
               <Route path="requirements" element={<RequirementsPage />} />
               <Route path="certificates" element={<CertificatesPage />} />
               <Route path="audit-logs" element={<AuditLogsPage />} />
