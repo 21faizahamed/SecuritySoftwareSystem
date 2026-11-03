@@ -15,6 +15,7 @@ import {
   Shield,
   User as UserIcon,
   BookOpen,
+  MessageCircle,
   Award,
   Activity,
 } from 'lucide-react';
@@ -66,6 +67,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, onToggleCollapse 
       to: '/sira-compliance',
       label: 'SIRA Compliance',
       icon: BookOpen,
+    },
+    {
+      to: '/rag-chat',
+      label: 'Regulations Chatbot',
+      icon: MessageCircle,
     },
     {
       to: '/documents',

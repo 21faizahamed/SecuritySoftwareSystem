@@ -17,6 +17,7 @@ import { AuditLogsPage } from '../pages/Audit/AuditLogsPage';
 import { PublicVerifyPage } from '../pages/Verify/PublicVerifyPage';
 import { UserListPage } from '../pages/Admin/UserListPage';
 import { SettingsPage } from '../pages/Settings/SettingsPage';
+import { RagChatPage } from '../pages/RagChat/RagChatPage';
 
 export const AppRouter: React.FC = () => {
   return (
@@ -42,6 +43,7 @@ export const AppRouter: React.FC = () => {
               <Route path="documents" element={<DocumentListPage />} />
               <Route path="sira-compliance" element={<SiraCompliancePage />} />
               <Route path="requirements" element={<RequirementsPage />} />
+              <Route path="rag-chat" element={<RagChatPage />} />
               <Route path="certificates" element={<CertificatesPage />} />
               <Route path="audit-logs" element={<AuditLogsPage />} />
 

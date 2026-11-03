@@ -20,6 +20,8 @@ from app.api.routes import (
     sira_compliance_router,
 )
 
+from app.api.routes.rag_chat import router as rag_chat_router
+
 api_v1_router = APIRouter(prefix="/api/v1")
 
 # Include all modular sub-routers
@@ -43,3 +45,5 @@ api_v1_router.include_router(dashboard_router)
 api_v1_router.include_router(sira_compliance_router)
 
 __all__ = ["api_v1_router"]
+
+api_v1_router.include_router(rag_chat_router)

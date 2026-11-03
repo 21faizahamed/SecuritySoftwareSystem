@@ -1,4 +1,5 @@
 import logging
+import os
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 from sqlalchemy.orm import Session
@@ -14,6 +15,8 @@ from app.schemas.detection import (
     DetectionUpdate,
     AIAnalysisResponse,
     DetectionCountSummary,
+    ConstructionPhotoResult,
+    ConstructionReadinessResponse,
 )
 from app.services.document_service import DocumentService
 from app.services.yolo_detector import YOLOv8Detector

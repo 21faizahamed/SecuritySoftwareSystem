@@ -99,10 +99,9 @@ def create_resilient_engine():
     then standard XAMPP port (3306), and falls back to SQLite if MySQL is unavailable.
     """
     candidate_ports = [settings.DB_PORT]
-    if 3306 not in candidate_ports:
-        candidate_ports.append(3306)
-    if 4306 not in candidate_ports:
-        candidate_ports.append(4306)
+    for fallback in (3307, 3306, 4306):
+        if fallback not in candidate_ports:
+            candidate_ports.append(fallback)
 
     auth = f"{settings.DB_USER}:{settings.DB_PASSWORD}" if settings.DB_PASSWORD else settings.DB_USER
 
